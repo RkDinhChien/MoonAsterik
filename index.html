@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon* - Connect IT Students with Careers</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+      <div class="container navbar-content">
+        <div class="navbar-brand">
+          <svg
+            class="icon icon-lg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="brand-text"
+            >Moon<span class="brand-accent">*</span></span
+          >
+        </div>
+
+        <div id="navbar-menu" class="navbar-menu">
+          <a href="#jobs" class="navbar-link">Find Jobs</a>
+          <a href="#companies" class="navbar-link">For Companies</a>
+          <a href="#about" class="navbar-link">About Us</a>
+        </div>
+
+        <div id="navbar-actions" class="navbar-actions">
+          <button id="login-btn" class="btn btn-ghost">Login</button>
+          <button id="signup-btn" class="btn btn-primary">Sign Up</button>
+        </div>
+
+        <div
+          id="navbar-logged-in"
+          class="navbar-logged-in"
+          style="display: none"
+        >
+          <span id="user-type-label" class="navbar-user-type"></span>
+          <button id="logout-btn" class="btn btn-outline">Logout</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-content">
+      <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="footer-brand">
+              <svg
+                class="icon icon-lg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="brand-text"
+                >Moon<span class="brand-accent">*</span></span
+              >
+            </div>
+            <p class="footer-description">
+              Connecting IT students with their dream careers.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Platform</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Find Jobs</a></li>
+              <li><a href="#" class="footer-link">For Companies</a></li>
+              <li><a href="#" class="footer-link">How It Works</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2025 Moon*. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal: Sign Up Dialog -->
+    <div id="signup-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Join Moon*</h2>
+          <button class="modal-close">&times;</button>
+        </div>
+        <p class="modal-description">Choose your account type to get started</p>
+        <div class="modal-body">
+          <button id="signup-student-btn" class="account-type-card">
+            <div class="account-type-icon primary">
+              <svg
+                class="icon icon-lg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path
+                  d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"
+                ></path>
+              </svg>
+            </div>
+            <div class="account-type-content">
+              <h3 class="account-type-title">I'm a Student</h3>
+              <p class="account-type-desc">
+                Find internships and entry-level jobs that match your skills
+              </p>
+            </div>
+          </button>
+
+          <button id="signup-employer-btn" class="account-type-card">
+            <div class="account-type-icon secondary">
+              <svg
+                class="icon icon-lg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="account-type-content">
+              <h3 class="account-type-title">I'm an Employer</h3>
+              <p class="account-type-desc">
+                Post jobs and connect with talented IT students
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Login Dialog -->
+    <div id="login-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Welcome Back</h2>
+          <button class="modal-close">&times;</button>
+        </div>
+        <p class="modal-description">Choose your account type to continue</p>
+        <div class="modal-body">
+          <button
+            id="login-student-btn"
+            class="btn btn-primary btn-lg btn-full"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path>
+            </svg>
+            Login as Student
+          </button>
+
+          <button
+            id="login-employer-btn"
+            class="btn btn-secondary btn-lg btn-full"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
+            </svg>
+            Login as Employer
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts - Load in order -->
+    <!-- 1. State management -->
+    <script src="js/state.js"></script>
+
+    <!-- 2. Page templates -->
+    <script src="js/pages/landing.js"></script>
+    <script src="js/pages/student-dashboard.js"></script>
+    <script src="js/pages/company-dashboard.js"></script>
+    <script src="js/pages/other-pages.js"></script>
+
+    <!-- 3. Router -->
+    <script src="js/router.js"></script>
+
+    <!-- 4. Main app controller -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

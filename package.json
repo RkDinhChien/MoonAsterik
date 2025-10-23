@@ -1,0 +1,22 @@
+{
+  "name": "moon-asterisk",
+  "version": "1.0.0",
+  "description": "Moon* - IT Student and Company Job Matching Platform",
+  "private": true,
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost",
+    "dev": "live-server --port=3000 --host=localhost",
+    "build": "echo 'No build step required for vanilla HTML/CSS/JS'"
+  },
+  "keywords": [
+    "jobs",
+    "internships",
+    "students",
+    "careers"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
