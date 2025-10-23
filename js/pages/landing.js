@@ -4,46 +4,207 @@
 
 const renderLandingPage = () => `
   <div class="landing-page">
-    <!-- Hero Section -->
-    <section class="hero-section" style="background-color: #ECEFF1; padding: 5rem 1rem;">
-      <div class="container">
-        <div class="grid md-grid-cols-2 gap-lg items-center">
-          <div>
-            <h1 style="color: #263238;">
-              Launch Your <span style="color: #00BCD4;">Tech Career</span>
-            </h1>
-            <p style="color: #78909C; font-size: 1.25rem; margin-bottom: 2rem;">
-              Moon* connects talented IT students with innovative companies looking for fresh perspectives and cutting-edge skills.
-            </p>
-            <div class="flex flex-col gap-md" style="max-width: 400px;">
-              <button class="btn btn-primary btn-lg" onclick="app.handleStudentClick()">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path>
-                </svg>
-                I'm a Student
-              </button>
-              <button class="btn btn-outline btn-lg" onclick="app.handleEmployerClick()">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
-                </svg>
-                I'm an Employer
-              </button>
-            </div>
-          </div>
-          <div style="height: 400px; border-radius: 0.75rem; overflow: hidden; box-shadow: var(--shadow-xl);">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" 
-                 alt="Students working" 
-                 style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
+    <!-- Hero Section - Full Screen with Background Image -->
+    <section class="hero-section" style="
+      position: relative;
+      min-height: 100vh;
+      background-image: url('assets/photo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ")
+      <!-- Overlay for better text readability -->
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(0, 188, 212, 0.4) 0%, rgba(38, 50, 56, 0.6) 100%);
+      "></div>
+      
+      <!-- Content on top of image -->
+      <div class="container" style="position: relative; z-index: 1; text-align: center; padding: 2rem;">
+        <h1 style="color: #ffffff; font-size: 3.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+          Launch Your <span style="color: #00BCD4; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Tech Career</span>
+        </h1>
+        <p style="color: #ffffff; font-size: 1.5rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+          Moon* connects talented IT students with innovative companies looking for fresh perspectives and cutting-edge skills.
+        </p>
+        <div style="display: flex; flex-direction: row; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-lg" onclick="app.handleStudentClick()" style="background-color: #ffffff; color: #00BCD4; min-width: 200px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path>
+            </svg>
+            I'm a Student
+          </button>
+          <button class="btn btn-lg" onclick="app.handleEmployerClick()" style="background-color: transparent; color: #ffffff; border: 2px solid #ffffff; min-width: 200px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
+            </svg>
+            I'm an Employer
+          </button>
         </div>
       </div>
     </section>
 
+    <!-- Featured Companies -->
+    <section style="background-color: white; padding: 2.5rem 0; overflow: hidden;">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+        <h2 class="text-center" style="color: #263238; margin-bottom: 2rem; font-weight: 700;">
+          TOP TIER EMPLOYERS
+        </h2>
+      </div>
+      <div class="logos-slider">
+        <div class="logos-track">
+            ${[
+              { name: "FPT Software", file: "fpt.png", url: "https://www.fpt-software.com/" },
+              { name: "VNG Corporation", file: "vng.png", url: "https://www.vng.com.vn/" },
+              { name: "Viettel", file: "viettel.png", url: "https://vietteltelecom.vn/" },
+              { name: "VNPT", file: "vnpt.png", url: "https://www.vnpt.vn/" },
+              { name: "Tiki", file: "tiki.png", url: "https://tiki.vn/" },
+              { name: "Shopee", file: "shopee.png", url: "https://shopee.vn/" },
+              { name: "Grab", file: "grab.png", url: "https://www.grab.com/vn/" },
+              { name: "Momo", file: "momo.png", url: "https://www.momo.vn/" },
+              { name: "VinGroup", file: "vingroup.png", url: "https://www.vingroup.net/" },
+              { name: "CMC Corporation", file: "cmc.png", url: "https://www.cmc.com.vn/" },
+              { name: "TMA Solutions", file: "tma.png", url: "https://www.tma.com.vn/" },
+              { name: "NashTech", file: "nashtech.png", url: "https://www.nashtechglobal.com/" },
+              { name: "Luxoft Vietnam", file: "luxoft.png", url: "https://www.luxoft.com/" },
+              { name: "KMS Technology", file: "kms.png", url: "https://kms-technology.com/" },
+              { name: "Gameloft", file: "gameloft.png", url: "https://www.gameloft.com/" },
+              // Duplicate for seamless loop
+              { name: "FPT Software", file: "fpt.png", url: "https://www.fpt-software.com/" },
+              { name: "VNG Corporation", file: "vng.png", url: "https://www.vng.com.vn/" },
+              { name: "Viettel", file: "viettel.png", url: "https://vietteltelecom.vn/" },
+              { name: "VNPT", file: "vnpt.png", url: "https://www.vnpt.vn/" },
+              { name: "Tiki", file: "tiki.png", url: "https://tiki.vn/" },
+              { name: "Shopee", file: "shopee.png", url: "https://shopee.vn/" },
+              { name: "Grab", file: "grab.png", url: "https://www.grab.com/vn/" },
+              { name: "Momo", file: "momo.png", url: "https://www.momo.vn/" },
+              { name: "VinGroup", file: "vingroup.png", url: "https://www.vingroup.net/" },
+              { name: "CMC Corporation", file: "cmc.png", url: "https://www.cmc.com.vn/" },
+              { name: "TMA Solutions", file: "tma.png", url: "https://www.tma.com.vn/" },
+              { name: "NashTech", file: "nashtech.png", url: "https://www.nashtechglobal.com/" },
+              { name: "Luxoft Vietnam", file: "luxoft.png", url: "https://www.luxoft.com/" },
+              { name: "KMS Technology", file: "kms.png", url: "https://kms-technology.com/" },
+              { name: "Gameloft", file: "gameloft.png", url: "https://www.gameloft.com/" },
+            ]
+              .map(
+                (company) => `
+                <a href="${company.url}" target="_blank" rel="noopener noreferrer" class="logo-item">
+                  <img src="assets/logos/${company.file}" alt="${company.name}" />
+                </a>
+              `
+              )
+              .join("")}
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .logos-slider {
+          width: 100vw;
+          overflow: hidden;
+          position: relative;
+          padding: 1rem 0;
+          margin-left: calc(-50vw + 50%);
+        }
+        
+        .logos-track {
+          display: flex;
+          animation: scroll 40s linear infinite;
+          width: fit-content;
+        }
+        
+        .logo-item {
+          flex-shrink: 0;
+          width: 160px;
+          height: 80px;
+          margin: 0 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          border: 2px solid transparent;
+          border-radius: 12px;
+          padding: 0.75rem;
+          text-decoration: none;
+          background-color: transparent;
+        }
+        
+        .logo-item:hover {
+          transform: scale(1.08);
+          border-color: #00BCD4;
+          background-color: #f8f9fa;
+          box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);
+        }
+        
+        .logo-item:active,
+        .logo-item.clicked {
+          border-color: #0097A7;
+          box-shadow: 0 6px 16px rgba(0, 151, 167, 0.25);
+          background-color: #e3f2fd;
+        }
+        
+        .logo-item img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+        
+        .logo-item:hover img {
+          opacity: 1;
+        }
+        
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .logos-slider:hover .logos-track {
+          animation-play-state: paused;
+        }
+      </style>
+      
+      <script>
+        // Add click effect to logo items
+        document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(() => {
+            const logoItems = document.querySelectorAll('.logo-item');
+            logoItems.forEach(item => {
+              item.addEventListener('click', function() {
+                // Remove clicked class from all items
+                logoItems.forEach(i => i.classList.remove('clicked'));
+                // Add clicked class to this item
+                this.classList.add('clicked');
+                // Remove after 2 seconds
+                setTimeout(() => {
+                  this.classList.remove('clicked');
+                }, 2000);
+              });
+            });
+          }, 100);
+        });
+      </script>
+    </section>
+
     <!-- Stats Section -->
-    <section style="background-color: #00BCD4; padding: 4rem 1rem;">
+    <section style="background-color: #00BCD4; padding: 2.5rem 1rem;">
       <div class="container">
         <div class="grid md-grid-cols-3 gap-lg">
           <div class="text-center">
@@ -62,40 +223,11 @@ const renderLandingPage = () => `
       </div>
     </section>
 
-    <!-- Featured Companies -->
-    <section style="background-color: white; padding: 4rem 1rem;">
-      <div class="container">
-        <h2 class="text-center" style="color: #263238; margin-bottom: 3rem;">
-          Companies Hiring Now
-        </h2>
-        <div class="grid grid-cols-2 md-grid-cols-4 gap-lg">
-          ${[
-            "Google",
-            "Microsoft",
-            "Amazon",
-            "Meta",
-            "Apple",
-            "Netflix",
-            "Spotify",
-            "Airbnb",
-          ]
-            .map(
-              (company) => `
-              <div class="card text-center" style="padding: 1.5rem;">
-                <span style="color: #78909C; font-weight: 500;">${company}</span>
-              </div>
-            `
-            )
-            .join("")}
-        </div>
-      </div>
-    </section>
-
     <!-- Features Section -->
-    <section style="background-color: #ECEFF1; padding: 4rem 1rem;">
+    <section style="background-color: #ECEFF1; padding: 2.5rem 1rem;">
       <div class="container">
         <h2 class="text-center" style="color: #263238;">Why Choose Moon*?</h2>
-        <p class="text-center" style="color: #78909C; max-width: 700px; margin: 0 auto 3rem;">
+        <p class="text-center" style="color: #78909C; max-width: 700px; margin: 0 auto 2rem;">
           We've built the most comprehensive platform for connecting IT talent with opportunity
         </p>
         <div class="grid md-grid-cols-2 lg-grid-cols-4 gap-lg">
@@ -138,9 +270,9 @@ const renderLandingPage = () => `
     </section>
 
     <!-- How It Works -->
-    <section style="background-color: white; padding: 4rem 1rem;">
+    <section style="background-color: white; padding: 2.5rem 1rem;">
       <div class="container">
-        <h2 class="text-center" style="color: #263238; margin-bottom: 3rem;">How It Works</h2>
+        <h2 class="text-center" style="color: #263238; margin-bottom: 2rem;">How It Works</h2>
         <div class="grid md-grid-cols-2 gap-lg" style="max-width: 1000px; margin: 0 auto;">
           <!-- For Students -->
           <div>
@@ -232,9 +364,9 @@ const renderLandingPage = () => `
     </section>
 
     <!-- Testimonials -->
-    <section style="background-color: #ECEFF1; padding: 4rem 1rem;">
+    <section style="background-color: #ECEFF1; padding: 2.5rem 1rem;">
       <div class="container">
-        <h2 class="text-center" style="color: #263238; margin-bottom: 3rem;">Success Stories</h2>
+        <h2 class="text-center" style="color: #263238; margin-bottom: 2rem;">Success Stories</h2>
         <div class="grid md-grid-cols-2 gap-lg" style="max-width: 900px; margin: 0 auto;">
           ${[
             {
