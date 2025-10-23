@@ -64,37 +64,125 @@ const renderLandingPage = () => `
       <div class="logos-slider">
         <div class="logos-track">
             ${[
-              { name: "FPT Software", file: "fpt.png", url: "https://www.fpt-software.com/" },
-              { name: "VNG Corporation", file: "vng.png", url: "https://www.vng.com.vn/" },
-              { name: "Viettel", file: "viettel.png", url: "https://vietteltelecom.vn/" },
+              {
+                name: "FPT Software",
+                file: "fpt.png",
+                url: "https://www.fpt-software.com/",
+              },
+              {
+                name: "VNG Corporation",
+                file: "vng.png",
+                url: "https://www.vng.com.vn/",
+              },
+              {
+                name: "Viettel",
+                file: "viettel.png",
+                url: "https://vietteltelecom.vn/",
+              },
               { name: "VNPT", file: "vnpt.png", url: "https://www.vnpt.vn/" },
               { name: "Tiki", file: "tiki.png", url: "https://tiki.vn/" },
               { name: "Shopee", file: "shopee.png", url: "https://shopee.vn/" },
-              { name: "Grab", file: "grab.png", url: "https://www.grab.com/vn/" },
+              {
+                name: "Grab",
+                file: "grab.png",
+                url: "https://www.grab.com/vn/",
+              },
               { name: "Momo", file: "momo.png", url: "https://www.momo.vn/" },
-              { name: "VinGroup", file: "vingroup.png", url: "https://www.vingroup.net/" },
-              { name: "CMC Corporation", file: "cmc.png", url: "https://www.cmc.com.vn/" },
-              { name: "TMA Solutions", file: "tma.png", url: "https://www.tma.com.vn/" },
-              { name: "NashTech", file: "nashtech.png", url: "https://www.nashtechglobal.com/" },
-              { name: "Luxoft Vietnam", file: "luxoft.png", url: "https://www.luxoft.com/" },
-              { name: "KMS Technology", file: "kms.png", url: "https://kms-technology.com/" },
-              { name: "Gameloft", file: "gameloft.png", url: "https://www.gameloft.com/" },
+              {
+                name: "VinGroup",
+                file: "vingroup.png",
+                url: "https://www.vingroup.net/",
+              },
+              {
+                name: "CMC Corporation",
+                file: "cmc.png",
+                url: "https://www.cmc.com.vn/",
+              },
+              {
+                name: "TMA Solutions",
+                file: "tma.png",
+                url: "https://www.tma.com.vn/",
+              },
+              {
+                name: "NashTech",
+                file: "nashtech.png",
+                url: "https://www.nashtechglobal.com/",
+              },
+              {
+                name: "Luxoft Vietnam",
+                file: "luxoft.png",
+                url: "https://www.luxoft.com/",
+              },
+              {
+                name: "KMS Technology",
+                file: "kms.png",
+                url: "https://kms-technology.com/",
+              },
+              {
+                name: "Gameloft",
+                file: "gameloft.png",
+                url: "https://www.gameloft.com/",
+              },
               // Duplicate for seamless loop
-              { name: "FPT Software", file: "fpt.png", url: "https://www.fpt-software.com/" },
-              { name: "VNG Corporation", file: "vng.png", url: "https://www.vng.com.vn/" },
-              { name: "Viettel", file: "viettel.png", url: "https://vietteltelecom.vn/" },
+              {
+                name: "FPT Software",
+                file: "fpt.png",
+                url: "https://www.fpt-software.com/",
+              },
+              {
+                name: "VNG Corporation",
+                file: "vng.png",
+                url: "https://www.vng.com.vn/",
+              },
+              {
+                name: "Viettel",
+                file: "viettel.png",
+                url: "https://vietteltelecom.vn/",
+              },
               { name: "VNPT", file: "vnpt.png", url: "https://www.vnpt.vn/" },
               { name: "Tiki", file: "tiki.png", url: "https://tiki.vn/" },
               { name: "Shopee", file: "shopee.png", url: "https://shopee.vn/" },
-              { name: "Grab", file: "grab.png", url: "https://www.grab.com/vn/" },
+              {
+                name: "Grab",
+                file: "grab.png",
+                url: "https://www.grab.com/vn/",
+              },
               { name: "Momo", file: "momo.png", url: "https://www.momo.vn/" },
-              { name: "VinGroup", file: "vingroup.png", url: "https://www.vingroup.net/" },
-              { name: "CMC Corporation", file: "cmc.png", url: "https://www.cmc.com.vn/" },
-              { name: "TMA Solutions", file: "tma.png", url: "https://www.tma.com.vn/" },
-              { name: "NashTech", file: "nashtech.png", url: "https://www.nashtechglobal.com/" },
-              { name: "Luxoft Vietnam", file: "luxoft.png", url: "https://www.luxoft.com/" },
-              { name: "KMS Technology", file: "kms.png", url: "https://kms-technology.com/" },
-              { name: "Gameloft", file: "gameloft.png", url: "https://www.gameloft.com/" },
+              {
+                name: "VinGroup",
+                file: "vingroup.png",
+                url: "https://www.vingroup.net/",
+              },
+              {
+                name: "CMC Corporation",
+                file: "cmc.png",
+                url: "https://www.cmc.com.vn/",
+              },
+              {
+                name: "TMA Solutions",
+                file: "tma.png",
+                url: "https://www.tma.com.vn/",
+              },
+              {
+                name: "NashTech",
+                file: "nashtech.png",
+                url: "https://www.nashtechglobal.com/",
+              },
+              {
+                name: "Luxoft Vietnam",
+                file: "luxoft.png",
+                url: "https://www.luxoft.com/",
+              },
+              {
+                name: "KMS Technology",
+                file: "kms.png",
+                url: "https://kms-technology.com/",
+              },
+              {
+                name: "Gameloft",
+                file: "gameloft.png",
+                url: "https://www.gameloft.com/",
+              },
             ]
               .map(
                 (company) => `
