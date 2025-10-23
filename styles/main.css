@@ -256,11 +256,15 @@ p {
 .navbar-link {
   color: var(--dark-color);
   font-weight: 500;
-  transition: opacity var(--transition-fast);
+  transition: color var(--transition-normal),
+    background-color var(--transition-normal);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
 }
 
 .navbar-link:hover {
-  opacity: 0.8;
+  color: var(--primary-color);
+  background-color: rgba(0, 188, 212, 0.08);
 }
 
 .navbar-actions {

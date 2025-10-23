@@ -291,6 +291,139 @@ const renderLandingPage = () => `
       </script>
     </section>
 
+    <!-- Features Section -->
+    <section style="background: linear-gradient(to bottom, #ffffff 0%, #f0f9ff 100%); padding: 4rem 1rem;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 4rem; align-items: center; max-width: 1300px; margin: 0 auto;">
+          
+          <!-- Left Side - Image/CTA -->
+          <div style="position: relative;">
+            <div style="
+              position: absolute;
+              top: -20px;
+              right: -20px;
+              width: 150px;
+              height: 150px;
+              background: linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%);
+              border-radius: 50%;
+              opacity: 0.1;
+              z-index: 0;
+            "></div>
+            <div style="
+              position: absolute;
+              bottom: -30px;
+              left: -30px;
+              width: 200px;
+              height: 200px;
+              background: linear-gradient(135deg, #4DD0E1 0%, #00BCD4 100%);
+              border-radius: 50%;
+              opacity: 0.08;
+              z-index: 0;
+            "></div>
+            <img src="assets/CTA_photo.png" alt="Students collaborating" style="
+              width: 100%;
+              height: auto;
+              display: block;
+              border-radius: 20px;
+              box-shadow: 0 20px 60px rgba(0, 188, 212, 0.2);
+              position: relative;
+              z-index: 1;
+              transform: perspective(1000px) rotateY(-5deg);
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='perspective(1000px) rotateY(0deg) scale(1.02)'" onmouseout="this.style.transform='perspective(1000px) rotateY(-5deg)'" />
+          </div>
+          
+          <!-- Right Side - Features -->
+          <div>
+            <h2 style="color: #1a1a1a; font-size: 2.5rem; font-weight: 800; margin-bottom: 0.75rem; line-height: 1.2;">
+              Why Choose Moon<span style="background: linear-gradient(135deg, #00BCD4 0%, #4DD0E1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">*</span>?
+            </h2>
+            <p style="color: #64748b; margin-bottom: 2.5rem; font-size: 1rem; line-height: 1.7;">
+              We've built the most comprehensive platform for connecting IT talent with opportunity
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+              ${[
+                {
+                  icon: `<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>`,
+                  title: "AI-Powered Matching",
+                  desc: "Our intelligent algorithm matches students with the perfect opportunities based on skills and preferences.",
+                  color: "#00BCD4"
+                },
+                {
+                  icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>`,
+                  title: "Verified Profiles",
+                  desc: "All student profiles and company listings are verified to ensure authenticity and quality.",
+                  color: "#00ACC1"
+                },
+                {
+                  icon: `<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>`,
+                  title: "Direct Application Tracking",
+                  desc: "Track your applications in real-time and get instant notifications on status updates.",
+                  color: "#4DD0E1"
+                },
+                {
+                  icon: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>`,
+                  title: "Career Growth Tools",
+                  desc: "Access resources, mentorship programs, and skill assessments to accelerate your career.",
+                  color: "#26C6DA"
+                },
+              ]
+                .map(
+                  (feature) => `
+                <div style="display: flex; gap: 1.25rem; transition: transform 0.2s ease;" onmouseover="this.style.transform='translateX(8px)'" onmouseout="this.style.transform='translateX(0)'">
+                  <div style="
+                    width: 52px;
+                    height: 52px;
+                    background: linear-gradient(135deg, ${feature.color} 0%, ${feature.color}dd 100%);
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    box-shadow: 0 4px 12px ${feature.color}30;
+                  ">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 26px; height: 26px;">
+                      ${feature.icon}
+                    </svg>
+                  </div>
+                  
+                  <div>
+                    <h3 style="
+                      color: #1a1a1a;
+                      font-size: 1.125rem;
+                      font-weight: 700;
+                      margin-bottom: 0.375rem;
+                    ">${feature.title}</h3>
+                    
+                    <p style="
+                      color: #64748b;
+                      margin: 0;
+                      line-height: 1.6;
+                      font-size: 0.9375rem;
+                    ">${feature.desc}</p>
+                  </div>
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Mobile Responsive -->
+        <style>
+          @media (max-width: 768px) {
+            .container > div {
+              grid-template-columns: 1fr !important;
+              gap: 2rem !important;
+            }
+          }
+        </style>
+      </div>
+    </section>
+
     <!-- Stats Section -->
     <section style="background-color: #00BCD4; padding: 2.5rem 1rem;">
       <div class="container">
@@ -307,52 +440,6 @@ const renderLandingPage = () => `
             <div style="font-size: 2.5rem; color: #ffffff; font-weight: 700;">3,200</div>
             <div style="color: #ECEFF1; font-size: 1.125rem;">Jobs Posted</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section style="background-color: #ECEFF1; padding: 2.5rem 1rem;">
-      <div class="container">
-        <h2 class="text-center" style="color: #263238;">Why Choose Moon*?</h2>
-        <p class="text-center" style="color: #78909C; max-width: 700px; margin: 0 auto 2rem;">
-          We've built the most comprehensive platform for connecting IT talent with opportunity
-        </p>
-        <div class="grid md-grid-cols-2 lg-grid-cols-4 gap-lg">
-          ${[
-            {
-              icon: `<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>`,
-              title: "AI-Powered Matching",
-              desc: "Our intelligent algorithm matches students with the perfect opportunities based on skills and preferences.",
-            },
-            {
-              icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>`,
-              title: "Verified Profiles",
-              desc: "All student profiles and company listings are verified to ensure authenticity and quality.",
-            },
-            {
-              icon: `<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>`,
-              title: "Direct Application Tracking",
-              desc: "Track your applications in real-time and get instant notifications on status updates.",
-            },
-            {
-              icon: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>`,
-              title: "Career Growth Tools",
-              desc: "Access resources, mentorship programs, and skill assessments to accelerate your career.",
-            },
-          ]
-            .map(
-              (feature) => `
-            <div class="card">
-              <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" style="margin-bottom: 1rem;">
-                ${feature.icon}
-              </svg>
-              <h3 style="color: #263238;">${feature.title}</h3>
-              <p style="color: #78909C; margin: 0;">${feature.desc}</p>
-            </div>
-          `
-            )
-            .join("")}
         </div>
       </div>
     </section>
