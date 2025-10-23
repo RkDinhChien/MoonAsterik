@@ -348,25 +348,25 @@ const renderLandingPage = () => `
                   icon: `<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>`,
                   title: "AI-Powered Matching",
                   desc: "Our intelligent algorithm matches students with the perfect opportunities based on skills and preferences.",
-                  color: "#00BCD4"
+                  color: "#00BCD4",
                 },
                 {
                   icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>`,
                   title: "Verified Profiles",
                   desc: "All student profiles and company listings are verified to ensure authenticity and quality.",
-                  color: "#00ACC1"
+                  color: "#00ACC1",
                 },
                 {
                   icon: `<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>`,
                   title: "Direct Application Tracking",
                   desc: "Track your applications in real-time and get instant notifications on status updates.",
-                  color: "#4DD0E1"
+                  color: "#4DD0E1",
                 },
                 {
                   icon: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>`,
                   title: "Career Growth Tools",
                   desc: "Access resources, mentorship programs, and skill assessments to accelerate your career.",
-                  color: "#26C6DA"
+                  color: "#26C6DA",
                 },
               ]
                 .map(
