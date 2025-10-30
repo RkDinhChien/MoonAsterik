@@ -321,7 +321,7 @@ const renderLandingPage = () => `
               z-index: 0;
             "></div>
             <img src="assets/CTA_photo.png" alt="Students collaborating" style="
-              width: 100%;
+              width: 115%;
               height: auto;
               display: block;
               border-radius: 20px;
@@ -330,6 +330,7 @@ const renderLandingPage = () => `
               z-index: 1;
               transform: perspective(1000px) rotateY(-5deg);
               transition: transform 0.3s ease;
+              margin-left: -7.5%;
             " onmouseover="this.style.transform='perspective(1000px) rotateY(0deg) scale(1.02)'" onmouseout="this.style.transform='perspective(1000px) rotateY(-5deg)'" />
           </div>
           
