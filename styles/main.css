@@ -511,6 +511,33 @@ p {
 }
 
 /* ===========================
+   Form Inputs
+   =========================== */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+}
+
+.form-input::placeholder {
+  color: #b0bec5;
+}
+
+.form-input:invalid:not(:placeholder-shown) {
+  border-color: var(--error);
+}
+
+/* ===========================
    Account Type Cards
    =========================== */
 .account-type-card {
@@ -805,4 +832,41 @@ p {
 
 .slide-in {
   animation: slideIn var(--transition-normal) ease-out;
+}
+
+/* ===========================
+   Story Modal Specific Styles
+   =========================== */
+#story-modal .modal-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+#story-modal-content p {
+  margin-bottom: 1.5rem;
+}
+
+#story-modal-content strong {
+  color: #263238;
+  font-weight: 600;
+}
+
+/* Responsive adjustments for story modal */
+@media (max-width: 768px) {
+  #story-modal .modal-content {
+    max-width: 95%;
+    margin: 1rem;
+  }
+
+  #story-modal-image-container {
+    height: 200px !important;
+  }
+
+  #story-modal-content {
+    padding: 0 1rem 1rem 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  #story-modal .modal-body > div:first-child {
+    padding: 0 1rem !important;
+  }
 }

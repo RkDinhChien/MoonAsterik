@@ -4,6 +4,17 @@
 
 const Router = {
   navigate(page) {
+    // Special handling for landing page - always log out and show landing
+    if (page === "landing") {
+      window.AppState.setLoggedIn(false);
+      window.AppState.setUserType(null);
+      window.AppState.setCurrentPage("landing");
+      this.renderPage();
+      this.updateNavbar();
+      window.scrollTo(0, 0);
+      return;
+    }
+
     window.AppState.setCurrentPage(page);
     this.renderPage();
     window.scrollTo(0, 0);
@@ -17,6 +28,12 @@ const Router = {
 
     if (!state.isLoggedIn) {
       mainContent.innerHTML = window.PageTemplates.landing();
+      // Initialize stats animation after rendering landing page
+      setTimeout(() => {
+        if (window.PageTemplates.initStatsAnimation) {
+          window.PageTemplates.initStatsAnimation();
+        }
+      }, 100);
       return;
     }
 
