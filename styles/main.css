@@ -6,35 +6,35 @@
   --primary-color: #00bcd4;
   --primary-light: #4dd0e1;
   --primary-dark: #0097a7;
-  
+
   /* Secondary Accent - Deep Purple for contrast */
   --secondary-color: #7c4dff;
   --secondary-light: #b47cff;
   --secondary-dark: #651fff;
-  
+
   /* Accent Colors - Carefully selected for harmony */
   --accent-coral: #ff7675;
   --accent-orange: #fdcb6e;
   --accent-pink: #fd79a8;
   --accent-green: #00b894;
-  
+
   /* Status Colors */
   --success: #00b894;
   --warning: #fdcb6e;
   --error: #ff7675;
   --info: #74b9ff;
-  
+
   /* Neutral Colors */
   --dark-color: #263238;
   --gray-color: #78909c;
   --light-gray: #eceff1;
   --white: #ffffff;
-  
+
   /* Background Gradients */
   --gradient-primary: linear-gradient(135deg, #00bcd4 0%, #4dd0e1 100%);
   --gradient-purple: linear-gradient(135deg, #7c4dff 0%, #651fff 100%);
   --gradient-warm: linear-gradient(135deg, #ff7675 0%, #fdcb6e 100%);
-  
+
   /* Soft Backgrounds */
   --bg-primary-soft: rgba(0, 188, 212, 0.08);
   --bg-purple-soft: rgba(124, 77, 255, 0.08);
