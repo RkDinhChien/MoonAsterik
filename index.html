@@ -31,10 +31,50 @@
         </div>
 
         <div id="navbar-menu" class="navbar-menu">
-          <a href="#jobs" class="navbar-link">Find Jobs</a>
-          <a href="#companies" class="navbar-link">For Companies</a>
-          <a href="#about" class="navbar-link">About Us</a>
+          <a
+            href="#hero"
+            class="navbar-link"
+            onclick="app.scrollToSection('hero'); return false;"
+            >Home</a
+          >
+          <a
+            href="#features"
+            class="navbar-link"
+            onclick="app.scrollToSection('features'); return false;"
+            >Features</a
+          >
+          <a
+            href="#how-it-works"
+            class="navbar-link"
+            onclick="app.scrollToSection('how-it-works'); return false;"
+            >How It Works</a
+          >
+          <a
+            href="#success-stories"
+            class="navbar-link"
+            onclick="app.scrollToSection('success-stories'); return false;"
+            >Success Stories</a
+          >
         </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          id="mobile-menu-toggle"
+          class="mobile-menu-toggle"
+          style="display: none"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
 
         <div id="navbar-actions" class="navbar-actions">
           <button id="login-btn" class="btn btn-ghost">Login</button>

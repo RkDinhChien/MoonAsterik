@@ -2,16 +2,43 @@
    CSS Variables & Theme
    =========================== */
 :root {
-  /* Color Palette */
+  /* Primary Brand Colors - Cyan (Keep as main identity) */
   --primary-color: #00bcd4;
-  --secondary-color: #4dd0e1;
+  --primary-light: #4dd0e1;
+  --primary-dark: #0097a7;
+  
+  /* Secondary Accent - Deep Purple for contrast */
+  --secondary-color: #7c4dff;
+  --secondary-light: #b47cff;
+  --secondary-dark: #651fff;
+  
+  /* Accent Colors - Carefully selected for harmony */
+  --accent-coral: #ff7675;
+  --accent-orange: #fdcb6e;
+  --accent-pink: #fd79a8;
+  --accent-green: #00b894;
+  
+  /* Status Colors */
+  --success: #00b894;
+  --warning: #fdcb6e;
+  --error: #ff7675;
+  --info: #74b9ff;
+  
+  /* Neutral Colors */
   --dark-color: #263238;
   --gray-color: #78909c;
   --light-gray: #eceff1;
   --white: #ffffff;
-  --success: #4caf50;
-  --warning: #ff9800;
-  --error: #f44336;
+  
+  /* Background Gradients */
+  --gradient-primary: linear-gradient(135deg, #00bcd4 0%, #4dd0e1 100%);
+  --gradient-purple: linear-gradient(135deg, #7c4dff 0%, #651fff 100%);
+  --gradient-warm: linear-gradient(135deg, #ff7675 0%, #fdcb6e 100%);
+  
+  /* Soft Backgrounds */
+  --bg-primary-soft: rgba(0, 188, 212, 0.08);
+  --bg-purple-soft: rgba(124, 77, 255, 0.08);
+  --bg-coral-soft: rgba(255, 118, 117, 0.08);
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -282,6 +309,57 @@ p {
 .navbar-user-type {
   color: var(--gray-color);
   font-weight: 500;
+}
+
+.mobile-menu-toggle {
+  background: none;
+  border: none;
+  color: var(--dark-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: none;
+}
+
+.mobile-menu-toggle:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+    display: none;
+  }
+
+  .navbar-menu.active {
+    display: flex !important;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar-actions {
+    gap: 0.5rem;
+  }
+
+  .navbar-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -832,6 +910,61 @@ p {
 
 .slide-in {
   animation: slideIn var(--transition-normal) ease-out;
+}
+
+/* ===========================
+   How It Works Section Responsive
+   =========================== */
+@media (max-width: 1024px) {
+  #how-it-works .container > div:nth-child(2) {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #how-it-works {
+    padding: 3rem 1rem !important;
+  }
+
+  #how-it-works h2 {
+    font-size: 2rem !important;
+  }
+
+  #how-it-works .container > div:first-child {
+    margin-bottom: 2.5rem !important;
+  }
+
+  #how-it-works .container > div:nth-child(2) {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  #how-it-works .container > div:nth-child(2) > div {
+    padding: 2rem !important;
+  }
+
+  #how-it-works h3 {
+    font-size: 1.5rem !important;
+  }
+
+  #how-it-works .container > div:last-child {
+    margin-top: 2.5rem !important;
+    padding: 2rem !important;
+  }
+
+  #how-it-works .container > div:last-child h3 {
+    font-size: 1.25rem !important;
+  }
+
+  #how-it-works .container > div:last-child > div {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  #how-it-works .container > div:last-child button {
+    width: 100%;
+  }
 }
 
 /* ===========================

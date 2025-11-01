@@ -5,7 +5,7 @@
 const renderLandingPage = () => `
   <div class="landing-page">
     <!-- Hero Section - Full Screen with Background Image -->
-    <section class="hero-section" style="
+    <section id="hero" class="hero-section" style="
       position: relative;
       min-height: 100vh;
       background-image: url('assets/photo.jpg');
@@ -292,7 +292,7 @@ const renderLandingPage = () => `
     </section>
 
     <!-- Features Section -->
-    <section style="background: linear-gradient(to bottom, #ffffff 0%, #f0f9ff 100%); padding: 4rem 1rem;">
+    <section id="features" style="background: linear-gradient(to bottom, #ffffff 0%, #f0f9ff 100%); padding: 4rem 1rem;">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 4rem; align-items: center; max-width: 1300px; margin: 0 auto;">
           
@@ -585,101 +585,216 @@ const renderLandingPage = () => `
     </section>
 
     <!-- How It Works -->
-    <section style="background-color: white; padding: 2.5rem 1rem;">
+    <section id="how-it-works" style="background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%); padding: 5rem 1rem;">
       <div class="container">
-        <h2 class="text-center" style="color: #263238; margin-bottom: 2rem;">How It Works</h2>
-        <div class="grid md-grid-cols-2 gap-lg" style="max-width: 1000px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <h2 style="color: #263238; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">How It Works</h2>
+          <p style="color: #546E7A; font-size: 1.125rem;">Simple steps to connect talent with opportunity</p>
+        </div>
+
+        <!-- Timeline Layout -->
+        <div style="max-width: 1200px; margin: 0 auto;">
+          
           <!-- For Students -->
-          <div>
-            <h3 class="text-center" style="color: #00BCD4; margin-bottom: 2rem;">For Students</h3>
-            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="margin-bottom: 4rem;">
+            <h3 style="
+              color: #00BCD4;
+              font-size: 1.5rem;
+              font-weight: 700;
+              margin-bottom: 2rem;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.75rem;
+            ">
+              <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+              For Students
+            </h3>
+            
+            <div style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              gap: 2rem;
+            ">
               ${[
                 {
-                  step: "1",
-                  title: "Create Your Profile",
-                  desc: "Build a comprehensive profile showcasing your skills, projects, and experience",
+                  num: "1",
+                  icon: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z",
+                  title: "Create Profile",
+                  desc: "Build your profile with skills, projects, and experience"
                 },
                 {
-                  step: "2",
+                  num: "2",
+                  icon: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z",
                   title: "Get Matched",
-                  desc: "Our AI algorithm finds the perfect job opportunities for you",
+                  desc: "AI finds perfect opportunities for your skills"
                 },
                 {
-                  step: "3",
-                  title: "Apply & Track",
-                  desc: "Apply with one click and track your applications in real-time",
+                  num: "3",
+                  icon: "M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
+                  title: "Apply Easily",
+                  desc: "One-click apply and track applications"
                 },
                 {
-                  step: "4",
-                  title: "Start Your Career",
-                  desc: "Interview with top companies and launch your tech career",
-                },
-              ]
-                .map(
-                  (item) => `
-                <div style="display: flex; gap: 1rem;">
-                  <div style="flex-shrink: 0; width: 3rem; height: 3rem; border-radius: 50%; background-color: #00BCD4; color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">
-                    ${item.step}
+                  num: "4",
+                  icon: "M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z",
+                  title: "Start Career",
+                  desc: "Interview and launch your tech career"
+                }
+              ].map(item => `
+                <div style="
+                  background: white;
+                  padding: 2rem 1.5rem;
+                  border-radius: 12px;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                  transition: all 0.3s ease;
+                  position: relative;
+                  border-left: 4px solid #00BCD4;
+                "
+                onmouseover="this.style.boxShadow='0 8px 24px rgba(0,188,212,0.15)'; this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)'; this.style.transform='translateY(0)'"
+                >
+                  <div style="
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                  ">
+                    <div style="
+                      width: 48px;
+                      height: 48px;
+                      background: linear-gradient(135deg, #00BCD4, #0097A7);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: white;
+                      font-weight: 700;
+                      font-size: 1.25rem;
+                      flex-shrink: 0;
+                    ">${item.num}</div>
+                    <h4 style="
+                      color: #263238;
+                      font-size: 1.125rem;
+                      font-weight: 700;
+                      margin: 0;
+                    ">${item.title}</h4>
                   </div>
-                  <div>
-                    <h4 style="color: #263238; margin-bottom: 0.5rem;">${item.title}</h4>
-                    <p style="color: #78909C; margin: 0;">${item.desc}</p>
-                  </div>
+                  <p style="
+                    color: #546E7A;
+                    font-size: 0.9375rem;
+                    line-height: 1.6;
+                    margin: 0;
+                  ">${item.desc}</p>
                 </div>
-              `
-                )
-                .join("")}
+              `).join('')}
             </div>
           </div>
 
           <!-- For Companies -->
           <div>
-            <h3 class="text-center" style="color: #4DD0E1; margin-bottom: 2rem;">For Companies</h3>
-            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <h3 style="
+              color: #FF6B6B;
+              font-size: 1.5rem;
+              font-weight: 700;
+              margin-bottom: 2rem;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.75rem;
+            ">
+              <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+              </svg>
+              For Companies
+            </h3>
+            
+            <div style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              gap: 2rem;
+            ">
               ${[
                 {
-                  step: "1",
-                  title: "Post Your Jobs",
-                  desc: "Create detailed job listings to attract the right talent",
+                  num: "1",
+                  title: "Post Jobs",
+                  desc: "Create detailed listings to attract top talent"
                 },
                 {
-                  step: "2",
-                  title: "Review Applicants",
-                  desc: "Get AI-matched candidates that fit your requirements",
+                  num: "2",
+                  title: "Review Candidates",
+                  desc: "Get AI-matched profiles based on requirements"
                 },
                 {
-                  step: "3",
-                  title: "Hire Talent",
-                  desc: "Connect with students and schedule interviews seamlessly",
+                  num: "3",
+                  title: "Schedule Interviews",
+                  desc: "Connect and interview with ease"
                 },
                 {
-                  step: "4",
+                  num: "4",
                   title: "Build Your Team",
-                  desc: "Bring fresh perspectives and skills to your organization",
-                },
-              ]
-                .map(
-                  (item) => `
-                <div style="display: flex; gap: 1rem;">
-                  <div style="flex-shrink: 0; width: 3rem; height: 3rem; border-radius: 50%; background-color: #4DD0E1; color: #263238; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">
-                    ${item.step}
+                  desc: "Hire and grow with fresh talent"
+                }
+              ].map(item => `
+                <div style="
+                  background: white;
+                  padding: 2rem 1.5rem;
+                  border-radius: 12px;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                  transition: all 0.3s ease;
+                  position: relative;
+                  border-left: 4px solid #FF6B6B;
+                "
+                onmouseover="this.style.boxShadow='0 8px 24px rgba(255,107,107,0.15)'; this.style.transform='translateY(-4px)'"
+                onmouseout="this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)'; this.style.transform='translateY(0)'"
+                >
+                  <div style="
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                  ">
+                    <div style="
+                      width: 48px;
+                      height: 48px;
+                      background: linear-gradient(135deg, #FF6B6B, #EE5A6F);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: white;
+                      font-weight: 700;
+                      font-size: 1.25rem;
+                      flex-shrink: 0;
+                    ">${item.num}</div>
+                    <h4 style="
+                      color: #263238;
+                      font-size: 1.125rem;
+                      font-weight: 700;
+                      margin: 0;
+                    ">${item.title}</h4>
                   </div>
-                  <div>
-                    <h4 style="color: #263238; margin-bottom: 0.5rem;">${item.title}</h4>
-                    <p style="color: #78909C; margin: 0;">${item.desc}</p>
-                  </div>
+                  <p style="
+                    color: #546E7A;
+                    font-size: 0.9375rem;
+                    line-height: 1.6;
+                    margin: 0;
+                  ">${item.desc}</p>
                 </div>
-              `
-                )
-                .join("")}
+              `).join('')}
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- Success Stories / News Section -->
-    <section style="background-color: #ECEFF1; padding: 3rem 1rem;">
+    <section id="success-stories" style="background-color: #ECEFF1; padding: 3rem 1rem;">
       <div class="container">
         <div style="text-align: center; margin-bottom: 2.5rem;">
           <h2 style="color: #263238; margin-bottom: 0.5rem;">Success Stories</h2>

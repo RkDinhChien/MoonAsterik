@@ -24,6 +24,19 @@ const app = {
       .getElementById("logout-btn")
       ?.addEventListener("click", () => this.handleLogout());
 
+    // Mobile menu toggle
+    document
+      .getElementById("mobile-menu-toggle")
+      ?.addEventListener("click", () => this.toggleMobileMenu());
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll(".navbar-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        const menu = document.getElementById("navbar-menu");
+        if (menu) menu.classList.remove("active");
+      });
+    });
+
     // Sign up modal
     document
       .getElementById("signup-student-btn")
@@ -215,6 +228,36 @@ const app = {
 
     // Open modal
     document.getElementById("story-modal").classList.add("active");
+  },
+
+  scrollToSection(sectionId) {
+    // Check if user is on landing page
+    const state = window.AppState.state;
+
+    if (state.isLoggedIn) {
+      // If logged in, first navigate to landing (which logs out)
+      window.Router.navigate("landing");
+      // Wait for page to render, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 300);
+    } else {
+      // Already on landing page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  },
+
+  toggleMobileMenu() {
+    const menu = document.getElementById("navbar-menu");
+    if (menu) {
+      menu.classList.toggle("active");
+    }
   },
 };
 
