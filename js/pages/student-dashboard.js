@@ -1,194 +1,316 @@
 // ===========================
-// Student Dashboard Template
+// Enhanced Student Dashboard Template
 // ===========================
 
 const renderStudentDashboard = () => {
   const state = window.AppState.state;
+  const profile = state.profile || {};
+  
+  // Calculate profile completion percentage
+  const calculateProfileCompletion = () => {
+    let completed = 0;
+    let total = 10;
+    
+    if (profile.fullName) completed++;
+    if (profile.email) completed++;
+    if (profile.phone) completed++;
+    if (profile.bio) completed++;
+    if (profile.avatar) completed++;
+    if (profile.skills && profile.skills.length > 0) completed++;
+    if (profile.education && profile.education.length > 0) completed++;
+    if (profile.experience && profile.experience.length > 0) completed++;
+    if (profile.githubUrl || profile.linkedinUrl || profile.portfolioUrl) completed++;
+    if (profile.cvFile) completed++;
+    
+    return Math.round((completed / total) * 100);
+  };
+
+  const completionPercentage = calculateProfileCompletion();
+
+  const stats = [
+    { label: 'Profile Views', value: '127', icon: 'eye' },
+    { label: 'Applications', value: '8', icon: 'file' },
+    { label: 'Saved Jobs', value: '15', icon: 'bookmark' },
+    { label: 'Interviews', value: '3', icon: 'calendar' }
+  ];
+
+  const recommendedJobs = [
+    {
+      id: 1,
+      title: 'Frontend Developer Intern',
+      company: 'TechViet Solutions',
+      location: 'Ho Chi Minh City',
+      type: 'Internship',
+      salary: '$500-800/month',
+      posted: '2 days ago',
+      match: 95
+    },
+    {
+      id: 2,
+      title: 'Backend Developer',
+      company: 'Digital Innovation Corp',
+      location: 'Hanoi',
+      type: 'Full-time',
+      salary: '$1,200-1,800/month',
+      posted: '5 days ago',
+      match: 88
+    },
+    {
+      id: 3,
+      title: 'Full Stack Intern',
+      company: 'StartupHub Vietnam',
+      location: 'Da Nang',
+      type: 'Internship',
+      salary: '$400-700/month',
+      posted: '1 week ago',
+      match: 82
+    }
+  ];
+
+  const recentApplications = [
+    {
+      id: 1,
+      company: 'FPT Software',
+      position: 'Software Engineer Intern',
+      status: 'under-review',
+      date: 'Oct 28, 2025'
+    },
+    {
+      id: 2,
+      company: 'VNG Corporation',
+      position: 'Junior Developer',
+      status: 'interview',
+      date: 'Oct 25, 2025'
+    },
+    {
+      id: 3,
+      company: 'Tiki',
+      position: 'Frontend Developer',
+      status: 'rejected',
+      date: 'Oct 20, 2025'
+    }
+  ];
+
+  const getStatusBadge = (status) => {
+    const statusMap = {
+      'under-review': { class: 'badge-warning', text: 'Under Review' },
+      'interview': { class: 'badge-primary', text: 'Interview Scheduled' },
+      'accepted': { class: 'badge-success', text: 'Accepted' },
+      'rejected': { class: 'badge-secondary', text: 'Not Selected' }
+    };
+    return statusMap[status] || statusMap['under-review'];
+  };
 
   return `
-    <div class="dashboard" style="padding: 2rem 1rem;">
-      <div class="container">
-        <div style="margin-bottom: 2rem;">
-          <h1 style="color: #263238;">Welcome back, ${state.user.name}!</h1>
-          <p style="color: #78909C;">Here's what's happening with your job search</p>
+    <div class="container py-xl">
+      <!-- Welcome Section -->
+      <div class="dashboard-welcome">
+        <div class="welcome-text">
+          <h1>Welcome back, ${profile.fullName || state.user.name}!</h1>
+          <p class="text-gray">Here's what's happening with your job search</p>
         </div>
+        <button class="btn btn-primary" onclick="window.Router.navigate('profile')">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Edit Profile
+        </button>
+      </div>
 
-        <!-- Stats Cards -->
-        <div class="grid md-grid-cols-4 gap-lg" style="margin-bottom: 2rem;">
-          ${[
-            {
-              icon: `<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline>`,
-              label: "Applications",
-              value: "12",
-              color: "#00BCD4",
-            },
-            {
-              icon: `<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>`,
-              label: "In Review",
-              value: "5",
-              color: "#4DD0E1",
-            },
-            {
-              icon: `<path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>`,
-              label: "Interviews",
-              value: "2",
-              color: "#00BCD4",
-            },
-            {
-              icon: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>`,
-              label: "Profile Views",
-              value: "48",
-              color: "#4DD0E1",
-            },
-          ]
-            .map(
-              (stat) => `
-            <div class="card">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div>
-                  <p style="color: #78909C; margin: 0 0 0.5rem 0;">${stat.label}</p>
-                  <h2 style="color: #263238; margin: 0;">${stat.value}</h2>
-                </div>
-                <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="${stat.color}">
-                  ${stat.icon}
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 md-grid-cols-4 mb-lg">
+        ${stats.map(stat => `
+          <div class="stat-card">
+            <div class="stat-icon">
+              ${stat.icon === 'eye' ? `
+                <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </div>
+              ` : stat.icon === 'file' ? `
+                <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="14 2 14 8 20 8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              ` : stat.icon === 'bookmark' ? `
+                <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              ` : `
+                <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="16" y1="2" x2="16" y2="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="8" y1="2" x2="8" y2="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="3" y1="10" x2="21" y2="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              `}
             </div>
-          `
-            )
-            .join("")}
-        </div>
+            <div class="stat-content">
+              <div class="stat-value">${stat.value}</div>
+              <div class="stat-label">${stat.label}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
 
-        <!-- Profile Completion Alert -->
-        <div class="card" style="border: 2px solid #00BCD4; margin-bottom: 2rem;">
-          <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
-            <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="#00BCD4">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="12" y1="8" x2="12" y2="12"></line>
-              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      <!-- Profile Completion Alert -->
+      ${completionPercentage < 80 ? `
+        <div class="alert alert-info mb-lg">
+          <div class="alert-content">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="16" x2="12" y2="12" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="8" x2="12.01" y2="8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <h3 style="color: #263238; margin: 0;">Complete Your Profile</h3>
+            <div class="alert-text">
+              <h4>Complete Your Profile</h4>
+              <p>Your profile is ${completionPercentage}% complete. A complete profile gets 3x more views! Add your skills, experience, and portfolio to stand out.</p>
+              <div class="progress mt-md">
+                <div class="progress-bar" style="width: ${completionPercentage}%"></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-              <span style="color: #263238;">Profile Completion</span>
-              <span style="color: #00BCD4; font-weight: 600;">75%</span>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 75%;"></div>
-            </div>
-            <p style="color: #78909C; margin: 1rem 0;">
-              A complete profile gets 3x more views! Add your projects and skills to stand out.
-            </p>
-            <button class="btn btn-primary" onclick="app.navigate('profile')">
-              Complete Profile
-            </button>
+          <button class="btn btn-primary btn-sm" onclick="window.Router.navigate('profile')">
+            Complete Profile
+          </button>
+        </div>
+      ` : ''}
+
+      <!-- Main Content Grid -->
+      <div class="dashboard-grid">
+        <!-- Recommended Jobs Section -->
+        <div class="dashboard-section">
+          <div class="section-header">
+            <h3>Recommended for You</h3>
+            <a href="#" class="text-primary" onclick="window.Router.navigate('jobs'); return false;">
+              View all jobs →
+            </a>
+          </div>
+          <div class="job-cards">
+            ${recommendedJobs.map(job => `
+              <div class="job-card">
+                <div class="job-card-header">
+                  <div class="job-company-logo">
+                    <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="job-match-badge">
+                    <span class="badge badge-success">${job.match}% Match</span>
+                  </div>
+                </div>
+                <div class="job-card-content">
+                  <h4 class="job-title">${job.title}</h4>
+                  <p class="job-company">${job.company}</p>
+                  <div class="job-meta">
+                    <span class="job-meta-item">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      ${job.location}
+                    </span>
+                    <span class="job-meta-item">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      ${job.type}
+                    </span>
+                  </div>
+                  <div class="job-salary">${job.salary}</div>
+                  <div class="job-posted">${job.posted}</div>
+                </div>
+                <div class="job-card-actions">
+                  <button class="btn btn-primary btn-full">
+                    Apply Now
+                  </button>
+                  <button class="btn btn-ghost">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Save
+                  </button>
+                </div>
+              </div>
+            `).join('')}
           </div>
         </div>
 
-        <div class="grid md-grid-cols-3 gap-lg">
-          <!-- Recommended Jobs -->
-          <div style="grid-column: span 2;">
-            <div class="card">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                <h3 style="color: #263238; margin: 0;">Recommended for You</h3>
-                <button class="btn btn-ghost" style="color: #00BCD4;" onclick="app.navigate('jobs')">
-                  View All
-                </button>
-              </div>
-              <div style="display: flex; flex-direction: column; gap: 1rem;">
-                ${[
-                  {
-                    title: "Frontend Developer Intern",
-                    company: "TechStart Inc.",
-                    location: "Remote",
-                    type: "Internship",
-                    match: 95,
-                    skills: ["React", "TypeScript", "CSS"],
-                  },
-                  {
-                    title: "Junior Full Stack Developer",
-                    company: "DataFlow Solutions",
-                    location: "New York, NY",
-                    type: "Full-time",
-                    match: 88,
-                    skills: ["Node.js", "React", "MongoDB"],
-                  },
-                  {
-                    title: "Data Science Intern",
-                    company: "AI Innovations",
-                    location: "San Francisco, CA",
-                    type: "Internship",
-                    match: 82,
-                    skills: ["Python", "Machine Learning", "SQL"],
-                  },
-                ]
-                  .map(
-                    (job) => `
-                  <div class="card" style="border: 1px solid #ECEFF1;">
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-                      <div>
-                        <h4 style="color: #263238; margin: 0 0 0.25rem 0;">${
-                          job.title
-                        }</h4>
-                        <p style="color: #78909C; margin: 0;">${job.company}</p>
-                      </div>
-                      <span class="badge badge-primary">${
-                        job.match
-                      }% Match</span>
+        <!-- Recent Applications Section -->
+        <div class="dashboard-sidebar">
+          <div class="sidebar-section">
+            <div class="section-header">
+              <h3>Recent Applications</h3>
+              <a href="#" class="text-primary" onclick="window.Router.navigate('applications'); return false;">
+                View all →
+              </a>
+            </div>
+            <div class="application-list">
+              ${recentApplications.map(app => {
+                const statusInfo = getStatusBadge(app.status);
+                return `
+                  <div class="application-item">
+                    <div class="application-info">
+                      <h4>${app.position}</h4>
+                      <p class="text-gray">${app.company}</p>
+                      <span class="badge ${statusInfo.class}">${statusInfo.text}</span>
                     </div>
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; font-size: 0.875rem; color: #78909C;">
-                      <span>📍 ${job.location}</span>
-                      <span>💼 ${job.type}</span>
-                    </div>
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                      ${job.skills
-                        .map(
-                          (skill) =>
-                            `<span class="badge badge-secondary">${skill}</span>`
-                        )
-                        .join("")}
-                    </div>
-                    <button class="btn btn-primary btn-full">Apply Now</button>
+                    <div class="application-date text-gray">${app.date}</div>
                   </div>
-                `
-                  )
-                  .join("")}
-              </div>
+                `;
+              }).join('')}
             </div>
           </div>
 
-          <!-- Recent Applications -->
-          <div>
-            <div class="card">
-              <h3 style="color: #263238; margin-bottom: 1.5rem;">Recent Applications</h3>
-              <div style="display: flex; flex-direction: column; gap: 1rem;">
-                ${[
-                  {
-                    title: "Backend Developer Intern",
-                    company: "Cloud Systems",
-                    status: "Interview Scheduled",
-                    date: "Applied 5 days ago",
-                  },
-                  {
-                    title: "UI/UX Developer",
-                    company: "Design Studio",
-                    status: "In Review",
-                    date: "Applied 1 week ago",
-                  },
-                ]
-                  .map(
-                    (app) => `
-                  <div style="padding: 1rem; border: 1px solid #ECEFF1; border-radius: 0.5rem;">
-                    <h4 style="color: #263238; margin: 0 0 0.25rem 0; font-size: 1rem;">${app.title}</h4>
-                    <p style="color: #78909C; margin: 0 0 0.5rem 0; font-size: 0.875rem;">${app.company}</p>
-                    <span class="badge badge-warning" style="margin-bottom: 0.5rem;">${app.status}</span>
-                    <p style="color: #78909C; margin: 0; font-size: 0.75rem;">${app.date}</p>
-                  </div>
-                `
-                  )
-                  .join("")}
+          <!-- Profile Quick View -->
+          <div class="sidebar-section mt-lg">
+            <div class="section-header">
+              <h3>Profile Quick View</h3>
+            </div>
+            <div class="profile-quick-view">
+              <div class="profile-avatar-medium">
+                ${profile.avatar 
+                  ? `<img src="${profile.avatar}" alt="${profile.fullName}" class="avatar-img" />`
+                  : `<div class="avatar-placeholder">
+                       <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-linecap="round" stroke-linejoin="round"/>
+                         <circle cx="12" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                     </div>`
+                }
               </div>
+              <h4>${profile.fullName || state.user.name}</h4>
+              <p class="text-gray">${profile.bio || 'Add a professional summary to your profile'}</p>
+              
+              ${profile.skills && profile.skills.length > 0 ? `
+                <div class="profile-skills-preview">
+                  <h5>Top Skills</h5>
+                  <div class="skills-tags">
+                    ${profile.skills.slice(0, 3).map(skill => `
+                      <span class="skill-tag">${skill.name}</span>
+                    `).join('')}
+                    ${profile.skills.length > 3 ? `
+                      <span class="skill-tag-more">+${profile.skills.length - 3} more</span>
+                    ` : ''}
+                  </div>
+                </div>
+              ` : ''}
+
+              <div class="profile-completion-mini">
+                <div class="completion-header">
+                  <span>Profile Strength</span>
+                  <span class="completion-percentage">${completionPercentage}%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: ${completionPercentage}%"></div>
+                </div>
+              </div>
+
+              <button class="btn btn-outline btn-full mt-md" onclick="window.Router.navigate('profile')">
+                View Full Profile
+              </button>
             </div>
           </div>
         </div>
