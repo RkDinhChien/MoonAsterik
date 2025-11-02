@@ -37,13 +37,10 @@ const app = {
       });
     });
 
-    // Sign up modal
+    // Unified signup form
     document
-      .getElementById("signup-student-btn")
-      ?.addEventListener("click", () => this.handleStudentClick());
-    document
-      .getElementById("signup-employer-btn")
-      ?.addEventListener("click", () => this.handleEmployerClick());
+      .getElementById("unified-signup-form")
+      ?.addEventListener("submit", (e) => this.handleUnifiedSignUp(e));
 
     // Login type selection
     document
@@ -148,6 +145,202 @@ const app = {
       "#student-login-form form, #employer-login-form form"
     );
     forms.forEach((form) => form.reset());
+  },
+
+  // ===============
+  // Sign Up helpers
+  // ===============
+  // Old multi-step helpers are now unused; kept for reference.
+
+  updatePasswordStrength(userType) {
+    const inputId =
+      userType === "student"
+        ? "student-signup-password"
+        : "employer-signup-password";
+    const meterId =
+      userType === "student"
+        ? "student-password-strength"
+        : "employer-password-strength";
+    const val = document.getElementById(inputId)?.value || "";
+    const meter = document.getElementById(meterId);
+    if (!meter) return;
+
+    // Simple strength rules
+    let score = 0;
+    if (val.length >= 8) score++;
+    if (/[A-Z]/.test(val)) score++;
+    if (/[0-9]/.test(val)) score++;
+    if (/[^A-Za-z0-9]/.test(val)) score++;
+
+    const labels = ["Weak", "Fair", "Good", "Strong"];
+    const colors = ["#ef5350", "#ff9800", "#2196f3", "#43a047"];
+    const idx = Math.min(score - 1, 3);
+    if (val.length === 0) {
+      meter.textContent = "";
+      meter.style.height = "0";
+    } else {
+      meter.textContent = labels[idx] || "Weak";
+      meter.style.color = colors[idx] || "#ef5350";
+      meter.style.height = "auto";
+      meter.style.marginTop = "4px";
+      meter.style.fontSize = "12px";
+      meter.style.fontWeight = "600";
+    }
+  },
+
+  togglePasswordVisibility(inputId, btn) {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+    const type =
+      input.getAttribute("type") === "password" ? "text" : "password";
+    input.setAttribute("type", type);
+    if (btn) {
+      btn.style.color = type === "password" ? "#90a4ae" : "#263238";
+    }
+  },
+
+  handleSocialLogin(provider) {
+    alert(`Social ${provider} login is a demo placeholder.`);
+  },
+
+  handleSignUpSubmit(event, userType) {
+    event.preventDefault();
+
+    const isStudent = userType === "student";
+    const name = isStudent
+      ? document.getElementById("student-name").value.trim()
+      : document.getElementById("company-name").value.trim();
+    const email = isStudent
+      ? document.getElementById("student-signup-email").value.trim()
+      : document.getElementById("employer-signup-email").value.trim();
+    const password = isStudent
+      ? document.getElementById("student-signup-password").value
+      : document.getElementById("employer-signup-password").value;
+    const skills = isStudent
+      ? (document.getElementById("student-skills").value || "").trim()
+      : "";
+    const agreed = isStudent
+      ? document.getElementById("student-terms").checked
+      : document.getElementById("employer-terms").checked;
+
+    // Validation
+    if (!name || !email || !password) {
+      alert("Please fill in all required fields");
+      return false;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters");
+      return false;
+    }
+    if (!agreed) {
+      alert("Please agree to the Terms");
+      return false;
+    }
+
+    // Local storage store
+    const key = "moon_users";
+    const users = JSON.parse(localStorage.getItem(key) || "[]");
+    const exists = users.find(
+      (u) => u.email.toLowerCase() === email.toLowerCase()
+    );
+    if (exists) {
+      alert("An account with this email already exists.");
+      return false;
+    }
+
+    const newUser = {
+      type: userType,
+      name,
+      email,
+      password, // Note: in real apps, never store plain passwords.
+      skills,
+      createdAt: new Date().toISOString(),
+    };
+    users.push(newUser);
+    localStorage.setItem(key, JSON.stringify(users));
+
+    // Auto login and go to dashboard
+    this.closeAllModals();
+    window.AppState.setUserType(userType);
+    window.AppState.setLoggedIn(true);
+    window.AppState.setCurrentPage("dashboard");
+    this.updateNavbar();
+    this.renderPage();
+    return false;
+  },
+
+  handleUnifiedSignUp(event) {
+    event.preventDefault();
+    const name = document.getElementById("full-name")?.value.trim();
+    const identifier = document
+      .getElementById("signup-identifier")
+      ?.value.trim();
+    const password = document.getElementById("signup-password")?.value;
+    const confirm = document.getElementById("signup-confirm")?.value;
+    const agreed = document.getElementById("signup-terms")?.checked;
+
+    if (!name || !identifier || !password || !confirm) {
+      alert("Please fill in all required fields");
+      return false;
+    }
+    if (password !== confirm) {
+      alert("Passwords do not match");
+      return false;
+    }
+    if (!/[^A-Za-z0-9]/.test(password) || password.length < 8) {
+      alert(
+        "Password must be at least 8 characters and contain a special character"
+      );
+      return false;
+    }
+    if (!agreed) {
+      alert("Please agree to the terms & policy");
+      return false;
+    }
+
+    // Accept either username or email
+    const isEmail = /@/.test(identifier);
+    if (isEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(identifier)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+
+    const key = "moon_users";
+    const users = JSON.parse(localStorage.getItem(key) || "[]");
+    const exists = users.find((u) => {
+      const uid = (u.identifier || "").toLowerCase();
+      const uem = (u.email || "").toLowerCase();
+      const idLower = identifier.toLowerCase();
+      // Match against either stored identifier or email for backward compatibility
+      return uid === idLower || (isEmail && uem === idLower);
+    });
+    if (exists) {
+      alert("An account with this username/email already exists.");
+      return false;
+    }
+
+    const newUser = {
+      type: "student",
+      name,
+      identifier,
+      email: isEmail ? identifier : "",
+      password,
+      createdAt: new Date().toISOString(),
+    };
+    users.push(newUser);
+    localStorage.setItem(key, JSON.stringify(users));
+
+    this.closeAllModals();
+    window.AppState.setUserType("student");
+    window.AppState.setLoggedIn(true);
+    window.AppState.setCurrentPage("dashboard");
+    this.updateNavbar();
+    this.renderPage();
+    return false;
   },
 
   showLoginTypeSelection() {

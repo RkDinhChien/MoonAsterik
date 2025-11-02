@@ -206,7 +206,9 @@ p {
 }
 
 .btn-secondary:hover {
-  opacity: 0.9;
+  opacity: 0.95;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-outline {
@@ -562,6 +564,19 @@ p {
   color: var(--dark-color);
 }
 
+.btn-dark {
+  background: #0f0f10;
+  color: #fff;
+}
+.btn-dark:hover {
+  filter: brightness(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+.social-inline .btn {
+  padding: 0;
+}
+
 .modal-close {
   font-size: 2rem;
   color: var(--gray-color);
@@ -588,14 +603,80 @@ p {
   gap: var(--spacing-md);
 }
 
+/* Signup specific helpers */
+.password-field .password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #90a4ae;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.password-strength {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  color: #90a4ae;
+  margin: 8px 0 12px 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: #e0e6ea;
+  display: block;
+}
+.divider span {
+  font-size: 0.9rem;
+}
+
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #e0e6ea;
+  background: #fff;
+}
+.btn-social .social-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.btn-social.facebook .social-icon {
+  background: #1877f2;
+  color: #fff;
+}
+.btn-social.google .social-icon {
+  background: #fff;
+  color: #ea4335;
+  border: 1px solid #e0e6ea;
+}
+
 /* ===========================
    Form Inputs
    =========================== */
 .form-input {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
+  padding: 0.9rem 0.95rem;
+  border: 1px solid #d5e3ea;
+  border-radius: 12px;
+  background-color: #fbfdff;
   font-size: 1rem;
   font-family: var(--font-sans);
   transition: all var(--transition-fast);
@@ -604,7 +685,8 @@ p {
 
 .form-input:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+  box-shadow: 0 0 0 4px rgba(0, 188, 212, 0.12);
+  background-color: #ffffff;
 }
 
 .form-input::placeholder {
@@ -613,6 +695,51 @@ p {
 
 .form-input:invalid:not(:placeholder-shown) {
   border-color: var(--error);
+}
+
+/* Inputs with icons */
+.input-with-icon {
+  position: relative;
+}
+.input-with-icon .form-input {
+  padding-left: 44px;
+}
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #90a4ae;
+  pointer-events: none;
+}
+.input-with-icon:focus-within .input-icon {
+  color: var(--primary-color);
+}
+
+/* Helper text below inputs */
+.input-help {
+  font-size: 0.82rem;
+  color: #78909c;
+  margin-top: 6px;
+}
+
+/* Brand accent for checkbox in modal */
+.modal input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+/* Spacing between form fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Slightly more breathing room on larger screens */
+@media (min-width: 640px) {
+  .form-group {
+    margin-bottom: 1.1rem;
+  }
 }
 
 /* ===========================

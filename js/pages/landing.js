@@ -15,7 +15,7 @@ const renderLandingPage = () => `
       display: flex;
       align-items: center;
       justify-content: center;
-    ")
+    ">
       <!-- Overlay for better text readability -->
       <div style="
         position: absolute;
