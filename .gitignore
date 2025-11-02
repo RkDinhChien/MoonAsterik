@@ -1,9 +1,12 @@
-# Dependencies
+
+# Vercel
+.vercel
+
+# Node modules
 node_modules/
 package-lock.json
 
-# Build outputs
-dist/
+# Build outputs (keep dist/ for Vercel static hosting)
 build/
 
 # IDE
