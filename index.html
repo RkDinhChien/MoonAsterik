@@ -87,6 +87,8 @@
           style="display: none"
         >
           <span id="user-type-label" class="navbar-user-type"></span>
+          <a href="#" class="navbar-link" onclick="Router.navigate('profile'); return false;">Hồ sơ</a>
+          <a href="#" class="navbar-link" onclick="Router.navigate('jobs'); return false;">Tìm việc</a>
           <button id="logout-btn" class="btn btn-outline">Logout</button>
         </div>
       </div>
@@ -848,7 +850,8 @@
     <script src="js/state.js"></script>
 
     <!-- 2. Page templates -->
-    <script src="js/pages/landing.js"></script>
+  <script src="js/pages/landing.js"></script>
+  <script src="js/pages/student-profile-setup.js"></script>
     <script src="js/pages/student-dashboard.js"></script>
     <script src="js/pages/company-dashboard.js"></script>
     <script src="js/pages/other-pages.js"></script>

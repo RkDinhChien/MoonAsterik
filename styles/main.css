@@ -189,6 +189,12 @@ p {
   white-space: nowrap;
 }
 
+.btn-sm {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+}
+
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white);
@@ -212,9 +218,9 @@ p {
 }
 
 .btn-outline {
-  border: 2px solid var(--primary-color);
+  border: 1.5px solid var(--primary-color);
   color: var(--primary-color);
-  background-color: transparent;
+  background-color: #f6fbfd;
 }
 
 .btn-outline:hover {
@@ -507,6 +513,52 @@ p {
 
 .card-content {
   color: var(--gray-color);
+}
+
+/* ===========================
+   Profile Page
+   =========================== */
+.page-grid { display:grid; grid-template-columns: 1fr 320px; gap: 1.25rem; }
+@media (max-width: 1024px) { .page-grid { grid-template-columns: 1fr; } }
+.page-header { display:flex; align-items:center; gap:1.25rem; }
+.page-header h2 { margin:0 0 .25rem 0; color:#263238; font-weight:800; }
+.page-header .subtitle { display:flex; gap:1rem; color:#607D8B; flex-wrap:wrap; font-size:.95rem; }
+.avatar-lg { position:relative; width:92px; height:92px; }
+.avatar-lg img { width:92px; height:92px; border-radius:999px; object-fit:cover; border:2px solid #eceff1; }
+.avatar-lg .avatar-action { position:absolute; right:-6px; bottom:-6px; background:#fff; border:1px solid #e0e6ea; width:32px; height:32px; border-radius:999px; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow: var(--shadow-sm); }
+.section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; }
+.muted { color:#607D8B; }
+.chip { background:#fff3cd; color:#856404; padding:2px 8px; border-radius:6px; border:1px solid #ffeeba; }
+.profile-sidebar .profile-nav-link {
+  color: #546E7A;
+  padding: 6px 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.profile-sidebar .profile-nav-link:hover { background: #f4f8fb; color: #263238; }
+.profile-sidebar .profile-nav-link.active {
+  color: var(--primary-color);
+  background: rgba(0, 188, 212, 0.12);
+  border-left: 3px solid var(--primary-color);
+  padding-left: 12px;
+}
+.profile-section h3 { color: #263238; }
+
+/* ===========================
+  Profile Setup: Editable lists
+  =========================== */
+.list-rows { display: flex; flex-direction: column; gap: .6rem; }
+.list-rows .row { display: grid; gap: .6rem; align-items: center; }
+.list-rows .grid-2 { grid-template-columns: 1fr 1fr; }
+.list-rows .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.list-rows .grid-cert { grid-template-columns: 2fr 1fr 200px auto; }
+.list-rows .grid-award { grid-template-columns: 2fr 200px auto; }
+.list-rows .grid-skill { grid-template-columns: 2fr 1fr auto; }
+.btn-icon { padding: .55rem .75rem; }
+@media (max-width: 768px) {
+  .list-rows .grid-2, .list-rows .grid-3, .list-rows .grid-cert, .list-rows .grid-award, .list-rows .grid-skill {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===========================

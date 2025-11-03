@@ -58,6 +58,9 @@ const Router = {
       case "applications":
         template = window.PageTemplates.applications;
         break;
+      case "profile-setup":
+        template = window.PageTemplates["profile-setup"];
+        break;
       case "post-job":
         template = window.PageTemplates["post-job"];
         break;
@@ -90,7 +93,7 @@ const Router = {
       navbarActions.style.display = "none";
       navbarLoggedIn.style.display = "flex";
       userTypeLabel.textContent =
-        state.userType === "student" ? "Student Portal" : "Company Portal";
+        state.userType === "student" ? "Sinh viên" : "Công ty";
     } else {
       navbarActions.style.display = "flex";
       navbarLoggedIn.style.display = "none";

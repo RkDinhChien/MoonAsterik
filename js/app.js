@@ -8,6 +8,13 @@
 
 const app = {
   init() {
+    // Hydrate user profile from localStorage if exists (demo persistence)
+    try {
+      const cached = localStorage.getItem("moon_profile");
+      if (cached) {
+        window.AppState.setUserInfo(JSON.parse(cached));
+      }
+    } catch {}
     this.setupEventListeners();
     this.renderPage();
   },
@@ -92,7 +99,7 @@ const app = {
     this.closeAllModals();
     window.AppState.setUserType("student");
     window.AppState.setLoggedIn(true);
-    window.AppState.setCurrentPage("dashboard");
+    window.AppState.setCurrentPage("profile");
     this.updateNavbar();
     this.renderPage();
   },
@@ -265,9 +272,9 @@ const app = {
 
     // Auto login and go to dashboard
     this.closeAllModals();
-    window.AppState.setUserType(userType);
-    window.AppState.setLoggedIn(true);
-    window.AppState.setCurrentPage("dashboard");
+  window.AppState.setUserType(userType);
+  window.AppState.setLoggedIn(true);
+  window.AppState.setCurrentPage(userType === "student" ? "profile" : "dashboard");
     this.updateNavbar();
     this.renderPage();
     return false;
@@ -337,7 +344,9 @@ const app = {
     this.closeAllModals();
     window.AppState.setUserType("student");
     window.AppState.setLoggedIn(true);
-    window.AppState.setCurrentPage("dashboard");
+    // Seed basic user info for profile page
+    window.AppState.setUserInfo({ fullName: name, email: isEmail ? identifier : "" });
+    window.AppState.setCurrentPage("profile");
     this.updateNavbar();
     this.renderPage();
     return false;
@@ -451,6 +460,166 @@ const app = {
     if (menu) {
       menu.classList.toggle("active");
     }
+  },
+
+  // Jobs search (demo)
+  searchJobs() {
+    const q = document.getElementById('job-q')?.value?.toLowerCase() || '';
+    const loc = document.getElementById('job-loc')?.value?.toLowerCase() || '';
+    const cards = document.querySelectorAll('#jobs-list .card');
+    cards.forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      const match = (!q || text.includes(q)) && (!loc || text.includes(loc));
+      card.style.display = match ? '' : 'none';
+    });
+  },
+
+  // ===========================
+  // Profile setup handlers
+  // ===========================
+  handleAvatarChange(e) {
+    const file = e?.target?.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = document.getElementById("avatar-preview");
+      if (img) img.src = reader.result;
+      window.AppState.setUserInfo({ avatar: reader.result });
+    };
+    reader.readAsDataURL(file);
+  },
+
+  saveStudentProfile() {
+    const get = (id) => document.getElementById(id)?.value?.trim() || "";
+    // Basic profile info
+    const profile = {
+      fullName: get("pf-fullname"),
+      studentId: get("pf-student-id"),
+      graduation: get("pf-graduation"),
+      gender: document.getElementById("pf-gender")?.value || "",
+      phone: get("pf-phone"),
+      email: get("pf-email"),
+      country: get("pf-country"),
+      github: get("pf-github"),
+      viblo: get("pf-viblo"),
+      facebook: get("pf-facebook"),
+      slack: get("pf-slack"),
+      jlpt: window.AppState.state?.user?.jlpt || "",
+    };
+
+    // Education (single)
+    profile.university = get('pf-edu-university');
+    profile.faculty = get('pf-edu-faculty');
+    profile.gpa = get('pf-edu-gpa');
+    // Prepare array form for profile rendering
+    const studentCodeEd = get('pf-edu-code');
+    profile.education = [
+      {
+        university: profile.university || '',
+        faculty: profile.faculty || '',
+        studentCode: studentCodeEd || profile.studentId || '',
+        year: profile.year || '',
+        graduation: profile.graduation || '',
+        gpa: profile.gpa || '',
+      },
+    ];
+
+    // Certificates
+    const certRows = Array.from(document.querySelectorAll('#cert-list .row-cert'));
+    profile.certificates = certRows.map(row => {
+      const name = row.querySelector('.cert-name')?.value?.trim() || '';
+      const value = row.querySelector('.cert-value')?.value?.trim() || '';
+      const dateRaw = row.querySelector('.cert-date')?.value?.trim() || '';
+      const date = dateRaw ? dateRaw.replaceAll('-', '/') : '';
+      return { name, value, date };
+    }).filter(c => c.name || c.value || c.date);
+
+    // Awards
+    const awardRows = Array.from(document.querySelectorAll('#award-list .row-award'));
+    profile.awards = awardRows.map(row => {
+      const title = row.querySelector('.award-title')?.value?.trim() || '';
+      const dateRaw = row.querySelector('.award-date')?.value?.trim() || '';
+      const date = dateRaw ? dateRaw.replaceAll('-', '/') : '';
+      return { title, date };
+    }).filter(a => a.title || a.date);
+
+    // Highlights
+    const highlightRows = Array.from(document.querySelectorAll('#highlight-list .row-highlight'));
+    profile.highlights = highlightRows.map(row => row.querySelector('.highlight-text')?.value?.trim() || '')
+      .filter(h => h);
+
+    // Skills
+    const skillRows = Array.from(document.querySelectorAll('#skill-list .row-skill'));
+    profile.skills = skillRows.map(row => {
+      const name = row.querySelector('.skill-name')?.value?.trim() || '';
+      const months = parseInt(row.querySelector('.skill-months')?.value || '0', 10) || 0;
+      return { name, months };
+    }).filter(s => s.name);
+
+    window.AppState.setUserInfo(profile);
+    // Lightweight local persistence for demo
+    try { localStorage.setItem("moon_profile", JSON.stringify(profile)); } catch {}
+    window.Router.navigate("profile");
+    this.updateNavbar();
+    this.renderPage();
+  },
+
+  // Helpers for dynamic rows in profile setup
+  addCertRow() {
+    const list = document.getElementById('cert-list');
+    if (!list) return;
+    const div = document.createElement('div');
+    div.className = 'row grid-cert row-cert';
+    div.innerHTML = `
+      <input class="form-input cert-name" placeholder="Tên chứng chỉ (vd: JLPT, IELTS)" />
+      <input class="form-input cert-value" placeholder="Giá trị (vd: N4, 6.0)" />
+      <input class="form-input cert-date" type="date" />
+      <button class="btn btn-outline btn-icon" onclick="this.parentElement.remove()">Xóa</button>
+    `;
+    list.appendChild(div);
+  },
+  addAwardRow() {
+    const list = document.getElementById('award-list');
+    if (!list) return;
+    const div = document.createElement('div');
+    div.className = 'row grid-award row-award';
+    div.innerHTML = `
+      <input class="form-input award-title" placeholder="Tên giải thưởng" />
+      <input class="form-input award-date" type="date" />
+      <button class="btn btn-outline btn-icon" onclick="this.parentElement.remove()">Xóa</button>
+    `;
+    list.appendChild(div);
+  },
+  addHighlightRow() {
+    const list = document.getElementById('highlight-list');
+    if (!list) return;
+    const div = document.createElement('div');
+    div.className = 'row row-highlight';
+    div.innerHTML = `
+      <input class="form-input highlight-text" placeholder="Mô tả ngắn điểm mạnh / thành tích" />
+      <button class="btn btn-outline btn-icon" onclick="this.parentElement.remove()">Xóa</button>
+    `;
+    list.appendChild(div);
+  },
+  addSkillRow() {
+    const list = document.getElementById('skill-list');
+    if (!list) return;
+    const div = document.createElement('div');
+    div.className = 'row grid-skill row-skill';
+    div.innerHTML = `
+      <input class="form-input skill-name" placeholder="Tên kỹ năng (vd: React, Node.js)" />
+      <input class="form-input skill-months" type="number" min="0" placeholder="Số tháng kinh nghiệm" />
+      <button class="btn btn-outline btn-icon" onclick="this.parentElement.remove()">Xóa</button>
+    `;
+    list.appendChild(div);
+  },
+  resetEdu() {
+    ['pf-edu-university','pf-edu-faculty','pf-edu-code','pf-edu-gpa'].forEach(id=>{
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+    });
+    const grad = document.getElementById('pf-edu-graduation');
+    if (grad) grad.value = '';
   },
 };
 
