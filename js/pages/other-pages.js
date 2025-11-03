@@ -5,34 +5,12 @@
 const renderProfilePage = () => {
   const user = window.AppState.getUserInfo?.() || {};
   const val = (v) => (v && String(v).trim() ? v : "—");
-  // Demo datasets (can be replaced by real data later)
-  const education = user.education || [
-    {
-      university: user.university || "Đại học Công nghệ Thông tin",
-      faculty: user.faculty || "Khoa OEP",
-      studentCode: user.studentCode || user.studentId || "—",
-      year: user.year || "3 năm",
-      graduation: user.graduation || "—",
-      gpa: user.gpa || "—",
-    },
-  ];
-  const certificates = user.certificates || [
-    { name: "JLPT", value: user.jlpt || "—", date: "2024/12/01" },
-    { name: "IELTS", value: user.ielts || "—", date: "2025/01/12" },
-  ];
-  const awards = user.awards || [
-    { title: "FPT Software Go Japan 2025", date: "2025/07/31" },
-  ];
-  const highlights = user.highlights || [
-    "Có thái độ chủ động, thích nghi nhanh, sẵn sàng làm việc trong nhiều môi trường.",
-  ];
-  const skills = user.skills || [
-    { name: "C++", months: 8 },
-    { name: "Python", months: 4 },
-    { name: "JavaScript", months: 2 },
-    { name: "HTML", months: 3 },
-    { name: "SQL", months: 4 },
-  ];
+  // Use actual user data; do not show demo/sample entries here
+  const education = user.education || [];
+  const certificates = user.certificates || [];
+  const awards = user.awards || [];
+  const highlights = user.highlights || [];
+  const skills = user.skills || [];
 
   return `
     <div class="profile-page" style="padding: 1.25rem 1rem;">
@@ -126,16 +104,20 @@ const renderProfilePage = () => {
                 <h3 style="margin:0;">Chứng chỉ</h3>
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
-              <div style="display:grid; grid-template-columns: 1fr 200px; row-gap:.5rem; column-gap:1rem;">
-                ${certificates
-                  .map(
-                    (c) => `
-                  <div><strong>${c.name}</strong> ${val(c.value)}</div>
-                  <div style="color:#607D8B;">${val(c.date)}</div>
-                `
-                  )
-                  .join("")}
-              </div>
+                <div style="display:grid; grid-template-columns: 1fr 200px; row-gap:.5rem; column-gap:1rem;">
+                  ${
+                    certificates.length
+                      ? certificates
+                          .map(
+                            (c) => `
+                    <div><strong>${c.name}</strong> ${val(c.value)}</div>
+                    <div style="color:#607D8B;">${val(c.date)}</div>
+                  `
+                          )
+                          .join("")
+                      : `<div style="color:#90A4AE;">Chưa có chứng chỉ. <a href="#" onclick="Router.navigate('profile-setup')">Chỉnh sửa</a></div><div></div>`
+                  }
+                </div>
             </section>
 
             <!-- Awards -->
@@ -144,16 +126,20 @@ const renderProfilePage = () => {
                 <h3 style="margin:0;">Giải thưởng</h3>
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
-              <div style="display:grid; grid-template-columns: 1fr 200px; row-gap:.5rem; column-gap:1rem;">
-                ${awards
-                  .map(
-                    (a) => `
-                  <div>${a.title}</div>
-                  <div style="color:#607D8B;">${a.date}</div>
-                `
-                  )
-                  .join("")}
-              </div>
+                <div style="display:grid; grid-template-columns: 1fr 200px; row-gap:.5rem; column-gap:1rem;">
+                  ${
+                    awards.length
+                      ? awards
+                          .map(
+                            (a) => `
+                    <div>${a.title}</div>
+                    <div style="color:#607D8B;">${a.date}</div>
+                  `
+                          )
+                          .join("")
+                      : `<div style="color:#90A4AE;">Chưa có giải thưởng. <a href="#" onclick="Router.navigate('profile-setup')">Chỉnh sửa</a></div><div></div>`
+                  }
+                </div>
             </section>
 
             <!-- Highlights -->
@@ -162,9 +148,13 @@ const renderProfilePage = () => {
                 <h3 style="margin:0;">Điểm nổi bật</h3>
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
-              <ul style="margin-left:1rem; color:#455A64; display:flex; flex-direction:column; gap:.5rem;">
-                ${highlights.map((h) => `<li>${h}</li>`).join("")}
-              </ul>
+                ${
+                  highlights.length
+                    ? `<ul style="margin-left:1rem; color:#455A64; display:flex; flex-direction:column; gap:.5rem;">${highlights
+                        .map((h) => `<li>${h}</li>`)
+                        .join("")}</ul>`
+                    : `<div style="color:#90A4AE;">Chưa có điểm nổi bật. <a href="#" onclick="Router.navigate('profile-setup')">Chỉnh sửa</a></div>`
+                }
             </section>
 
             <!-- Skills -->
@@ -173,14 +163,16 @@ const renderProfilePage = () => {
                 <h3 style="margin:0;">Kỹ năng chuyên môn</h3>
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
-              <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-                ${skills
-                  .map(
-                    (s) =>
-                      `<span style="font-size:.9rem; padding:.35rem .6rem; border:1px solid #e0e6ea; border-radius:999px; color:#607D8B; background:#fafcfe;">${s.name} <span style='opacity:.7'>${s.months} tháng</span></span>`
-                  )
-                  .join("")}
-              </div>
+                ${
+                  skills.length
+                    ? `<div style="display:flex; gap:.5rem; flex-wrap:wrap;">${skills
+                        .map(
+                          (s) =>
+                            `<span style="font-size:.9rem; padding:.35rem .6rem; border:1px solid #e0e6ea; border-radius:999px; color:#607D8B; background:#fafcfe;">${s.name} <span style='opacity:.7'>${s.months} tháng</span></span>`
+                        )
+                        .join("")}</div>`
+                    : `<div style="color:#90A4AE;">Chưa có kỹ năng. <a href="#" onclick="Router.navigate('profile-setup')">Chỉnh sửa</a></div>`
+                }
             </section>
           </div>
 
