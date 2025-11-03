@@ -40,14 +40,24 @@ const renderProfilePage = () => {
         <!-- Header Card -->
         <div class="card page-header">
           <div class="avatar-lg">
-            <img src="${user.avatar || 'https://api.dicebear.com/8.x/thumbs/svg?seed=Moon'}" alt="Avatar" />
+            <img src="${
+              user.avatar || "https://api.dicebear.com/8.x/thumbs/svg?seed=Moon"
+            }" alt="Avatar" />
           </div>
           <div style="flex:1">
-            <h2>${val(user.fullName) || 'Hồ sơ của bạn'}</h2>
+            <h2>${val(user.fullName) || "Hồ sơ của bạn"}</h2>
             <div class="subtitle">
-              <div>ID <strong style="margin-left:.4rem">${val(user.studentId)}</strong></div>
-              <div>Tháng tốt nghiệp <strong style="margin-left:.4rem">${val(user.graduation)}</strong></div>
-              <div>Mạng xã hội <a href="${user.github || '#'}" target="_blank" rel="noopener" style="color:#00BCD4">${user.github ? 'GitHub' : 'Thêm GitHub'}</a></div>
+              <div>ID <strong style="margin-left:.4rem">${val(
+                user.studentId
+              )}</strong></div>
+              <div>Tháng tốt nghiệp <strong style="margin-left:.4rem">${val(
+                user.graduation
+              )}</strong></div>
+              <div>Mạng xã hội <a href="${
+                user.github || "#"
+              }" target="_blank" rel="noopener" style="color:#00BCD4">${
+    user.github ? "GitHub" : "Thêm GitHub"
+  }</a></div>
             </div>
           </div>
           <button class="btn btn-outline btn-sm" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
@@ -61,12 +71,24 @@ const renderProfilePage = () => {
             <section id="sec-basic" class="card profile-section" style="scroll-margin-top: 90px;">
               <div class="section-header"><h3 style="margin:0;">Thông tin cơ bản</h3></div>
               <div style="display:grid; grid-template-columns: 220px 1fr; row-gap:.75rem; column-gap:1rem;">
-                <div style="color:#607D8B;">Họ và tên</div><div>${val(user.fullName)}</div>
-                <div style="color:#607D8B;">Ngày sinh</div><div>${val(user.birthday)}</div>
-                <div style="color:#607D8B;">Giới tính</div><div>${val(user.gender)}</div>
-                <div style="color:#607D8B;">Số điện thoại</div><div>${val(user.phone)}</div>
-                <div style="color:#607D8B;">Email</div><div>${val(user.email)}</div>
-                <div style="color:#607D8B;">Quốc gia</div><div>${val(user.country)}</div>
+                <div style="color:#607D8B;">Họ và tên</div><div>${val(
+                  user.fullName
+                )}</div>
+                <div style="color:#607D8B;">Ngày sinh</div><div>${val(
+                  user.birthday
+                )}</div>
+                <div style="color:#607D8B;">Giới tính</div><div>${val(
+                  user.gender
+                )}</div>
+                <div style="color:#607D8B;">Số điện thoại</div><div>${val(
+                  user.phone
+                )}</div>
+                <div style="color:#607D8B;">Email</div><div>${val(
+                  user.email
+                )}</div>
+                <div style="color:#607D8B;">Quốc gia</div><div>${val(
+                  user.country
+                )}</div>
               </div>
             </section>
 
@@ -77,12 +99,24 @@ const renderProfilePage = () => {
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
               <div style="display:grid; grid-template-columns: 220px 1fr; row-gap:.75rem; column-gap:1rem;">
-                <div style="color:#607D8B;">Đại học</div><div>${val(education[0].university)}</div>
-                <div style="color:#607D8B;">Khoa</div><div>${val(education[0].faculty)}</div>
-                <div style="color:#607D8B;">Mã số sinh viên</div><div>${val(education[0].studentCode)}</div>
-                <div style="color:#607D8B;">Niên khóa</div><div>${val(education[0].year)}</div>
-                <div style="color:#607D8B;">Dự kiến tốt nghiệp</div><div>${val(education[0].graduation)}</div>
-                <div style="color:#607D8B;">GPA</div><div>${val(education[0].gpa)}</div>
+                <div style="color:#607D8B;">Đại học</div><div>${val(
+                  education[0].university
+                )}</div>
+                <div style="color:#607D8B;">Khoa</div><div>${val(
+                  education[0].faculty
+                )}</div>
+                <div style="color:#607D8B;">Mã số sinh viên</div><div>${val(
+                  education[0].studentCode
+                )}</div>
+                <div style="color:#607D8B;">Niên khóa</div><div>${val(
+                  education[0].year
+                )}</div>
+                <div style="color:#607D8B;">Dự kiến tốt nghiệp</div><div>${val(
+                  education[0].graduation
+                )}</div>
+                <div style="color:#607D8B;">GPA</div><div>${val(
+                  education[0].gpa
+                )}</div>
               </div>
             </section>
 
@@ -93,10 +127,14 @@ const renderProfilePage = () => {
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
               <div style="display:grid; grid-template-columns: 1fr 200px; row-gap:.5rem; column-gap:1rem;">
-                ${certificates.map(c => `
+                ${certificates
+                  .map(
+                    (c) => `
                   <div><strong>${c.name}</strong> ${val(c.value)}</div>
                   <div style="color:#607D8B;">${val(c.date)}</div>
-                `).join('')}
+                `
+                  )
+                  .join("")}
               </div>
             </section>
 
@@ -107,10 +145,14 @@ const renderProfilePage = () => {
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
               <div style="display:grid; grid-template-columns: 1fr 200px; row-gap:.5rem; column-gap:1rem;">
-                ${awards.map(a => `
+                ${awards
+                  .map(
+                    (a) => `
                   <div>${a.title}</div>
                   <div style="color:#607D8B;">${a.date}</div>
-                `).join('')}
+                `
+                  )
+                  .join("")}
               </div>
             </section>
 
@@ -121,7 +163,7 @@ const renderProfilePage = () => {
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
               <ul style="margin-left:1rem; color:#455A64; display:flex; flex-direction:column; gap:.5rem;">
-                ${highlights.map(h => `<li>${h}</li>`).join('')}
+                ${highlights.map((h) => `<li>${h}</li>`).join("")}
               </ul>
             </section>
 
@@ -132,7 +174,12 @@ const renderProfilePage = () => {
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
               <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-                ${skills.map(s => `<span style="font-size:.9rem; padding:.35rem .6rem; border:1px solid #e0e6ea; border-radius:999px; color:#607D8B; background:#fafcfe;">${s.name} <span style='opacity:.7'>${s.months} tháng</span></span>`).join('')}
+                ${skills
+                  .map(
+                    (s) =>
+                      `<span style="font-size:.9rem; padding:.35rem .6rem; border:1px solid #e0e6ea; border-radius:999px; color:#607D8B; background:#fafcfe;">${s.name} <span style='opacity:.7'>${s.months} tháng</span></span>`
+                  )
+                  .join("")}
               </div>
             </section>
           </div>
@@ -197,22 +244,51 @@ const renderJobsPage = () => `
 
       <div id="jobs-list" class="grid md-grid-cols-3 gap-lg">
         ${[
-          { title: 'Frontend Developer (React)', company: 'TechStart', loc: 'TP.HCM', type: 'Intern', tags:['React','JS','HTML/CSS'] },
-          { title: 'Backend Developer (Node.js)', company: 'FinHub', loc: 'Hà Nội', type: 'Fresher', tags:['Node','Express','MongoDB'] },
-          { title: 'QA Engineer', company: 'HealthPlus', loc: 'Remote', type: 'Intern', tags:['Test','Automation','Jest'] },
-        ].map(j => `
+          {
+            title: "Frontend Developer (React)",
+            company: "TechStart",
+            loc: "TP.HCM",
+            type: "Intern",
+            tags: ["React", "JS", "HTML/CSS"],
+          },
+          {
+            title: "Backend Developer (Node.js)",
+            company: "FinHub",
+            loc: "Hà Nội",
+            type: "Fresher",
+            tags: ["Node", "Express", "MongoDB"],
+          },
+          {
+            title: "QA Engineer",
+            company: "HealthPlus",
+            loc: "Remote",
+            type: "Intern",
+            tags: ["Test", "Automation", "Jest"],
+          },
+        ]
+          .map(
+            (j) => `
           <div class="card">
             <h4 style="margin-bottom:.25rem;">${j.title}</h4>
-            <div style="color:#607D8B; margin-bottom:.5rem;">${j.company} • ${j.loc} • ${j.type}</div>
+            <div style="color:#607D8B; margin-bottom:.5rem;">${j.company} • ${
+              j.loc
+            } • ${j.type}</div>
             <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:.75rem;">
-              ${j.tags.map(t=>`<span style="font-size:.85rem; padding:.25rem .5rem; border:1px solid #e0e6ea; border-radius:999px; color:#607D8B;">${t}</span>`).join('')}
+              ${j.tags
+                .map(
+                  (t) =>
+                    `<span style="font-size:.85rem; padding:.25rem .5rem; border:1px solid #e0e6ea; border-radius:999px; color:#607D8B;">${t}</span>`
+                )
+                .join("")}
             </div>
             <div style="display:flex; gap:.5rem;">
               <button class="btn btn-outline">Lưu</button>
               <button class="btn btn-primary">Ứng tuyển</button>
             </div>
           </div>
-        `).join('')}
+        `
+          )
+          .join("")}
       </div>
     </div>
   </div>
