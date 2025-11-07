@@ -23,7 +23,11 @@ const renderProfilePage = () => {
             }" alt="Avatar" />
           </div>
           <div style="flex:1">
-            <h2>${(user.fullName && String(user.fullName).trim()) ? user.fullName : "Hồ sơ của bạn"}</h2>
+            <h2>${
+              user.fullName && String(user.fullName).trim()
+                ? user.fullName
+                : "Hồ sơ của bạn"
+            }</h2>
             <div class="subtitle">
               <div>ID <strong style="margin-left:.4rem">${val(
                 user.studentId
@@ -76,19 +80,35 @@ const renderProfilePage = () => {
                 <h3 style="margin:0;">Học vấn</h3>
                 <button class="btn btn-outline" onclick="Router.navigate('profile-setup')">Chỉnh sửa</button>
               </div>
-              ${education.length ? (()=>{
-                const edu = education[0] || {};
-                return `
+              ${
+                education.length
+                  ? (() => {
+                      const edu = education[0] || {};
+                      return `
                   <div style="display:grid; grid-template-columns: 220px 1fr; row-gap:.75rem; column-gap:1rem;">
-                    <div style="color:#607D8B;">Đại học</div><div>${val(edu.university)}</div>
-                    <div style="color:#607D8B;">Khoa</div><div>${val(edu.faculty)}</div>
-                    <div style="color:#607D8B;">Mã số sinh viên</div><div>${val(edu.studentCode)}</div>
-                    <div style="color:#607D8B;">Niên khóa</div><div>${val(edu.year)}</div>
-                    <div style="color:#607D8B;">Dự kiến tốt nghiệp</div><div>${val(edu.graduation)}</div>
-                    <div style="color:#607D8B;">GPA</div><div>${val(edu.gpa)}</div>
+                    <div style="color:#607D8B;">Đại học</div><div>${val(
+                      edu.university
+                    )}</div>
+                    <div style="color:#607D8B;">Khoa</div><div>${val(
+                      edu.faculty
+                    )}</div>
+                    <div style="color:#607D8B;">Mã số sinh viên</div><div>${val(
+                      edu.studentCode
+                    )}</div>
+                    <div style="color:#607D8B;">Niên khóa</div><div>${val(
+                      edu.year
+                    )}</div>
+                    <div style="color:#607D8B;">Dự kiến tốt nghiệp</div><div>${val(
+                      edu.graduation
+                    )}</div>
+                    <div style="color:#607D8B;">GPA</div><div>${val(
+                      edu.gpa
+                    )}</div>
                   </div>
                 `;
-              })() : `<div style="color:#90A4AE;">Chưa có học vấn. <a href="#" onclick="Router.navigate('profile-setup')">Chỉnh sửa</a></div>`}
+                    })()
+                  : `<div style="color:#90A4AE;">Chưa có học vấn. <a href="#" onclick="Router.navigate('profile-setup')">Chỉnh sửa</a></div>`
+              }
             </section>
 
             <!-- Certificates -->

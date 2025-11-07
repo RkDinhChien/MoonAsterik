@@ -197,21 +197,27 @@ p {
 
 /* Password toggle button inside input */
 .password-toggle-btn {
-  position:absolute;
-  right:12px;
-  top:50%;
-  transform:translateY(-50%);
-  background:transparent;
-  border:none;
-  padding:4px;
-  color:#78909c;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 4px;
+  color: #78909c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-.password-toggle-btn:hover { color: var(--primary-color); }
-.password-toggle-btn:focus { outline:2px solid var(--primary-color); outline-offset:2px; border-radius:6px; }
+.password-toggle-btn:hover {
+  color: var(--primary-color);
+}
+.password-toggle-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
 
 .btn-primary {
   background-color: var(--primary-color);
