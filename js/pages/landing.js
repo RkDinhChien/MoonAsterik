@@ -955,6 +955,34 @@ const renderLandingPage = () => `
             )
             .join("")}
         </div>
+        
+        <!-- View More Button -->
+        <div style="text-align: center; margin-top: 3rem;">
+          <button 
+            onclick="window.location.href='blogs.html'" 
+            style="
+              background: #00BCD4;
+              color: white;
+              border: none;
+              padding: 1rem 2rem;
+              border-radius: 8px;
+              font-size: 1rem;
+              font-weight: 600;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              display: inline-flex;
+              align-items: center;
+              gap: 0.5rem;
+            "
+            onmouseover="this.style.background='#0097A7'; this.style.transform='translateY(-2px)'"
+            onmouseout="this.style.background='#00BCD4'; this.style.transform='translateY(0)'"
+          >
+            More Success Stories
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
