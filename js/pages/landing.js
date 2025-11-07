@@ -187,7 +187,7 @@ const renderLandingPage = () => `
               .map(
                 (company) => `
                 <a href="${company.url}" target="_blank" rel="noopener noreferrer" class="logo-item">
-                  <img src="assets/logos/${company.file}" alt="${company.name}" />
+                  <img src="/assets/logos/${company.file}" alt="${company.name}" />
                 </a>
               `
               )

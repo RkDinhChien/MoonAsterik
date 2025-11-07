@@ -3,21 +3,38 @@
 // ===========================
 
 const Router = {
-  navigate(page) {
-    // Special handling for landing page - always log out and show landing
-    if (page === "landing") {
+  // If deployed under a subfolder, set BASE_PATH accordingly. For local root keep empty string.
+  BASE_PATH: '',
+  pathFor(page){
+    if(page==='landing') return (this.BASE_PATH || '') + '/';
+    return (this.BASE_PATH || '') + '/' + page;
+  },
+  parsePath(){
+    const { pathname } = window.location;
+    const base = this.BASE_PATH;
+    const raw = base && pathname.startsWith(base) ? pathname.substring(base.length) : pathname;
+    const seg = raw.replace(/^\//,'');
+    if(!seg) return 'landing';
+    const first = seg.split('/')[0];
+    // whitelist pages
+    const allowed = ['landing','jobs','profile','applications','dashboard'];
+    return allowed.includes(first) ? first : 'landing';
+  },
+  navigate(page, replace=false) {
+    // landing means reset session
+    if (page === 'landing') {
       window.AppState.setLoggedIn(false);
       window.AppState.setUserType(null);
-      window.AppState.setCurrentPage("landing");
-      this.renderPage();
-      this.updateNavbar();
-      window.scrollTo(0, 0);
-      return;
     }
-
     window.AppState.setCurrentPage(page);
+    const url = this.pathFor(page);
+    try {
+      if(replace) window.history.replaceState({page}, '', url);
+      else window.history.pushState({page}, '', url);
+    } catch {}
     this.renderPage();
-    window.scrollTo(0, 0);
+    this.updateNavbar();
+    window.scrollTo(0,0);
   },
 
   renderPage() {
@@ -103,3 +120,21 @@ const Router = {
 
 // Export for use in other modules
 window.Router = Router;
+
+// Initialize route from URL on load
+window.addEventListener('DOMContentLoaded', () => {
+  const initial = Router.parsePath();
+  if(initial !== window.AppState.state.currentPage){
+    window.AppState.setCurrentPage(initial);
+  }
+  // Replace state to sync
+  Router.navigate(initial, true);
+});
+
+// Handle back/forward
+window.addEventListener('popstate', (e) => {
+  const page = (e.state && e.state.page) || Router.parsePath();
+  window.AppState.setCurrentPage(page);
+  Router.renderPage();
+  Router.updateNavbar();
+});
