@@ -54325,5 +54325,281 @@
     "headcount": 5,
     "banner": "assets/img/banners/devops.jpg",
     "status": "published"
+  },
+  {
+    "id": 3000,
+    "title": "Research Engineer (LLM Safety)",
+    "category": "ML/AI",
+    "companyId": "vinai",
+    "companyName": "VinAI",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN",
+      "geo": {
+        "lat": 21.0278,
+        "lng": 105.8342
+      }
+    },
+    "type": "Full-time",
+    "experienceLevel": "Senior",
+    "salary": {
+      "min": 70000000,
+      "max": 120000000,
+      "currency": "VND",
+      "unit": "month",
+      "isGross": true
+    },
+    "postedAt": "2025-09-11",
+    "expiresAt": "2025-11-04",
+    "tags": [
+      "Kubernetes",
+      "Microservices",
+      "C++",
+      "Rust",
+      "Airflow",
+      "Go"
+    ],
+    "description": {
+      "summary": "Tuyển Research Engineer (LLM Safety) tham gia các dự án lõi tại VinAI.",
+      "responsibilities": [
+        "Thiết kế, huấn luyện và triển khai mô hình ở quy mô sản xuất",
+        "Viết test, review code, tối ưu hiệu năng suy luận",
+        "Xây dựng pipeline dữ liệu và giám sát chất lượng",
+        "Phối hợp đa phòng ban (Product/Infra/Research)"
+      ],
+      "requirements": [
+        "Vững kiến thức CS (DSA, hệ điều hành, mạng)",
+        "Kinh nghiệm thực tế với stack liên quan",
+        "Kỹ năng giao tiếp, làm việc nhóm",
+        "Tư duy sản phẩm và cải tiến liên tục"
+      ],
+      "niceToHave": [
+        "Kinh nghiệm hệ thống phân tán",
+        "Publications/competitions",
+        "Chứng chỉ cloud"
+      ],
+      "benefits": [
+        "Thiết bị làm việc",
+        "Thưởng dự án",
+        "Nghỉ phép 15 ngày/năm",
+        "Teambuilding/Workshop"
+      ]
+    },
+    "apply": {
+      "howToApply": "Gửi CV PDF kèm link GitHub/Google Scholar.",
+      "contactEmail": "recruit@vinai.com",
+      "applyLink": "https://jobs.vinai.com/3000"
+    },
+    "remotePolicy": "hybrid",
+    "headcount": 4,
+    "banner": "assets/img/banners/ml/ai.jpg",
+    "status": "published"
+  },
+  {
+    "id": 3001,
+    "title": "MLOps Engineer (K8s/Triton)",
+    "category": "ML/AI",
+    "companyId": "vinai",
+    "companyName": "VinAI",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN",
+      "geo": {
+        "lat": 10.8231,
+        "lng": 106.6297
+      }
+    },
+    "type": "Full-time",
+    "experienceLevel": "Mid",
+    "salary": {
+      "min": 45000000,
+      "max": 70000000,
+      "currency": "VND",
+      "unit": "month",
+      "isGross": true
+    },
+    "postedAt": "2025-10-14",
+    "expiresAt": "2025-12-01",
+    "tags": [
+      "Azure",
+      "TensorFlow",
+      "C++",
+      "Rust",
+      "Docker",
+      "Triton"
+    ],
+    "description": {
+      "summary": "Tuyển MLOps Engineer (K8s/Triton) tham gia các dự án lõi tại VinAI.",
+      "responsibilities": [
+        "Thiết kế, huấn luyện và triển khai mô hình ở quy mô sản xuất",
+        "Viết test, review code, tối ưu hiệu năng suy luận",
+        "Xây dựng pipeline dữ liệu và giám sát chất lượng",
+        "Phối hợp đa phòng ban (Product/Infra/Research)"
+      ],
+      "requirements": [
+        "Vững kiến thức CS (DSA, hệ điều hành, mạng)",
+        "Kinh nghiệm thực tế với stack liên quan",
+        "Kỹ năng giao tiếp, làm việc nhóm",
+        "Tư duy sản phẩm và cải tiến liên tục"
+      ],
+      "niceToHave": [
+        "Kinh nghiệm hệ thống phân tán",
+        "Publications/competitions",
+        "Chứng chỉ cloud"
+      ],
+      "benefits": [
+        "Thiết bị làm việc",
+        "Thưởng dự án",
+        "Nghỉ phép 15 ngày/năm",
+        "Teambuilding/Workshop"
+      ]
+    },
+    "apply": {
+      "howToApply": "Gửi CV PDF kèm link GitHub/Google Scholar.",
+      "contactEmail": "recruit@vinai.com",
+      "applyLink": "https://jobs.vinai.com/3001"
+    },
+    "remotePolicy": "onsite",
+    "headcount": 2,
+    "banner": "assets/img/banners/ml/ai.jpg",
+    "status": "published"
+  },
+  {
+    "id": 3002,
+    "title": "Computer Vision Engineer (Autonomous)",
+    "category": "ML/AI",
+    "companyId": "vinai",
+    "companyName": "VinAI",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN",
+      "geo": {
+        "lat": 21.0278,
+        "lng": 105.8342
+      }
+    },
+    "type": "Full-time",
+    "experienceLevel": "Junior",
+    "salary": {
+      "min": 25000000,
+      "max": 42000000,
+      "currency": "VND",
+      "unit": "month",
+      "isGross": true
+    },
+    "postedAt": "2025-08-31",
+    "expiresAt": "2025-10-20",
+    "tags": [
+      "Airflow",
+      "Docker",
+      "C++",
+      "Spark",
+      "Go",
+      "ONNX"
+    ],
+    "description": {
+      "summary": "Tuyển Computer Vision Engineer (Autonomous) tham gia các dự án lõi tại VinAI.",
+      "responsibilities": [
+        "Thiết kế, huấn luyện và triển khai mô hình ở quy mô sản xuất",
+        "Viết test, review code, tối ưu hiệu năng suy luận",
+        "Xây dựng pipeline dữ liệu và giám sát chất lượng",
+        "Phối hợp đa phòng ban (Product/Infra/Research)"
+      ],
+      "requirements": [
+        "Vững kiến thức CS (DSA, hệ điều hành, mạng)",
+        "Kinh nghiệm thực tế với stack liên quan",
+        "Kỹ năng giao tiếp, làm việc nhóm",
+        "Tư duy sản phẩm và cải tiến liên tục"
+      ],
+      "niceToHave": [
+        "Kinh nghiệm hệ thống phân tán",
+        "Publications/competitions",
+        "Chứng chỉ cloud"
+      ],
+      "benefits": [
+        "Thiết bị làm việc",
+        "Thưởng dự án",
+        "Nghỉ phép 15 ngày/năm",
+        "Teambuilding/Workshop"
+      ]
+    },
+    "apply": {
+      "howToApply": "Gửi CV PDF kèm link GitHub/Google Scholar.",
+      "contactEmail": "recruit@vinai.com",
+      "applyLink": "https://jobs.vinai.com/3002"
+    },
+    "remotePolicy": "hybrid",
+    "headcount": 6,
+    "banner": "assets/img/banners/ml/ai.jpg",
+    "status": "published"
+  },
+  {
+    "id": 3003,
+    "title": "Data Engineer (Real-time Platform)",
+    "category": "Data",
+    "companyId": "vinai",
+    "companyName": "VinAI",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN",
+      "geo": {
+        "lat": 10.8231,
+        "lng": 106.6297
+      }
+    },
+    "type": "Full-time",
+    "experienceLevel": "Mid",
+    "salary": {
+      "min": 45000000,
+      "max": 70000000,
+      "currency": "VND",
+      "unit": "month",
+      "isGross": true
+    },
+    "postedAt": "2025-08-08",
+    "expiresAt": "2025-10-28",
+    "tags": [
+      "Spark",
+      "Kubernetes",
+      "C++",
+      "ONNX",
+      "Dask",
+      "Airflow"
+    ],
+    "description": {
+      "summary": "Tuyển Data Engineer (Real-time Platform) tham gia các dự án lõi tại VinAI.",
+      "responsibilities": [
+        "Thiết kế, huấn luyện và triển khai mô hình ở quy mô sản xuất",
+        "Viết test, review code, tối ưu hiệu năng suy luận",
+        "Xây dựng pipeline dữ liệu và giám sát chất lượng",
+        "Phối hợp đa phòng ban (Product/Infra/Research)"
+      ],
+      "requirements": [
+        "Vững kiến thức CS (DSA, hệ điều hành, mạng)",
+        "Kinh nghiệm thực tế với stack liên quan",
+        "Kỹ năng giao tiếp, làm việc nhóm",
+        "Tư duy sản phẩm và cải tiến liên tục"
+      ],
+      "niceToHave": [
+        "Kinh nghiệm hệ thống phân tán",
+        "Publications/competitions",
+        "Chứng chỉ cloud"
+      ],
+      "benefits": [
+        "Thiết bị làm việc",
+        "Thưởng dự án",
+        "Nghỉ phép 15 ngày/năm",
+        "Teambuilding/Workshop"
+      ]
+    },
+    "apply": {
+      "howToApply": "Gửi CV PDF kèm link GitHub/Google Scholar.",
+      "contactEmail": "recruit@vinai.com",
+      "applyLink": "https://jobs.vinai.com/3003"
+    },
+    "remotePolicy": "onsite",
+    "headcount": 3,
+    "banner": "assets/img/banners/data.jpg",
+    "status": "published"
   }
 ]

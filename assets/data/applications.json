@@ -92880,5 +92880,3579 @@
         "product_owner"
       ]
     }
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2201",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23598646",
+    "submittedAt": "2025-10-21T17:19:46Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/6054.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Trang",
+    "email": "nguyen.khanh75@gmail.com",
+    "phone": "+84 983 754 292",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "MLOps",
+      "Go",
+      "Airflow",
+      "Triton",
+      "Rust"
+    ],
+    "history": [
+      {
+        "at": "2025-10-21T17:19:46Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-26T17:19:46Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-31T20:19:46Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-05T04:19:46Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-09T09:19:46Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-13T16:19:46Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2202",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23732948",
+    "submittedAt": "2025-09-28T13:00:55Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/4999.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.hai44@gmail.com",
+    "phone": "+84 967 394 723",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Rust",
+      "Go",
+      "Azure",
+      "Docker",
+      "PyTorch"
+    ],
+    "history": [
+      {
+        "at": "2025-09-28T13:00:55Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-01T15:00:55Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2203",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23081390",
+    "submittedAt": "2025-10-22T05:15:24Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/6140.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Tuan",
+    "email": "nguyen.hai75@gmail.com",
+    "phone": "+84 968 170 960",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Rust",
+      "NLP",
+      "GCP",
+      "Triton",
+      "CI/CD"
+    ],
+    "history": [
+      {
+        "at": "2025-10-22T05:15:24Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-23T05:15:24Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-26T12:15:24Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-29T18:15:24Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-01T18:15:24Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-05T23:15:24Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2204",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23805550",
+    "submittedAt": "2025-08-24T01:42:21Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/5709.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.phuc51@gmail.com",
+    "phone": "+84 973 182 270",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "AWS",
+      "Kubernetes",
+      "Airflow",
+      "NLP",
+      "CUDA"
+    ],
+    "history": [
+      {
+        "at": "2025-08-24T01:42:21Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-29T05:42:21Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-02T10:42:21Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2205",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23158647",
+    "submittedAt": "2025-09-15T03:22:47Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/4800.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.hai76@gmail.com",
+    "phone": "+84 933 369 388",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Python",
+      "CUDA",
+      "Docker",
+      "Airflow",
+      "MLOps"
+    ],
+    "history": [
+      {
+        "at": "2025-09-15T03:22:47Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-20T08:22:47Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-22T16:22:47Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-27T16:22:47Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-02T00:22:47Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-06T06:22:47Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2206",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23419894",
+    "submittedAt": "2025-10-16T20:43:56Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/2019.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.hai21@gmail.com",
+    "phone": "+84 924 448 715",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "C++",
+      "Go",
+      "Python",
+      "Spark",
+      "CUDA"
+    ],
+    "history": [
+      {
+        "at": "2025-10-16T20:43:56Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-21T21:43:56Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-24T21:43:56Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-26T00:43:56Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-31T06:43:56Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-02T10:43:56Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2207",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23890174",
+    "submittedAt": "2025-10-11T01:07:28Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/8996.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "AWS",
+      "GCP",
+      "CV",
+      "Rust",
+      "CUDA"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "hybrid",
+      "time": "2025-10-14T01:07:28Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/53fb7229",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-10-11T01:07:28Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-13T09:07:28Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-14T12:07:28Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2208",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23794970",
+    "submittedAt": "2025-08-29T19:13:02Z",
+    "status": "offered",
+    "cvUrl": "https://cdn.example.com/cv/9652.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.vy67@gmail.com",
+    "phone": "+84 956 271 464",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Dask",
+      "ONNX",
+      "Airflow",
+      "Azure",
+      "LLM"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "online",
+      "time": "2025-09-05T19:13:02Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/19386e39",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-29T19:13:02Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-02T22:13:02Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-05T06:13:02Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-09T11:13:02Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-10T11:13:02Z",
+        "by": "company",
+        "status": "offered"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2209",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23634534",
+    "submittedAt": "2025-11-01T00:47:53Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/6640.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Tuan",
+    "email": "nguyen.tuan11@gmail.com",
+    "phone": "+84 938 204 332",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "GCP",
+      "TensorFlow",
+      "LLM",
+      "Kafka",
+      "gRPC"
+    ],
+    "history": [
+      {
+        "at": "2025-11-01T00:47:53Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-02T07:47:53Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2210",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23953970",
+    "submittedAt": "2025-08-17T19:05:46Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/7365.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.hai23@gmail.com",
+    "phone": "+84 965 908 751",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "LLM",
+      "Rust",
+      "GraphQL",
+      "Ray",
+      "Kubernetes"
+    ],
+    "history": [
+      {
+        "at": "2025-08-17T19:05:46Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-22T01:05:46Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-23T03:05:46Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-08-25T05:05:46Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-08-26T07:05:46Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-08-31T14:05:46Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2211",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23163486",
+    "submittedAt": "2025-11-01T10:39:48Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/9989.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.minh93@gmail.com",
+    "phone": "+84 993 205 639",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Ray",
+      "CUDA",
+      "Docker",
+      "TensorFlow",
+      "gRPC"
+    ],
+    "history": [
+      {
+        "at": "2025-11-01T10:39:48Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-02T14:39:48Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-04T18:39:48Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-09T21:39:48Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2212",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23063863",
+    "submittedAt": "2025-09-20T16:43:39Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/6796.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "CI/CD",
+      "Spark",
+      "gRPC",
+      "Azure",
+      "Docker"
+    ],
+    "history": [
+      {
+        "at": "2025-09-20T16:43:39Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-25T18:43:39Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-30T20:43:39Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-06T04:43:39Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2213",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23004123",
+    "submittedAt": "2025-10-25T19:07:50Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/3454.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.khanh72@gmail.com",
+    "phone": "+84 917 433 798",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Azure",
+      "Airflow",
+      "GCP",
+      "GraphQL",
+      "Dask"
+    ],
+    "history": [
+      {
+        "at": "2025-10-25T19:07:50Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-27T03:07:50Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-28T06:07:50Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-30T10:07:50Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-31T11:07:50Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-05T18:07:50Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2214",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23530110",
+    "submittedAt": "2025-08-13T15:19:12Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/9391.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.hai66@gmail.com",
+    "phone": "+84 978 926 589",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Azure",
+      "ONNX",
+      "Triton",
+      "NLP",
+      "Airflow"
+    ],
+    "history": [
+      {
+        "at": "2025-08-13T15:19:12Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-15T22:19:12Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-18T04:19:12Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2215",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23703757",
+    "submittedAt": "2025-10-16T12:33:01Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/4942.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.vy16@gmail.com",
+    "phone": "+84 929 833 758",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "CI/CD",
+      "MLOps",
+      "CUDA",
+      "NLP",
+      "AWS"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "onsite",
+      "time": "2025-10-20T12:33:01Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/1a89956b",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-10-16T12:33:01Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-18T14:33:01Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-22T22:33:01Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2216",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23333998",
+    "submittedAt": "2025-10-06T04:23:44Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/2510.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.tuan71@gmail.com",
+    "phone": "+84 968 551 820",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Python",
+      "Kubernetes",
+      "LLM",
+      "Azure",
+      "Kafka"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "online",
+      "time": "2025-10-13T04:23:44Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/645dc59e",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-10-06T04:23:44Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-07T05:23:44Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-10T09:23:44Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2217",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23859598",
+    "submittedAt": "2025-09-05T14:05:26Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/7918.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.phuc20@gmail.com",
+    "phone": "+84 978 627 684",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "GCP",
+      "Triton",
+      "LLM",
+      "Rust",
+      "NLP"
+    ],
+    "history": [
+      {
+        "at": "2025-09-05T14:05:26Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-06T16:05:26Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2218",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23665258",
+    "submittedAt": "2025-08-15T09:28:26Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/2451.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.an9@gmail.com",
+    "phone": "+84 943 983 224",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "AWS",
+      "Python",
+      "LLM",
+      "Airflow",
+      "Docker"
+    ],
+    "history": [
+      {
+        "at": "2025-08-15T09:28:26Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-18T11:28:26Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2219",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23274617",
+    "submittedAt": "2025-09-16T15:11:35Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/1825.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.vy68@gmail.com",
+    "phone": "+84 936 396 556",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Azure",
+      "CI/CD",
+      "PyTorch",
+      "NLP",
+      "MLOps"
+    ],
+    "history": [
+      {
+        "at": "2025-09-16T15:11:35Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-19T15:11:35Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-20T15:11:35Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-25T23:11:35Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-28T07:11:35Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-02T10:11:35Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2220",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23453171",
+    "submittedAt": "2025-08-21T23:18:25Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/9110.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.vy89@gmail.com",
+    "phone": "+84 937 335 450",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "TensorFlow",
+      "gRPC",
+      "Triton",
+      "Ray",
+      "Microservices"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "online",
+      "time": "2025-08-28T23:18:25Z",
+      "location": "Da Nang",
+      "meetLink": "https://meet.example.com/9c9096cd",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-21T23:18:25Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-23T00:18:25Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-26T06:18:25Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-08-28T06:18:25Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2221",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23295628",
+    "submittedAt": "2025-10-14T07:02:15Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/4968.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.hai24@gmail.com",
+    "phone": "+84 930 375 556",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Python",
+      "NLP",
+      "MLOps",
+      "LLM",
+      "Airflow"
+    ],
+    "history": [
+      {
+        "at": "2025-10-14T07:02:15Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-17T10:02:15Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-18T14:02:15Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-20T19:02:15Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-22T19:02:15Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-26T01:02:15Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2222",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23210742",
+    "submittedAt": "2025-11-01T11:59:58Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/5066.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.khanh34@gmail.com",
+    "phone": "+84 921 247 509",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Spark",
+      "C++",
+      "Kubernetes",
+      "Python",
+      "CV"
+    ],
+    "history": [
+      {
+        "at": "2025-11-01T11:59:58Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-04T14:59:58Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2223",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23822126",
+    "submittedAt": "2025-08-31T11:31:38Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/7381.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.trang37@gmail.com",
+    "phone": "+84 989 758 248",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "C++",
+      "gRPC",
+      "Triton",
+      "Azure",
+      "Microservices"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "hybrid",
+      "time": "2025-09-02T11:31:38Z",
+      "location": "Da Nang",
+      "meetLink": "https://meet.example.com/7e294c45",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-31T11:31:38Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-05T14:31:38Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-06T14:31:38Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-07T16:31:38Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2224",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23585658",
+    "submittedAt": "2025-08-21T16:56:46Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/1831.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.hai34@gmail.com",
+    "phone": "+84 910 567 916",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Rust",
+      "Ray",
+      "Azure",
+      "Airflow",
+      "CI/CD"
+    ],
+    "history": [
+      {
+        "at": "2025-08-21T16:56:46Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-26T17:56:46Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2225",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23246190",
+    "submittedAt": "2025-09-19T07:18:25Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/4362.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.hai49@gmail.com",
+    "phone": "+84 919 590 800",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "CV",
+      "Dask",
+      "C++",
+      "Kafka",
+      "Microservices"
+    ],
+    "history": [
+      {
+        "at": "2025-09-19T07:18:25Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-21T08:18:25Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-26T10:18:25Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-29T14:18:25Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-02T16:18:25Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-03T23:18:25Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2226",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23104353",
+    "submittedAt": "2025-11-03T15:58:58Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/4566.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.vy60@gmail.com",
+    "phone": "+84 969 577 885",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Go",
+      "Airflow",
+      "TensorFlow",
+      "CV",
+      "Rust"
+    ],
+    "history": [
+      {
+        "at": "2025-11-03T15:58:58Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-07T15:58:58Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2227",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23471283",
+    "submittedAt": "2025-10-29T10:57:32Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/5401.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.khanh75@gmail.com",
+    "phone": "+84 921 245 865",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Azure",
+      "NLP",
+      "MLOps",
+      "CUDA",
+      "Kafka"
+    ],
+    "history": [
+      {
+        "at": "2025-10-29T10:57:32Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-03T14:57:32Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-04T19:57:32Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-07T02:57:32Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-11T08:57:32Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-12T10:57:32Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2228",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23316618",
+    "submittedAt": "2025-11-04T19:28:11Z",
+    "status": "offered",
+    "cvUrl": "https://cdn.example.com/cv/3305.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.tuan16@gmail.com",
+    "phone": "+84 952 101 432",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Dask",
+      "LLM",
+      "gRPC",
+      "Kubernetes",
+      "Go"
+    ],
+    "history": [
+      {
+        "at": "2025-11-04T19:28:11Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-06T19:28:11Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-09T23:28:11Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-13T00:28:11Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-17T06:28:11Z",
+        "by": "company",
+        "status": "offered"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2229",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23895751",
+    "submittedAt": "2025-10-10T09:01:38Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/1790.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.vy82@gmail.com",
+    "phone": "+84 929 355 372",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Docker",
+      "Azure",
+      "LLM",
+      "TensorFlow",
+      "Dask"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "online",
+      "time": "2025-10-17T09:01:38Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/0a3344c1",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-10-10T09:01:38Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-15T17:01:38Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-17T18:01:38Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-19T00:01:38Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-23T02:01:38Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-26T09:01:38Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2230",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23360356",
+    "submittedAt": "2025-08-26T01:18:49Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/5616.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.phuc84@gmail.com",
+    "phone": "+84 940 408 594",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Airflow",
+      "CI/CD",
+      "Kubernetes",
+      "Go",
+      "PyTorch"
+    ],
+    "history": [
+      {
+        "at": "2025-08-26T01:18:49Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-28T02:18:49Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-30T10:18:49Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-03T18:18:49Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-06T01:18:49Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-09T08:18:49Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2231",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23095121",
+    "submittedAt": "2025-08-28T10:33:53Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/3862.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.tuan31@gmail.com",
+    "phone": "+84 957 364 928",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Spark",
+      "TensorFlow",
+      "Python",
+      "Ray",
+      "Docker"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "hybrid",
+      "time": "2025-08-30T10:33:53Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/b1ada897",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-28T10:33:53Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-31T15:33:53Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-01T22:33:53Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-05T03:33:53Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2232",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23097096",
+    "submittedAt": "2025-11-07T01:59:39Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/5440.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Kubernetes",
+      "Microservices",
+      "AWS",
+      "Docker",
+      "CV"
+    ],
+    "history": [
+      {
+        "at": "2025-11-07T01:59:39Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-08T03:59:39Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-09T09:59:39Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2233",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23975425",
+    "submittedAt": "2025-11-04T10:44:49Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/9648.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "AWS",
+      "ONNX",
+      "GraphQL",
+      "Go",
+      "CUDA"
+    ],
+    "history": [
+      {
+        "at": "2025-11-04T10:44:49Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-06T18:44:49Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-08T01:44:49Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-09T09:44:49Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-10T09:44:49Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-12T12:44:49Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2234",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23264025",
+    "submittedAt": "2025-09-29T07:43:40Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/9654.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.khanh10@gmail.com",
+    "phone": "+84 948 637 696",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "TensorFlow",
+      "Kubernetes",
+      "NLP",
+      "ONNX",
+      "GraphQL"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "hybrid",
+      "time": "2025-10-02T07:43:40Z",
+      "location": "Da Nang",
+      "meetLink": "https://meet.example.com/21935245",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-29T07:43:40Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-02T12:43:40Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-04T19:43:40Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-09T22:43:40Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-15T01:43:40Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-16T07:43:40Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2235",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23927830",
+    "submittedAt": "2025-08-12T01:45:26Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/7881.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.phuc48@gmail.com",
+    "phone": "+84 939 604 134",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Triton",
+      "LLM",
+      "Docker",
+      "MLOps",
+      "CI/CD"
+    ],
+    "history": [
+      {
+        "at": "2025-08-12T01:45:26Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-16T04:45:26Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-17T08:45:26Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-08-22T09:45:26Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-08-24T16:45:26Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-08-26T20:45:26Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2236",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23797411",
+    "submittedAt": "2025-09-15T03:38:49Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/5832.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.trang29@gmail.com",
+    "phone": "+84 972 527 781",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "C++",
+      "Kafka",
+      "CUDA",
+      "Kubernetes",
+      "TensorFlow"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "online",
+      "time": "2025-09-19T03:38:49Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/bf1f13ab",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-15T03:38:49Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-16T05:38:49Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-20T12:38:49Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2237",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23345236",
+    "submittedAt": "2025-08-23T07:34:34Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/4124.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.minh40@gmail.com",
+    "phone": "+84 995 842 487",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "gRPC",
+      "MLOps",
+      "LLM",
+      "AWS",
+      "PyTorch"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "onsite",
+      "time": "2025-08-24T07:34:34Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/5163777b",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-23T07:34:34Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-27T08:34:34Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-01T11:34:34Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-05T16:34:34Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-08T22:34:34Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-09T22:34:34Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2238",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23202402",
+    "submittedAt": "2025-09-08T08:06:06Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/6297.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.minh81@gmail.com",
+    "phone": "+84 962 353 931",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Microservices",
+      "Dask",
+      "Kubernetes",
+      "C++",
+      "AWS"
+    ],
+    "history": [
+      {
+        "at": "2025-09-08T08:06:06Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-09T08:06:06Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2239",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23355540",
+    "submittedAt": "2025-09-08T04:29:34Z",
+    "status": "offered",
+    "cvUrl": "https://cdn.example.com/cv/6946.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.vy96@gmail.com",
+    "phone": "+84 998 424 382",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "CV",
+      "Python",
+      "Ray",
+      "Dask",
+      "Kafka"
+    ],
+    "history": [
+      {
+        "at": "2025-09-08T04:29:34Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-09T04:29:34Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-11T05:29:34Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-15T12:29:34Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-19T16:29:34Z",
+        "by": "company",
+        "status": "offered"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2240",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23191825",
+    "submittedAt": "2025-11-05T03:45:17Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/1142.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.trang78@gmail.com",
+    "phone": "+84 940 435 981",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "LLM",
+      "AWS",
+      "MLOps",
+      "GraphQL",
+      "Kafka"
+    ],
+    "history": [
+      {
+        "at": "2025-11-05T03:45:17Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-06T11:45:17Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-08T17:45:17Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-10T20:45:17Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-14T21:45:17Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-16T04:45:17Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2241",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23075670",
+    "submittedAt": "2025-09-01T12:52:50Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/5339.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.khanh54@gmail.com",
+    "phone": "+84 973 826 557",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "PyTorch",
+      "ONNX",
+      "CUDA",
+      "Docker",
+      "AWS"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "online",
+      "time": "2025-09-07T12:52:50Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/df39a98e",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-01T12:52:50Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-04T16:52:50Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-07T20:52:50Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-11T00:52:50Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-14T03:52:50Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-18T06:52:50Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2242",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23927117",
+    "submittedAt": "2025-09-17T23:22:07Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/4084.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.vy32@gmail.com",
+    "phone": "+84 974 638 336",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Microservices",
+      "GraphQL",
+      "Go",
+      "AWS",
+      "C++"
+    ],
+    "history": [
+      {
+        "at": "2025-09-17T23:22:07Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-18T23:22:07Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2243",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23042322",
+    "submittedAt": "2025-09-15T05:04:02Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/5811.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.an77@gmail.com",
+    "phone": "+84 984 298 176",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "MLOps",
+      "Azure",
+      "PyTorch",
+      "AWS",
+      "Kafka"
+    ],
+    "history": [
+      {
+        "at": "2025-09-15T05:04:02Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-18T05:04:02Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-19T10:04:02Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-21T10:04:02Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-24T15:04:02Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-26T15:04:02Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2244",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23683297",
+    "submittedAt": "2025-09-19T19:59:01Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/4333.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Tuan",
+    "email": "nguyen.phuc87@gmail.com",
+    "phone": "+84 957 289 735",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "CV",
+      "Rust",
+      "TensorFlow",
+      "C++",
+      "GraphQL"
+    ],
+    "history": [
+      {
+        "at": "2025-09-19T19:59:01Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-24T03:59:01Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-28T04:59:01Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-02T05:59:01Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-06T13:59:01Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-08T21:59:01Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2245",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23429694",
+    "submittedAt": "2025-09-02T02:50:51Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/5641.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.minh40@gmail.com",
+    "phone": "+84 982 465 524",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Docker",
+      "Python",
+      "Dask",
+      "GraphQL",
+      "MLOps"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "hybrid",
+      "time": "2025-09-06T02:50:51Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/134b904b",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-02T02:50:51Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-03T08:50:51Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-05T14:50:51Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2246",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23483295",
+    "submittedAt": "2025-08-18T21:42:17Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/3663.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.trang83@gmail.com",
+    "phone": "+84 960 191 686",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Kafka",
+      "MLOps",
+      "Ray",
+      "Azure",
+      "PyTorch"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "online",
+      "time": "2025-08-23T21:42:17Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/eda0d0fc",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-18T21:42:17Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-19T22:42:17Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-24T05:42:17Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2247",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23957138",
+    "submittedAt": "2025-09-28T21:37:44Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/8909.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.khanh92@gmail.com",
+    "phone": "+84 989 804 944",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "PyTorch",
+      "Microservices",
+      "GraphQL",
+      "ONNX",
+      "Kafka"
+    ],
+    "history": [
+      {
+        "at": "2025-09-28T21:37:44Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-03T00:37:44Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-07T02:37:44Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-12T05:37:44Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-13T11:37:44Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-18T13:37:44Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2248",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23760094",
+    "submittedAt": "2025-10-10T02:01:44Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/4155.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.tuan16@gmail.com",
+    "phone": "+84 959 713 566",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Airflow",
+      "Microservices",
+      "Dask",
+      "CV",
+      "Docker"
+    ],
+    "history": [
+      {
+        "at": "2025-10-10T02:01:44Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-13T05:01:44Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-17T11:01:44Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-20T18:01:44Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-26T01:01:44Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-10-28T01:01:44Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2249",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23800656",
+    "submittedAt": "2025-11-04T09:14:34Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/8508.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.phuc14@gmail.com",
+    "phone": "+84 918 231 467",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Docker",
+      "MLOps",
+      "Rust",
+      "GraphQL",
+      "AWS"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "online",
+      "time": "2025-11-05T09:14:34Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/801977e1",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-11-04T09:14:34Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-05T14:14:34Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-10T15:14:34Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2250",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23997057",
+    "submittedAt": "2025-11-07T04:27:22Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/3231.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.khanh25@gmail.com",
+    "phone": "+84 926 603 394",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "GraphQL",
+      "PyTorch",
+      "CI/CD",
+      "Ray",
+      "ONNX"
+    ],
+    "history": [
+      {
+        "at": "2025-11-07T04:27:22Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-08T09:27:22Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-13T13:27:22Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-15T18:27:22Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-20T22:27:22Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-25T00:27:22Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2251",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23218442",
+    "submittedAt": "2025-11-06T20:30:18Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/5306.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.tuan48@gmail.com",
+    "phone": "+84 914 303 286",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Kubernetes",
+      "PyTorch",
+      "Microservices",
+      "NLP",
+      "CI/CD"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "online",
+      "time": "2025-11-13T20:30:18Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/009274cd",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-11-06T20:30:18Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-08T04:30:18Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-09T09:30:18Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-13T17:30:18Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-18T18:30:18Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-22T02:30:18Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2252",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23605406",
+    "submittedAt": "2025-10-12T11:09:29Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/3395.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.hai30@gmail.com",
+    "phone": "+84 932 730 861",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "C++",
+      "CV",
+      "gRPC",
+      "Azure",
+      "NLP"
+    ],
+    "history": [
+      {
+        "at": "2025-10-12T11:09:29Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-15T16:09:29Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2253",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23645977",
+    "submittedAt": "2025-08-07T21:29:15Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/8081.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Tuan",
+    "email": "nguyen.minh17@gmail.com",
+    "phone": "+84 972 332 727",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Microservices",
+      "C++",
+      "Python",
+      "Spark",
+      "MLOps"
+    ],
+    "history": [
+      {
+        "at": "2025-08-07T21:29:15Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-10T22:29:15Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2254",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23617707",
+    "submittedAt": "2025-09-13T21:07:21Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/3190.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Hai",
+    "email": "nguyen.trang18@gmail.com",
+    "phone": "+84 911 920 349",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Triton",
+      "CUDA",
+      "AWS",
+      "Go",
+      "Rust"
+    ],
+    "interview": {
+      "round": 3,
+      "mode": "onsite",
+      "time": "2025-09-17T21:07:21Z",
+      "location": "Ho Chi Minh City",
+      "meetLink": "https://meet.example.com/6d686fce",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-13T21:07:21Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-14T21:07:21Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-20T02:07:21Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2255",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23046139",
+    "submittedAt": "2025-11-05T00:51:18Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/2008.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.trang31@gmail.com",
+    "phone": "+84 930 159 897",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Go",
+      "Python",
+      "Kafka",
+      "Airflow",
+      "CI/CD"
+    ],
+    "history": [
+      {
+        "at": "2025-11-05T00:51:18Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-07T02:51:18Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2256",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23531573",
+    "submittedAt": "2025-09-09T01:49:21Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/7803.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Trang",
+    "email": "nguyen.vy9@gmail.com",
+    "phone": "+84 948 740 149",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Ray",
+      "GraphQL",
+      "GCP",
+      "Triton",
+      "Airflow"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "hybrid",
+      "time": "2025-09-13T01:49:21Z",
+      "location": "Da Nang",
+      "meetLink": "https://meet.example.com/413bf2d2",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-09T01:49:21Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-13T03:49:21Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-15T04:49:21Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2257",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23351814",
+    "submittedAt": "2025-09-15T10:34:51Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/5313.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.phuc88@gmail.com",
+    "phone": "+84 976 371 402",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Microservices",
+      "TensorFlow",
+      "Rust",
+      "Azure",
+      "Python"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "hybrid",
+      "time": "2025-09-17T10:34:51Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/ce0faad5",
+      "panel": [
+        "hr_vinai",
+        "tech_lead"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-09-15T10:34:51Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-18T13:34:51Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-22T18:34:51Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-27T21:34:51Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2258",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23731505",
+    "submittedAt": "2025-10-31T11:59:44Z",
+    "status": "shortlisted",
+    "cvUrl": "https://cdn.example.com/cv/1104.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "Docker",
+      "Ray",
+      "ONNX",
+      "Spark",
+      "CV"
+    ],
+    "history": [
+      {
+        "at": "2025-10-31T11:59:44Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-04T12:59:44Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-09T14:59:44Z",
+        "by": "company",
+        "status": "shortlisted"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2259",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23652181",
+    "submittedAt": "2025-08-07T17:23:18Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/3651.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Trang",
+    "email": "nguyen.minh4@gmail.com",
+    "phone": "+84 915 241 809",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Microservices",
+      "C++",
+      "Triton",
+      "Rust",
+      "Ray"
+    ],
+    "history": [
+      {
+        "at": "2025-08-07T17:23:18Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-08T18:23:18Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-08-13T23:23:18Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-08-16T07:23:18Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-08-17T13:23:18Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-08-18T16:23:18Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2260",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23995362",
+    "submittedAt": "2025-09-09T18:47:46Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/2433.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.hai13@gmail.com",
+    "phone": "+84 926 200 910",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Dask",
+      "Microservices",
+      "TensorFlow",
+      "CV",
+      "LLM"
+    ],
+    "history": [
+      {
+        "at": "2025-09-09T18:47:46Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-13T00:47:46Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-16T00:47:46Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-19T04:47:46Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-22T04:47:46Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-25T09:47:46Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2261",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23827385",
+    "submittedAt": "2025-09-26T04:32:25Z",
+    "status": "interview",
+    "cvUrl": "https://cdn.example.com/cv/7765.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.tuan61@gmail.com",
+    "phone": "+84 916 650 679",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "TensorFlow",
+      "Triton",
+      "gRPC",
+      "Rust",
+      "Spark"
+    ],
+    "history": [
+      {
+        "at": "2025-09-26T04:32:25Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-28T10:32:25Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-29T18:32:25Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-01T22:32:25Z",
+        "by": "company",
+        "status": "interview"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2262",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23515358",
+    "submittedAt": "2025-08-02T04:19:36Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/4023.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Spark",
+      "MLOps",
+      "gRPC",
+      "Azure",
+      "NLP"
+    ],
+    "history": [
+      {
+        "at": "2025-08-02T04:19:36Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-08-07T06:19:36Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2263",
+    "jobId": 3002,
+    "companyId": "vinai",
+    "studentId": "stu-23522521",
+    "submittedAt": "2025-09-12T00:38:28Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/3716.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Khanh",
+    "email": "nguyen.hai90@gmail.com",
+    "phone": "+84 981 905 207",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Microservices",
+      "LLM",
+      "MLOps",
+      "Go",
+      "Kubernetes"
+    ],
+    "history": [
+      {
+        "at": "2025-09-12T00:38:28Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-13T06:38:28Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-14T11:38:28Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-16T15:38:28Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-19T21:38:28Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-25T05:38:28Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2264",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23244921",
+    "submittedAt": "2025-10-13T23:41:24Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/8551.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Minh",
+    "email": "nguyen.tuan75@gmail.com",
+    "phone": "+84 951 634 259",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "gRPC",
+      "AWS",
+      "CI/CD",
+      "Airflow",
+      "Ray"
+    ],
+    "interview": {
+      "round": 2,
+      "mode": "onsite",
+      "time": "2025-10-19T23:41:24Z",
+      "location": "Da Nang",
+      "meetLink": "https://meet.example.com/6486d76d",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-10-13T23:41:24Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-19T02:41:24Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-21T07:41:24Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-25T10:41:24Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-30T13:41:24Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-02T17:41:24Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2265",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23342425",
+    "submittedAt": "2025-08-31T14:56:46Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/9555.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.tuan25@gmail.com",
+    "phone": "+84 943 846 204",
+    "location": {
+      "city": "Da Nang",
+      "country": "VN"
+    },
+    "skills": [
+      "PyTorch",
+      "CI/CD",
+      "Go",
+      "TensorFlow",
+      "Kubernetes"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "onsite",
+      "time": "2025-09-06T14:56:46Z",
+      "location": "Da Nang",
+      "meetLink": "https://meet.example.com/de91c501",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-08-31T14:56:46Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-04T18:56:46Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-06T19:56:46Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-07T23:56:46Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-10T05:56:46Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-14T05:56:46Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2266",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23727123",
+    "submittedAt": "2025-10-17T19:34:23Z",
+    "status": "rejected",
+    "cvUrl": "https://cdn.example.com/cv/4644.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Vy",
+    "email": "nguyen.hai3@gmail.com",
+    "phone": "+84 928 363 718",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Ray",
+      "Kubernetes",
+      "Python",
+      "ONNX",
+      "Docker"
+    ],
+    "history": [
+      {
+        "at": "2025-10-17T19:34:23Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-23T01:34:23Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-10-25T04:34:23Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-10-27T05:34:23Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-10-31T11:34:23Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-03T15:34:23Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2267",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23747792",
+    "submittedAt": "2025-10-21T19:23:11Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/3563.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.hai59@gmail.com",
+    "phone": "+84 912 736 979",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "Docker",
+      "Azure",
+      "CI/CD",
+      "PyTorch",
+      "Microservices"
+    ],
+    "history": [
+      {
+        "at": "2025-10-21T19:23:11Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-10-24T19:23:11Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2268",
+    "jobId": 3003,
+    "companyId": "vinai",
+    "studentId": "stu-23039998",
+    "submittedAt": "2025-11-04T10:49:14Z",
+    "status": "hired",
+    "cvUrl": "https://cdn.example.com/cv/5116.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Trang",
+    "email": "nguyen.an67@gmail.com",
+    "phone": "+84 954 203 967",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "Spark",
+      "AWS",
+      "Airflow",
+      "TensorFlow",
+      "Triton"
+    ],
+    "interview": {
+      "round": 1,
+      "mode": "hybrid",
+      "time": "2025-11-11T10:49:14Z",
+      "location": "Hanoi",
+      "meetLink": "https://meet.example.com/8dba064f",
+      "panel": [
+        "hr_vinai",
+        "tech_lead",
+        "product_owner"
+      ]
+    },
+    "history": [
+      {
+        "at": "2025-11-04T10:49:14Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-11-09T15:49:14Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-11-13T22:49:14Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-11-16T00:49:14Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-11-20T08:49:14Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-11-21T13:49:14Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2269",
+    "jobId": 3000,
+    "companyId": "vinai",
+    "studentId": "stu-23064491",
+    "submittedAt": "2025-09-19T08:32:17Z",
+    "status": "viewed",
+    "cvUrl": "https://cdn.example.com/cv/1218.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen Phuc",
+    "email": "nguyen.tuan75@gmail.com",
+    "phone": "+84 943 211 329",
+    "location": {
+      "city": "Ho Chi Minh City",
+      "country": "VN"
+    },
+    "skills": [
+      "CV",
+      "Ray",
+      "Kubernetes",
+      "Azure",
+      "ONNX"
+    ],
+    "history": [
+      {
+        "at": "2025-09-19T08:32:17Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-23T15:32:17Z",
+        "by": "company",
+        "status": "viewed"
+      }
+    ]
+  },
+  {
+    "applicationId": "APP-2025-VINAI-2270",
+    "jobId": 3001,
+    "companyId": "vinai",
+    "studentId": "stu-23848898",
+    "submittedAt": "2025-09-02T06:46:51Z",
+    "status": "submitted",
+    "cvUrl": "https://cdn.example.com/cv/4164.pdf",
+    "coverLetter": "Em quan tâm vị trí tại VinAI và tin rằng kỹ năng phù hợp. Rất mong có cơ hội phỏng vấn.",
+    "name": "Nguyen An",
+    "email": "nguyen.trang46@gmail.com",
+    "phone": "+84 995 754 950",
+    "location": {
+      "city": "Hanoi",
+      "country": "VN"
+    },
+    "skills": [
+      "gRPC",
+      "GraphQL",
+      "Docker",
+      "AWS",
+      "CV"
+    ],
+    "history": [
+      {
+        "at": "2025-09-02T06:46:51Z",
+        "by": "student",
+        "status": "submitted"
+      },
+      {
+        "at": "2025-09-07T08:46:51Z",
+        "by": "company",
+        "status": "viewed"
+      },
+      {
+        "at": "2025-09-11T13:46:51Z",
+        "by": "company",
+        "status": "shortlisted"
+      },
+      {
+        "at": "2025-09-13T17:46:51Z",
+        "by": "company",
+        "status": "interview"
+      },
+      {
+        "at": "2025-09-17T21:46:51Z",
+        "by": "company",
+        "status": "offered"
+      },
+      {
+        "at": "2025-09-21T23:46:51Z",
+        "by": "company",
+        "status": "hired"
+      }
+    ]
   }
 ]
