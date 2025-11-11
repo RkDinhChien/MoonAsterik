@@ -39,6 +39,16 @@ class App {
 		window.router = this.router;
 		window.store = store;
 
+		// Create backward-compatible Router object for inline onclick handlers
+		window.Router = {
+			navigate: (page, replace = false) => {
+				this.router.navigate(page, { replace });
+			},
+			pathFor: (page) => {
+				return this.router.pathFor(page);
+			},
+		};
+
 		console.log('✅ Application Ready');
 	}
 
