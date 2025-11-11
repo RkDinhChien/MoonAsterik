@@ -1,0 +1,299 @@
+[
+	{
+		"id": 1,
+		"name": "Tech Career Fair Spring 2025",
+		"date": "2025-03-15",
+		"endDate": "2025-03-16",
+		"time": "09:00 - 17:00",
+		"location": "HCMC Exhibition Center, District 7",
+		"type": "onsite",
+		"status": "upcoming",
+		"boothCount": 45,
+		"registeredCount": 1247,
+		"description": "The largest technology career fair in Southern Vietnam, connecting top IT companies with talented students and professionals. Over 45 leading tech companies will be present with exciting opportunities.",
+		"features": [
+			"Live Interview Opportunities",
+			"Company Presentations",
+			"Career Counseling",
+			"Networking Sessions",
+			"Workshop & Tech Talks"
+		],
+		"booths": [
+			{
+				"id": 1,
+				"companyId": "vinai",
+				"companyName": "VinAI",
+				"positions": ["AI Engineer", "ML Engineer", "Research Scientist"],
+				"slots": 20,
+				"bookedSlots": 15
+			},
+			{
+				"id": 2,
+				"companyId": "fpt",
+				"companyName": "FPT Software",
+				"positions": [
+					"Backend Developer",
+					"Frontend Developer",
+					"DevOps Engineer"
+				],
+				"slots": 30,
+				"bookedSlots": 22
+			},
+			{
+				"id": 3,
+				"companyId": "vng",
+				"companyName": "VNG Corporation",
+				"positions": [
+					"Game Developer",
+					"Mobile Developer",
+					"Full-Stack Developer"
+				],
+				"slots": 25,
+				"bookedSlots": 18
+			}
+		],
+		"schedule": [
+			{
+				"time": "09:00 - 09:30",
+				"title": "Opening Ceremony",
+				"speaker": "Industry Leaders"
+			},
+			{
+				"time": "10:00 - 12:00",
+				"title": "Company Booth Visits",
+				"speaker": null
+			},
+			{
+				"time": "13:00 - 14:00",
+				"title": "Tech Talk: Future of AI in Vietnam",
+				"speaker": "Dr. Nguyen Van A - VinAI"
+			},
+			{
+				"time": "14:30 - 16:30",
+				"title": "Interview Sessions",
+				"speaker": null
+			}
+		],
+		"faq": [
+			{
+				"question": "Do I need to register in advance?",
+				"answer": "Yes, pre-registration is required. Walk-ins are subject to availability."
+			},
+			{
+				"question": "What should I bring?",
+				"answer": "Bring multiple copies of your CV, student ID, and dress professionally."
+			},
+			{
+				"question": "Can I apply to multiple companies?",
+				"answer": "Absolutely! You can visit as many booths as you like during the fair."
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Hanoi Tech Job Fair 2025",
+		"date": "2025-04-20",
+		"endDate": "2025-04-21",
+		"time": "08:30 - 18:00",
+		"location": "National Convention Center, Hanoi",
+		"type": "onsite",
+		"status": "upcoming",
+		"boothCount": 52,
+		"registeredCount": 2134,
+		"description": "Northern Vietnam's premier technology recruitment event featuring multinational corporations and fast-growing startups.",
+		"features": [
+			"International Companies",
+			"Startup Showcase",
+			"CV Review Services",
+			"Mock Interviews",
+			"Professional Headshots"
+		],
+		"booths": [
+			{
+				"id": 4,
+				"companyId": "grab",
+				"companyName": "Grab Vietnam",
+				"positions": ["Backend Engineer", "Data Analyst", "Product Manager"],
+				"slots": 35,
+				"bookedSlots": 28
+			},
+			{
+				"id": 5,
+				"companyId": "shopee",
+				"companyName": "Shopee Vietnam",
+				"positions": ["Frontend Developer", "Mobile Developer", "QA Engineer"],
+				"slots": 40,
+				"bookedSlots": 35
+			}
+		],
+		"schedule": [
+			{
+				"time": "08:30 - 09:00",
+				"title": "Registration & Networking Breakfast",
+				"speaker": null
+			},
+			{
+				"time": "09:30 - 12:00",
+				"title": "Company Presentations",
+				"speaker": "Various Companies"
+			},
+			{
+				"time": "13:00 - 17:30",
+				"title": "Open Fair & Interviews",
+				"speaker": null
+			}
+		],
+		"faq": [
+			{
+				"question": "Is there an entry fee?",
+				"answer": "No, the event is completely free for registered attendees."
+			},
+			{
+				"question": "Can fresh graduates attend?",
+				"answer": "Yes! The fair welcomes students, fresh graduates, and experienced professionals."
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Virtual Tech Career Week",
+		"date": "2025-05-10",
+		"endDate": "2025-05-14",
+		"time": "Online - 24/7 Access",
+		"location": "Virtual Platform",
+		"type": "online",
+		"status": "upcoming",
+		"boothCount": 38,
+		"registeredCount": 3542,
+		"description": "A week-long online career fair accessible from anywhere. Chat with recruiters, attend webinars, and apply to jobs all from the comfort of your home.",
+		"features": [
+			"Virtual Booths",
+			"Live Chat with Recruiters",
+			"On-Demand Webinars",
+			"Digital CV Drop",
+			"Video Interviews"
+		],
+		"booths": [
+			{
+				"id": 6,
+				"companyId": "momo",
+				"companyName": "MoMo",
+				"positions": [
+					"Backend Developer",
+					"Mobile Developer",
+					"DevOps Engineer"
+				],
+				"slots": 50,
+				"bookedSlots": 30
+			},
+			{
+				"id": 7,
+				"companyId": "tiki",
+				"companyName": "Tiki",
+				"positions": [
+					"Full-Stack Developer",
+					"Data Engineer",
+					"Product Manager"
+				],
+				"slots": 45,
+				"bookedSlots": 25
+			}
+		],
+		"schedule": [
+			{
+				"time": "Mon-Fri 10:00",
+				"title": "Daily Kickoff Webinar",
+				"speaker": "Career Experts"
+			},
+			{
+				"time": "Mon-Fri 14:00",
+				"title": "Company Spotlight Sessions",
+				"speaker": "Participating Companies"
+			},
+			{
+				"time": "All Day",
+				"title": "Virtual Booth Access",
+				"speaker": null
+			}
+		],
+		"faq": [
+			{
+				"question": "How do I access the virtual platform?",
+				"answer": "After registration, you'll receive login credentials via email."
+			},
+			{
+				"question": "Can I schedule video interviews?",
+				"answer": "Yes, companies offer time slots for video interviews throughout the week."
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Data & AI Career Fair 2025",
+		"date": "2025-06-08",
+		"endDate": "2025-06-08",
+		"time": "09:00 - 16:00",
+		"location": "University of Science, HCMC",
+		"type": "onsite",
+		"status": "registration-open",
+		"boothCount": 28,
+		"registeredCount": 856,
+		"description": "Specialized career fair focusing on Data Science, AI, and Machine Learning positions. Perfect for students and professionals in analytics and AI fields.",
+		"features": [
+			"AI/ML Focused",
+			"Technical Assessments",
+			"Portfolio Reviews",
+			"Research Presentations",
+			"Networking Lunch"
+		],
+		"booths": [
+			{
+				"id": 8,
+				"companyId": "vinai",
+				"companyName": "VinAI",
+				"positions": [
+					"Research Scientist",
+					"ML Engineer",
+					"Computer Vision Engineer"
+				],
+				"slots": 15,
+				"bookedSlots": 10
+			},
+			{
+				"id": 9,
+				"companyId": "fpt-ai",
+				"companyName": "FPT.AI",
+				"positions": ["NLP Engineer", "Data Scientist", "AI Engineer"],
+				"slots": 18,
+				"bookedSlots": 8
+			}
+		],
+		"schedule": [
+			{
+				"time": "09:00 - 10:00",
+				"title": "Keynote: AI Trends in Southeast Asia",
+				"speaker": "Dr. Tran Van B - VinAI"
+			},
+			{
+				"time": "10:30 - 15:00",
+				"title": "Fair & Technical Interviews",
+				"speaker": null
+			},
+			{
+				"time": "15:30 - 16:00",
+				"title": "Closing & Networking",
+				"speaker": null
+			}
+		],
+		"faq": [
+			{
+				"question": "Do I need AI/ML experience?",
+				"answer": "Entry-level positions are available, but basic knowledge is recommended."
+			},
+			{
+				"question": "Can I showcase my projects?",
+				"answer": "Yes! Bring your portfolio or GitHub links to discuss with recruiters."
+			}
+		]
+	}
+]

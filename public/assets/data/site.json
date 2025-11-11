@@ -1,0 +1,441 @@
+{
+	"siteTitle": "Moon* JobFair Vietnam",
+	"tagline": "Connect IT Students with Career Opportunities",
+	"description": "The leading platform connecting IT students and early-career professionals with top companies in Vietnam",
+	"contact": {
+		"email": "contact@moonasterisk.vn",
+		"phone": "+84 28 1234 5678",
+		"address": "123 Tech Street, District 1, Ho Chi Minh City, Vietnam"
+	},
+	"social": {
+		"facebook": "https://facebook.com/moonasterisk",
+		"linkedin": "https://linkedin.com/company/moonasterisk",
+		"twitter": "https://twitter.com/moonasterisk",
+		"instagram": "https://instagram.com/moonasterisk"
+	},
+	"industries": [
+		{
+			"id": "data-ai",
+			"name": "Data/AI",
+			"icon": "🤖",
+			"color": "#7c4dff",
+			"jobCount": 245
+		},
+		{
+			"id": "frontend",
+			"name": "Frontend",
+			"icon": "🎨",
+			"color": "#00bcd4",
+			"jobCount": 532
+		},
+		{
+			"id": "backend",
+			"name": "Backend",
+			"icon": "⚙️",
+			"color": "#00b894",
+			"jobCount": 678
+		},
+		{
+			"id": "mobile",
+			"name": "Mobile",
+			"icon": "📱",
+			"color": "#fd79a8",
+			"jobCount": 324
+		},
+		{
+			"id": "devops",
+			"name": "DevOps",
+			"icon": "🔧",
+			"color": "#fdcb6e",
+			"jobCount": 189
+		},
+		{
+			"id": "qa",
+			"name": "QA/Testing",
+			"icon": "🧪",
+			"color": "#ff7675",
+			"jobCount": 156
+		},
+		{
+			"id": "pm",
+			"name": "Product Management",
+			"icon": "📊",
+			"color": "#74b9ff",
+			"jobCount": 98
+		},
+		{
+			"id": "internship",
+			"name": "Internships",
+			"icon": "🎓",
+			"color": "#a29bfe",
+			"jobCount": 421
+		}
+	],
+	"locations": [
+		{
+			"id": "hanoi",
+			"name": "Hà Nội",
+			"code": "HN",
+			"jobCount": 892
+		},
+		{
+			"id": "hcmc",
+			"name": "TP. Hồ Chí Minh",
+			"code": "HCM",
+			"jobCount": 1456
+		},
+		{
+			"id": "danang",
+			"name": "Đà Nẵng",
+			"code": "DN",
+			"jobCount": 234
+		},
+		{
+			"id": "haiphong",
+			"name": "Hải Phòng",
+			"code": "HP",
+			"jobCount": 89
+		},
+		{
+			"id": "cantho",
+			"name": "Cần Thơ",
+			"code": "CT",
+			"jobCount": 67
+		},
+		{
+			"id": "remote",
+			"name": "Remote",
+			"code": "RM",
+			"jobCount": 345
+		}
+	],
+	"experienceLevels": [
+		{
+			"id": "intern",
+			"name": "Internship",
+			"years": "0"
+		},
+		{
+			"id": "entry",
+			"name": "Entry Level",
+			"years": "0-1"
+		},
+		{
+			"id": "junior",
+			"name": "Junior",
+			"years": "1-3"
+		},
+		{
+			"id": "mid",
+			"name": "Mid-Level",
+			"years": "3-5"
+		},
+		{
+			"id": "senior",
+			"name": "Senior",
+			"years": "5+"
+		}
+	],
+	"employmentTypes": [
+		{
+			"id": "full-time",
+			"name": "Full-Time"
+		},
+		{
+			"id": "part-time",
+			"name": "Part-Time"
+		},
+		{
+			"id": "contract",
+			"name": "Contract"
+		},
+		{
+			"id": "internship",
+			"name": "Internship"
+		}
+	],
+	"workModes": [
+		{
+			"id": "onsite",
+			"name": "Onsite",
+			"icon": "🏢"
+		},
+		{
+			"id": "remote",
+			"name": "Remote",
+			"icon": "🏠"
+		},
+		{
+			"id": "hybrid",
+			"name": "Hybrid",
+			"icon": "🔀"
+		}
+	],
+	"popularSkills": [
+		"JavaScript",
+		"Python",
+		"Java",
+		"React",
+		"Node.js",
+		"TypeScript",
+		"Vue.js",
+		"Angular",
+		"Spring Boot",
+		"Django",
+		"Flask",
+		"SQL",
+		"MongoDB",
+		"PostgreSQL",
+		"AWS",
+		"Docker",
+		"Kubernetes",
+		"Git",
+		"REST API",
+		"GraphQL",
+		"React Native",
+		"Flutter",
+		"Swift",
+		"Kotlin",
+		"TensorFlow",
+		"PyTorch",
+		"Machine Learning",
+		"Data Analysis",
+		"Power BI",
+		"Tableau"
+	],
+	"testimonials": [
+		{
+			"id": 1,
+			"name": "Nguyen Minh H.",
+			"role": "Software Engineer at Grab",
+			"avatar": "/assets/img/avatars/student1.jpg",
+			"quote": "Moon* helped me land my dream job at Grab! The audio intro feature really made my application stand out.",
+			"rating": 5,
+			"type": "student"
+		},
+		{
+			"id": 2,
+			"name": "Tran Thu L.",
+			"role": "Data Scientist at VinAI",
+			"avatar": "/assets/img/avatars/student2.jpg",
+			"quote": "The job fair feature is amazing. I got 3 interview opportunities in one day!",
+			"rating": 5,
+			"type": "student"
+		},
+		{
+			"id": 3,
+			"name": "Le Van M.",
+			"role": "HR Manager at FPT Software",
+			"avatar": "/assets/img/avatars/recruiter1.jpg",
+			"quote": "We found 10 qualified candidates within a week. The platform is efficient and easy to use.",
+			"rating": 5,
+			"type": "employer"
+		},
+		{
+			"id": 4,
+			"name": "Pham Thi N.",
+			"role": "Talent Acquisition at Shopee",
+			"avatar": "/assets/img/avatars/recruiter2.jpg",
+			"quote": "The audio intro feature gives us deeper insights into candidates beyond their CVs.",
+			"rating": 5,
+			"type": "employer"
+		}
+	],
+	"topCompanies": [
+		{
+			"id": "grab",
+			"name": "Grab Vietnam",
+			"logo": "/assets/logos/grab.png",
+			"featured": true
+		},
+		{
+			"id": "shopee",
+			"name": "Shopee Vietnam",
+			"logo": "/assets/logos/shopee.png",
+			"featured": true
+		},
+		{
+			"id": "vinai",
+			"name": "VinAI",
+			"logo": "/assets/logos/vinai.png",
+			"featured": true
+		},
+		{
+			"id": "fpt",
+			"name": "FPT Software",
+			"logo": "/assets/logos/fpt.png",
+			"featured": true
+		},
+		{
+			"id": "vng",
+			"name": "VNG Corporation",
+			"logo": "/assets/logos/vng.png",
+			"featured": true
+		},
+		{
+			"id": "momo",
+			"name": "MoMo",
+			"logo": "/assets/logos/momo.png",
+			"featured": true
+		},
+		{
+			"id": "tiki",
+			"name": "Tiki",
+			"logo": "/assets/logos/tiki.png",
+			"featured": false
+		},
+		{
+			"id": "viettel",
+			"name": "Viettel Group",
+			"logo": "/assets/logos/viettel.png",
+			"featured": false
+		}
+	],
+	"pricing": {
+		"student": {
+			"free": {
+				"name": "Free",
+				"price": 0,
+				"currency": "VND",
+				"features": [
+					"Create CV",
+					"Apply to unlimited jobs",
+					"Save up to 50 jobs",
+					"Audio intro (60s)",
+					"Job alerts",
+					"Basic profile"
+				]
+			},
+			"premium": {
+				"name": "Premium",
+				"price": 199000,
+				"currency": "VND",
+				"period": "month",
+				"features": [
+					"Everything in Free",
+					"Priority application",
+					"Extended audio intro (3 mins)",
+					"Advanced analytics",
+					"Profile boost",
+					"Career counseling",
+					"Resume review"
+				]
+			}
+		},
+		"employer": {
+			"free": {
+				"name": "Free Trial",
+				"price": 0,
+				"currency": "VND",
+				"duration": "7 days",
+				"features": [
+					"Post 1 job",
+					"View 10 CVs",
+					"Basic search",
+					"Standard support"
+				]
+			},
+			"credit": {
+				"name": "Credit Pack",
+				"price": 2000000,
+				"currency": "VND",
+				"credits": 50,
+				"features": [
+					"Pay per use",
+					"Post jobs (10 credits)",
+					"Unlock CV (2 credits)",
+					"Top job boost (20 credits)",
+					"6 months validity"
+				]
+			},
+			"pro": {
+				"name": "Pro",
+				"price": 15000000,
+				"currency": "VND",
+				"period": "month",
+				"features": [
+					"Unlimited job posts",
+					"Unlimited CV views",
+					"Advanced filters",
+					"AI matching",
+					"Company branding",
+					"Fair booth discount",
+					"Priority support",
+					"Analytics dashboard",
+					"API access"
+				]
+			}
+		}
+	},
+	"footer": {
+		"about": {
+			"title": "About Moon*",
+			"links": [
+				{ "name": "About Us", "url": "/about" },
+				{ "name": "How It Works", "url": "/how-it-works" },
+				{ "name": "Careers", "url": "/careers" },
+				{ "name": "Press Kit", "url": "/press" }
+			]
+		},
+		"forStudents": {
+			"title": "For Students",
+			"links": [
+				{ "name": "Find Jobs", "url": "/jobs" },
+				{ "name": "Job Fairs", "url": "/fairs" },
+				{ "name": "Create CV", "url": "/student/profile" },
+				{ "name": "Career Tips", "url": "/blog/career-tips" }
+			]
+		},
+		"forEmployers": {
+			"title": "For Employers",
+			"links": [
+				{ "name": "Post a Job", "url": "/employer/post-job" },
+				{ "name": "Pricing", "url": "/pricing" },
+				{ "name": "Find Candidates", "url": "/employer/candidates" },
+				{ "name": "Book Fair Booth", "url": "/fairs" }
+			]
+		},
+		"legal": {
+			"title": "Legal",
+			"links": [
+				{ "name": "Terms of Service", "url": "/terms" },
+				{ "name": "Privacy Policy", "url": "/privacy" },
+				{ "name": "Cookie Policy", "url": "/cookies" },
+				{ "name": "GDPR", "url": "/gdpr" }
+			]
+		}
+	},
+	"seo": {
+		"defaultTitle": "Moon* JobFair Vietnam - IT Jobs & Career Opportunities",
+		"defaultDescription": "Connect with top IT companies in Vietnam. Find internships, entry-level, and experienced developer positions. Create your CV, record audio intro, and get hired.",
+		"keywords": "IT jobs Vietnam, tech jobs, developer jobs, internships, career fair, job fair, software engineer, data science, AI jobs",
+		"ogImage": "/assets/img/og-image.jpg",
+		"twitterHandle": "@moonasterisk"
+	},
+	"features": {
+		"audioIntro": {
+			"enabled": true,
+			"maxDuration": 60,
+			"format": ["mp3", "wav", "m4a"]
+		},
+		"cvBuilder": {
+			"enabled": true,
+			"templates": ["ATS-Friendly", "Modern", "Classic"]
+		},
+		"jobFairs": {
+			"enabled": true,
+			"virtualEnabled": true
+		},
+		"aiMatching": {
+			"enabled": false,
+			"betaAccess": true
+		}
+	},
+	"stats": {
+		"totalJobs": 2843,
+		"totalCompanies": 487,
+		"totalCandidates": 15234,
+		"successfulHires": 3421,
+		"upcomingFairs": 4
+	}
+}

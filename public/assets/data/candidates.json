@@ -1,0 +1,292 @@
+[
+	{
+		"id": 1,
+		"name": "Nguyen Van A (Anonymous)",
+		"isAnonymous": true,
+		"school": "HCMUT - Ho Chi Minh City University of Technology",
+		"major": "Computer Science",
+		"graduationYear": 2025,
+		"gpa": 3.65,
+		"status": "student",
+		"location": {
+			"city": "Ho Chi Minh City",
+			"country": "VN"
+		},
+		"skills": ["React", "Node.js", "Python", "MongoDB", "Docker", "Git"],
+		"languages": [
+			{ "name": "Vietnamese", "level": "Native" },
+			{ "name": "English", "level": "IELTS 7.0" }
+		],
+		"hasAudioIntro": true,
+		"audioIntroUrl": "/audio/candidate_1.mp3",
+		"confidenceScore": 85,
+		"matchScore": 92,
+		"desiredPositions": ["Full-Stack Developer", "Backend Developer"],
+		"desiredSalary": {
+			"min": 15000000,
+			"max": 25000000,
+			"currency": "VND",
+			"unit": "month"
+		},
+		"availability": "Immediate",
+		"certificates": [
+			"AWS Certified Cloud Practitioner",
+			"MongoDB Associate Developer"
+		],
+		"projects": [
+			{
+				"title": "E-commerce Platform",
+				"description": "Built a full-stack e-commerce platform using MERN stack",
+				"technologies": ["React", "Node.js", "Express", "MongoDB"]
+			}
+		],
+		"privacyLevel": "public",
+		"lastActive": "2025-11-10"
+	},
+	{
+		"id": 2,
+		"name": "Tran Thi B (Anonymous)",
+		"isAnonymous": true,
+		"school": "HUST - Hanoi University of Science and Technology",
+		"major": "Software Engineering",
+		"graduationYear": 2024,
+		"gpa": 3.8,
+		"status": "fresh-graduate",
+		"location": {
+			"city": "Hanoi",
+			"country": "VN"
+		},
+		"skills": ["Java", "Spring Boot", "MySQL", "Kubernetes", "AWS", "Jenkins"],
+		"languages": [
+			{ "name": "Vietnamese", "level": "Native" },
+			{ "name": "English", "level": "TOEIC 850" }
+		],
+		"hasAudioIntro": true,
+		"audioIntroUrl": "/audio/candidate_2.mp3",
+		"confidenceScore": 78,
+		"matchScore": 88,
+		"desiredPositions": ["Backend Developer", "DevOps Engineer"],
+		"desiredSalary": {
+			"min": 18000000,
+			"max": 30000000,
+			"currency": "VND",
+			"unit": "month"
+		},
+		"availability": "1 month notice",
+		"certificates": [
+			"AWS Solutions Architect Associate",
+			"Certified Kubernetes Administrator"
+		],
+		"projects": [
+			{
+				"title": "Microservices Architecture",
+				"description": "Designed and implemented microservices for a banking application",
+				"technologies": ["Java", "Spring Boot", "Docker", "Kubernetes"]
+			}
+		],
+		"privacyLevel": "partial",
+		"lastActive": "2025-11-11"
+	},
+	{
+		"id": 3,
+		"name": "Le Van C (Anonymous)",
+		"isAnonymous": true,
+		"school": "VNU-HCM - Vietnam National University",
+		"major": "Data Science",
+		"graduationYear": 2025,
+		"gpa": 3.9,
+		"status": "student",
+		"location": {
+			"city": "Ho Chi Minh City",
+			"country": "VN"
+		},
+		"skills": [
+			"Python",
+			"TensorFlow",
+			"PyTorch",
+			"SQL",
+			"Tableau",
+			"Pandas",
+			"NumPy"
+		],
+		"languages": [
+			{ "name": "Vietnamese", "level": "Native" },
+			{ "name": "English", "level": "IELTS 7.5" }
+		],
+		"hasAudioIntro": true,
+		"audioIntroUrl": "/audio/candidate_3.mp3",
+		"confidenceScore": 90,
+		"matchScore": 95,
+		"desiredPositions": ["Data Scientist", "ML Engineer", "AI Engineer"],
+		"desiredSalary": {
+			"min": 20000000,
+			"max": 35000000,
+			"currency": "VND",
+			"unit": "month"
+		},
+		"availability": "June 2025",
+		"certificates": [
+			"Google Data Analytics Professional Certificate",
+			"Deep Learning Specialization (Coursera)"
+		],
+		"projects": [
+			{
+				"title": "Sentiment Analysis System",
+				"description": "Built NLP model for Vietnamese sentiment analysis",
+				"technologies": ["Python", "BERT", "PyTorch", "Flask"]
+			},
+			{
+				"title": "Recommendation Engine",
+				"description": "Developed collaborative filtering recommendation system",
+				"technologies": ["Python", "TensorFlow", "Scikit-learn"]
+			}
+		],
+		"privacyLevel": "public",
+		"lastActive": "2025-11-11"
+	},
+	{
+		"id": 4,
+		"name": "Pham Thi D (Anonymous)",
+		"isAnonymous": true,
+		"school": "UIT - University of Information Technology",
+		"major": "Information Systems",
+		"graduationYear": 2024,
+		"gpa": 3.5,
+		"status": "fresh-graduate",
+		"location": {
+			"city": "Ho Chi Minh City",
+			"country": "VN"
+		},
+		"skills": [
+			"React Native",
+			"Flutter",
+			"Swift",
+			"Kotlin",
+			"Firebase",
+			"REST API"
+		],
+		"languages": [
+			{ "name": "Vietnamese", "level": "Native" },
+			{ "name": "English", "level": "TOEIC 750" }
+		],
+		"hasAudioIntro": false,
+		"audioIntroUrl": null,
+		"confidenceScore": 72,
+		"matchScore": 80,
+		"desiredPositions": [
+			"Mobile Developer",
+			"iOS Developer",
+			"Android Developer"
+		],
+		"desiredSalary": {
+			"min": 15000000,
+			"max": 25000000,
+			"currency": "VND",
+			"unit": "month"
+		},
+		"availability": "Immediate",
+		"certificates": ["Google Associate Android Developer"],
+		"projects": [
+			{
+				"title": "Fitness Tracking App",
+				"description": "Cross-platform mobile app for fitness tracking",
+				"technologies": ["Flutter", "Firebase", "Google Fit API"]
+			}
+		],
+		"privacyLevel": "private",
+		"lastActive": "2025-11-09"
+	},
+	{
+		"id": 5,
+		"name": "Hoang Van E (Anonymous)",
+		"isAnonymous": true,
+		"school": "FPT University",
+		"major": "Software Engineering",
+		"graduationYear": 2025,
+		"gpa": 3.45,
+		"status": "student",
+		"location": {
+			"city": "Da Nang",
+			"country": "VN"
+		},
+		"skills": [
+			"Vue.js",
+			"Nuxt.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"GraphQL",
+			"PostgreSQL"
+		],
+		"languages": [
+			{ "name": "Vietnamese", "level": "Native" },
+			{ "name": "English", "level": "IELTS 6.5" },
+			{ "name": "Japanese", "level": "N3" }
+		],
+		"hasAudioIntro": true,
+		"audioIntroUrl": "/audio/candidate_5.mp3",
+		"confidenceScore": 83,
+		"matchScore": 87,
+		"desiredPositions": ["Frontend Developer", "Full-Stack Developer"],
+		"desiredSalary": {
+			"min": 12000000,
+			"max": 20000000,
+			"currency": "VND",
+			"unit": "month"
+		},
+		"availability": "July 2025",
+		"certificates": ["Meta Front-End Developer Professional Certificate"],
+		"projects": [
+			{
+				"title": "Real Estate Portal",
+				"description": "Modern real estate listing platform",
+				"technologies": ["Vue.js", "Nuxt.js", "Tailwind CSS", "PostgreSQL"]
+			}
+		],
+		"privacyLevel": "public",
+		"lastActive": "2025-11-10"
+	},
+	{
+		"id": 6,
+		"name": "Nguyen Thi F (Anonymous)",
+		"isAnonymous": true,
+		"school": "HCMUS - Ho Chi Minh City University of Science",
+		"major": "Applied Mathematics",
+		"graduationYear": 2024,
+		"gpa": 3.75,
+		"status": "fresh-graduate",
+		"location": {
+			"city": "Ho Chi Minh City",
+			"country": "VN"
+		},
+		"skills": ["Python", "R", "SQL", "Power BI", "Excel", "Statistics"],
+		"languages": [
+			{ "name": "Vietnamese", "level": "Native" },
+			{ "name": "English", "level": "IELTS 7.0" }
+		],
+		"hasAudioIntro": true,
+		"audioIntroUrl": "/audio/candidate_6.mp3",
+		"confidenceScore": 80,
+		"matchScore": 85,
+		"desiredPositions": ["Data Analyst", "Business Analyst"],
+		"desiredSalary": {
+			"min": 13000000,
+			"max": 22000000,
+			"currency": "VND",
+			"unit": "month"
+		},
+		"availability": "Immediate",
+		"certificates": [
+			"Microsoft Power BI Data Analyst",
+			"Google Data Analytics Professional Certificate"
+		],
+		"projects": [
+			{
+				"title": "Sales Dashboard",
+				"description": "Interactive dashboard for sales analysis",
+				"technologies": ["Power BI", "SQL", "Python"]
+			}
+		],
+		"privacyLevel": "public",
+		"lastActive": "2025-11-11"
+	}
+]

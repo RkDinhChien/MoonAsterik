@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category": "Student Success",
+    "title": "From Bootcamp to Big Tech: Sarah's Journey",
+    "excerpt": "How a CS student landed her dream internship at a Fortune 500 company through Moon*",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop",
+    "date": "Oct 25, 2025",
+    "readTime": "3 min read",
+    "author": "Sarah Chen",
+    "authorRole": "Software Engineering Intern at TechCorp",
+    "fullStory": "<p>When I started my computer science degree, I never imagined I'd be interning at one of the biggest tech companies in the world. Moon* changed everything for me.</p><p>The platform made it incredibly easy to showcase my projects and skills. I uploaded my GitHub portfolio, highlighted my coursework, and within days, I started receiving interview requests.</p><p>What impressed me most was the quality of companies on the platform. These weren't just any jobs - they were opportunities at companies I'd only dreamed of working for.</p><p>The interview process was smooth, and the Moon* team provided great resources to help me prepare. Three months later, I'm now working on real products used by millions of people.</p><p>My advice to other students: Don't wait until graduation. Start building your profile on Moon* now. You never know where it might lead!</p>"
+  },
+  {
+    "id": 2,
+    "category": "Company Impact",
+    "title": "How StartupHub Found Their Dream Team",
+    "excerpt": "A growing startup shares how they hired 5 exceptional developers in just 2 months",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=250&fit=crop",
+    "date": "Oct 22, 2025",
+    "readTime": "4 min read",
+    "author": "Marcus Rodriguez",
+    "authorRole": "HR Manager at StartupHub",
+    "fullStory": "<p>As a fast-growing startup, finding talented junior developers was always our biggest challenge. Traditional recruiting was expensive and time-consuming.</p><p>Then we discovered Moon*. The difference was immediate. Instead of sifting through hundreds of generic resumes, we could see real portfolios, actual projects, and genuine passion for technology.</p><p>In just two months, we hired five incredible developers. Each one brought fresh perspectives, strong technical skills, and enthusiasm that energized our entire team.</p><p>What sets Moon* apart is the quality of candidates. These students are motivated, well-prepared, and ready to contribute from day one.</p><p>The platform also made our hiring process more efficient. We could quickly schedule interviews, track candidates, and make offers - all in one place.</p><p>For any company looking to build their tech team, especially startups, Moon* is an absolute game-changer.</p>"
+  },
+  {
+    "id": 3,
+    "category": "Career Growth",
+    "title": "Breaking Into Tech: A Self-Taught Developer's Story",
+    "excerpt": "Michael's journey from online courses to his first software engineering role",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop",
+    "date": "Oct 18, 2025",
+    "readTime": "5 min read",
+    "author": "Michael Nguyen",
+    "authorRole": "Junior Developer at InnovateTech",
+    "fullStory": "<p>I didn't have a traditional CS degree. Everything I learned came from online courses, YouTube tutorials, and countless hours of practice. But breaking into the industry felt impossible.</p><p>Companies wanted experience, but how could I get experience without a job? Moon* solved this chicken-and-egg problem.</p><p>The platform let me showcase my self-taught skills through real projects. I built a portfolio of web applications, contributed to open source, and documented everything on my Moon* profile.</p><p>Employers on Moon* actually looked at what I could do, not just where I went to school. That made all the difference.</p><p>After applying to several positions, I got interviews from three different companies. The questions focused on my projects and problem-solving approach - exactly what I was prepared for.</p><p>Today, I'm a junior developer at InnovateTech, working on exciting projects and learning from experienced mentors. Moon* proved that if you have the skills and passion, you can make it in tech.</p><p>To all self-taught developers out there: your path is valid. Platforms like Moon* are creating opportunities for people like us.</p>"
+  },
+  {
+    "id": 4,
+    "category": "Tips & Guides",
+    "title": "5 Essential Skills Every IT Student Should Master",
+    "excerpt": "A comprehensive guide to the most important technical and soft skills for IT success",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
+    "date": "Oct 15, 2025",
+    "readTime": "6 min read",
+    "author": "Dr. Jennifer Liu",
+    "authorRole": "Computer Science Professor",
+    "fullStory": "<p>In today's rapidly evolving tech landscape, IT students need more than just coding skills to succeed. Based on my 15 years of teaching and industry experience, here are the five essential skills every IT student should master.</p><p><strong>1. Problem-Solving & Critical Thinking</strong><br>Technology is about solving real-world problems. Learn to break down complex issues, analyze requirements, and develop creative solutions.</p><p><strong>2. Version Control (Git)</strong><br>Every developer needs to understand Git. It's not just about code storage - it's about collaboration, tracking changes, and managing projects professionally.</p><p><strong>3. Communication Skills</strong><br>You'll work with designers, managers, and clients. Being able to explain technical concepts clearly is just as important as your coding ability.</p><p><strong>4. Continuous Learning</strong><br>Technology changes fast. Develop the habit of staying updated with new frameworks, tools, and best practices. Subscribe to tech blogs, join communities, and never stop learning.</p><p><strong>5. Testing & Debugging</strong><br>Writing code is only half the job. Learn to write tests, debug effectively, and ensure your code works reliably in different environments.</p><p>Focus on these fundamentals, and you'll have a strong foundation for any tech career path you choose.</p>"
+  },
+  {
+    "id": 5,
+    "category": "Industry Insights",
+    "title": "The Future of Remote Work in Tech",
+    "excerpt": "How the tech industry is adapting to remote work and what it means for new graduates",
+    "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=250&fit=crop",
+    "date": "Oct 12, 2025",
+    "readTime": "4 min read",
+    "author": "Alex Thompson",
+    "authorRole": "Tech Industry Analyst",
+    "fullStory": "<p>The pandemic fundamentally changed how we work, and the tech industry has been at the forefront of this transformation. As a new graduate entering the field, understanding these changes is crucial for your career planning.</p><p><strong>Remote-First Companies</strong><br>Many tech companies have adopted remote-first policies. This means you can work for companies anywhere in the world, not just in your local area. It's opened up incredible opportunities for talented developers regardless of location.</p><p><strong>Hybrid Models</strong><br>Other companies prefer hybrid approaches - a mix of remote and office work. This offers flexibility while maintaining team collaboration and company culture.</p><p><strong>Skills for Remote Success</strong><br>Remote work requires strong communication skills, self-discipline, and the ability to collaborate effectively through digital tools. Master tools like Slack, Zoom, and project management platforms.</p><p><strong>Networking in a Remote World</strong><br>Building professional relationships looks different now. Join virtual meetups, contribute to open source projects, and maintain an active presence on professional platforms.</p><p><strong>The Bottom Line</strong><br>Remote work isn't going away. Companies that embrace it have access to global talent, and employees gain flexibility and work-life balance. As a new graduate, you're entering the workforce at the perfect time to take advantage of these opportunities.</p>"
+  },
+  {
+    "id": 6,
+    "category": "Interview Tips",
+    "title": "Acing Your First Tech Interview: A Complete Guide",
+    "excerpt": "Everything you need to know to succeed in technical interviews and land your dream job",
+    "image": "https://images.unsplash.com/photo-1559818900-42043632ef16?w=400&h=250&fit=crop",
+    "date": "Oct 8, 2025",
+    "readTime": "7 min read",
+    "author": "David Kim",
+    "authorRole": "Senior Software Engineer & Interview Coach",
+    "fullStory": "<p>Tech interviews can be intimidating, but with the right preparation, you can turn them into opportunities to showcase your skills and passion. Here's your complete guide to interview success.</p><p><strong>Before the Interview</strong><br>Research the company thoroughly. Understand their products, mission, and recent news. Review the job description and prepare specific examples of how your skills match their needs.</p><p><strong>Technical Preparation</strong><br>Practice coding problems on platforms like LeetCode or HackerRank. Focus on data structures, algorithms, and system design basics. More importantly, practice explaining your thought process out loud.</p><p><strong>The STAR Method</strong><br>For behavioral questions, use the STAR method: Situation, Task, Action, Result. Prepare stories that demonstrate leadership, problem-solving, and teamwork.</p><p><strong>During the Interview</strong><br>Ask clarifying questions before jumping into solutions. Think out loud so interviewers can follow your reasoning. Don't be afraid to admit when you don't know something - instead, explain how you would find the answer.</p><p><strong>Questions to Ask</strong><br>Prepare thoughtful questions about the team, technology stack, and growth opportunities. This shows genuine interest and helps you evaluate if the company is right for you.</p><p><strong>After the Interview</strong><br>Send a thank-you email within 24 hours. Mention specific topics from your conversation and reiterate your interest in the role.</p><p>Remember, interviews are conversations, not interrogations. The company is evaluating you, but you're also evaluating them. Go in confident and authentic - you've got this!</p>"
+  },
+  {
+    "id": 7,
+    "category": "Tech Trends",
+    "title": "The Rise of AI in Software Development: A Developer's Perspective",
+    "excerpt": "How artificial intelligence is transforming the way we write code and what it means for junior developers",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop",
+    "date": "Nov 5, 2025",
+    "readTime": "5 min read",
+    "author": "Alex Chen",
+    "authorRole": "AI Engineer at InnovateTech",
+    "fullStory": "<p>Artificial Intelligence is no longer a futuristic concept - it's reshaping software development right now. As someone who's been working with AI tools daily, I want to share insights on what this means for developers, especially those just starting their careers.</p><p><strong>AI as a Coding Assistant</strong><br>Tools like GitHub Copilot, ChatGPT, and Claude are becoming essential parts of the development workflow. They help with code completion, debugging, and even architecture decisions. But here's the key: they're assistants, not replacements.</p><p><strong>What This Means for Junior Developers</strong><br>Don't worry - AI won't replace developers. Instead, it will amplify your capabilities. Junior developers who learn to work effectively with AI tools will have a significant advantage in the job market.</p><p><strong>Essential Skills in the AI Era</strong><br>Focus on problem-solving, system design, and understanding business requirements. AI can help you write code faster, but you still need to know what to build and why.</p><p><strong>Learning to Prompt Effectively</strong><br>Treating AI as a pair programming partner requires good communication skills. Learn to ask clear, specific questions and provide context for better results.</p><p><strong>The Future is Collaborative</strong><br>The most successful developers will be those who can seamlessly blend human creativity and problem-solving with AI's computational power. Start experimenting with AI tools now - your future self will thank you!</p>"
+  },
+  {
+    "id": 8,
+    "category": "Industry Insights",
+    "title": "Remote Work Revolution: How Tech Companies Are Adapting",
+    "excerpt": "Inside look at how the tech industry has embraced remote work and what it means for new graduates",
+    "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=250&fit=crop",
+    "date": "Nov 3, 2025",
+    "readTime": "4 min read",
+    "author": "Jessica Martinez",
+    "authorRole": "Remote Work Consultant & Former Tech Lead",
+    "fullStory": "<p>The pandemic accelerated a shift that was already underway - remote work in tech. Having led distributed teams for over five years, I've witnessed firsthand how this transformation is creating new opportunities for developers everywhere.</p><p><strong>The New Normal</strong><br>Major tech companies like Twitter, Shopify, and GitLab have gone fully remote. Even traditional companies are offering hybrid models. This shift has democratized access to top-tier tech jobs regardless of location.</p><p><strong>Opportunities for New Graduates</strong><br>Geographic barriers are dissolving. A developer in a small town can now work for Silicon Valley companies without relocating. This has increased competition but also expanded opportunities exponentially.</p><p><strong>Essential Remote Work Skills</strong><br>Strong written communication is crucial. You need to articulate ideas clearly in Slack, emails, and documentation. Time management and self-discipline become critical when you're not in an office environment.</p><p><strong>Building Relationships Virtually</strong><br>Remote work requires intentional relationship building. Participate actively in virtual coffee chats, team retrospectives, and online social events. Don't underestimate the power of a well-timed emoji or GIF!</p><p><strong>Setting Up for Success</strong><br>Invest in a good workspace, reliable internet, and quality audio/video equipment. Your home office is now your professional presence - make it count.</p><p><strong>The Future is Flexible</strong><br>Companies are realizing that flexibility leads to happier, more productive employees. As a new developer, embrace this change and develop the skills needed to thrive in a distributed world.</p>"
+  },
+  {
+    "id": 9,
+    "category": "Student Success",
+    "title": "From Community College to Google: Maria's Incredible Journey",
+    "excerpt": "How a non-traditional student broke into big tech through persistence and strategic learning",
+    "image": "https://images.unsplash.com/photo-1494790108755-2616c9b11d5b?w=400&h=250&fit=crop",
+    "date": "Nov 1, 2025",
+    "readTime": "6 min read",
+    "author": "Maria Gonzalez",
+    "authorRole": "Software Engineer at Google",
+    "fullStory": "<p>Three years ago, I was working as a retail manager with no programming experience. Today, I'm a software engineer at Google. If someone told me this would happen, I would have laughed. But here's proof that with the right strategy and persistence, anything is possible.</p><p><strong>The Beginning</strong><br>At 28, I decided I needed a career change. I couldn't afford a four-year computer science degree, so I started at community college while working full-time. It was exhausting, but every small victory motivated me to keep going.</p><p><strong>Building Skills Outside the Classroom</strong><br>Community college gave me the foundation, but I knew I needed more. I spent evenings and weekends on platforms like freeCodeCamp, building projects and contributing to open source. GitHub became my portfolio.</p><p><strong>The Power of Community</strong><br>I joined local meetups and online communities. The tech community is incredibly welcoming to people genuinely passionate about learning. I found mentors who guided me and peers who supported me through challenges.</p><p><strong>Landing My First Job</strong><br>After 18 months of intense learning, I landed a junior developer role at a startup. The salary was modest, but the learning opportunities were immense. I treated every task as a chance to grow.</p><p><strong>Making the Leap to Big Tech</strong><br>Two years of professional experience gave me the confidence to apply to Google. The interview process was intense, but all those LeetCode problems and system design videos finally paid off.</p><p><strong>Advice for Non-Traditional Students</strong><br>Your background is an asset, not a liability. Life experience gives you perspective that many young developers lack. Don't let imposter syndrome hold you back - you belong here too.</p>"
+  },
+  {
+    "id": 10,
+    "category": "Career Growth",
+    "title": "Building Your Personal Brand as a Developer",
+    "excerpt": "Practical strategies to establish yourself in the tech community and advance your career",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=250&fit=crop",
+    "date": "Oct 30, 2025",
+    "readTime": "5 min read",
+    "author": "Ryan Thompson",
+    "authorRole": "Senior Developer & Tech Content Creator",
+    "fullStory": "<p>In today's competitive tech landscape, technical skills alone aren't enough. Building a strong personal brand can differentiate you from other developers and open doors to opportunities you never imagined.</p><p><strong>What is Personal Branding?</strong><br>Your personal brand is how others perceive your professional identity. It's the unique combination of skills, experience, and personality that makes you memorable. For developers, this often means being known for specific technologies, problem-solving approaches, or communication style.</p><p><strong>Start with Your Online Presence</strong><br>Your GitHub profile is your digital portfolio. Make sure your repositories are well-documented with clear README files. Contribute to open source projects regularly - even small contributions count and show consistency.</p><p><strong>Content Creation</strong><br>Writing technical blogs, creating tutorials, or making coding videos helps establish your expertise. Start small - explain a concept you just learned or document a problem you solved. The tech community loves authentic, helpful content.</p><p><strong>Networking and Community Engagement</strong><br>Attend meetups, conferences, and online events. Engage genuinely on Twitter/X and LinkedIn. Share others' content with thoughtful commentary. Building relationships is about giving value, not just taking.</p><p><strong>Consistency is Key</strong><br>Personal branding is a marathon, not a sprint. Post regularly, maintain a professional tone, and stay authentic to your values. People connect with genuine personalities, not perfect facades.</p><p><strong>Measuring Success</strong><br>Track metrics that matter: meaningful connections made, opportunities received, and value provided to the community. Your personal brand should open doors while staying true to who you are.</p><p>Remember, you're not building a brand to become famous - you're building it to create opportunities and help others along the way.</p>"
+  }
+]
