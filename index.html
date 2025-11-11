@@ -3,10 +3,33 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Moon* - Connect IT Students with Careers</title>
-		<link rel="stylesheet" href="styles/main.css" />
-		<link rel="stylesheet" href="styles/landing.css" />
-		<link rel="stylesheet" href="profile-styles.css" />
+		<title>Moon* - Connect IT Students with Careers in Vietnam</title>
+		<meta
+			name="description"
+			content="The leading job fair platform connecting IT students with top tech companies in Vietnam. Find your dream job, build your profile, and connect with employers."
+		/>
+
+		<!-- Modern CSS Architecture (Phase 2) -->
+		<link rel="stylesheet" href="/src/css/main.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+
+		<!-- Open Graph Meta Tags -->
+		<meta
+			property="og:title"
+			content="Moon* - Connect IT Students with Careers"
+		/>
+		<meta
+			property="og:description"
+			content="The leading job fair platform for IT professionals in Vietnam"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/public/assets/img/og-image.jpg" />
 	</head>
 
 	<body>
@@ -883,28 +906,14 @@
 			</div>
 		</div>
 
-		<!-- Scripts - Load in order -->
-		<!-- 1. State management -->
+		<!-- Scripts - Modern Modular Architecture (Phase 3) -->
+		<!-- Core modules loaded as ES6 modules -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/home.page.js"></script>
+
+		<!-- Legacy support for backward compatibility -->
 		<script src="js/state.js"></script>
-
-		<!-- 2. Page templates -->
-		<script src="js/pages/landing.js"></script>
-		<script src="js/pages/student-profile-setup.js"></script>
-		<script src="js/pages/student-dashboard.js"></script>
-		<script src="js/pages/company-dashboard.js"></script>
-		<script src="js/pages/profile-page.js"></script>
-		<script src="js/pages/other-pages.js"></script>
-
-		<!--3. Load JSON data-->
-		<script src="assets/data/applications.json"></script>
-		<script src="assets/data/jobs.json"></script>
-		<script src="assets/data/companies.json"></script>
-		<script src="assets/data/stats.json"></script>
-
-		<!-- 4. Router -->
 		<script src="js/router.js"></script>
-
-		<!-- 5. Main app controller -->
-		<script src="js/app.js"></script>
+		<script src="js/pages/landing.js"></script>
 	</body>
 </html>

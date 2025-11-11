@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fair Details - Moon*</title>
+		<meta
+			name="description"
+			content="View job fair details and register for upcoming career events."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="fair-detail-page">
+			<!-- Breadcrumb -->
+			<section class="breadcrumb-section">
+				<div class="container">
+					<nav class="breadcrumb">
+						<a href="/" class="breadcrumb-link">Home</a>
+						<span class="breadcrumb-separator">/</span>
+						<a href="/public/fairs.html" class="breadcrumb-link">Job Fairs</a>
+						<span class="breadcrumb-separator">/</span>
+						<span id="fair-name-breadcrumb" class="breadcrumb-current"
+							>Fair Details</span
+						>
+					</nav>
+				</div>
+			</section>
+
+			<!-- Fair Header -->
+			<section class="fair-header">
+				<div class="fair-banner">
+					<img
+						id="fair-banner"
+						src="/public/assets/img/banners/fair-default.jpg"
+						alt="Fair Banner"
+					/>
+				</div>
+				<div class="container">
+					<div class="fair-header-content">
+						<div class="fair-header-main">
+							<div class="fair-badge-wrapper">
+								<span id="fair-type-badge" class="badge">On-site</span>
+								<span id="fair-status-badge" class="badge badge-success"
+									>Upcoming</span
+								>
+							</div>
+							<h1 id="fair-name" class="fair-name">Loading...</h1>
+							<p id="fair-tagline" class="fair-tagline">Event tagline</p>
+							<div id="fair-meta" class="fair-meta">
+								<div class="meta-item">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<rect
+											x="3"
+											y="4"
+											width="18"
+											height="18"
+											rx="2"
+											ry="2"
+										></rect>
+										<line x1="16" y1="2" x2="16" y2="6"></line>
+										<line x1="8" y1="2" x2="8" y2="6"></line>
+										<line x1="3" y1="10" x2="21" y2="10"></line>
+									</svg>
+									<span id="fair-date">Date</span>
+								</div>
+								<div class="meta-item">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<polyline points="12 6 12 12 16 14"></polyline>
+									</svg>
+									<span id="fair-time">Time</span>
+								</div>
+								<div class="meta-item">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<path
+											d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+										></path>
+										<circle cx="12" cy="10" r="3"></circle>
+									</svg>
+									<span id="fair-location">Location</span>
+								</div>
+								<div class="meta-item">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<rect
+											x="2"
+											y="7"
+											width="20"
+											height="14"
+											rx="2"
+											ry="2"
+										></rect>
+										<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+									</svg>
+									<span id="booth-count">0 Booths</span>
+								</div>
+							</div>
+						</div>
+						<div class="fair-header-actions">
+							<button id="register-btn" class="btn btn-primary btn-lg">
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+									<circle cx="8.5" cy="7" r="4"></circle>
+									<line x1="20" y1="8" x2="20" y2="14"></line>
+									<line x1="23" y1="11" x2="17" y2="11"></line>
+								</svg>
+								Register for Event
+							</button>
+							<button id="save-event-btn" class="btn btn-outline">
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+									></path>
+								</svg>
+								Save Event
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Fair Content -->
+			<section class="fair-content-section">
+				<div class="container">
+					<div class="fair-tabs">
+						<button class="tab-btn active" data-tab="overview">Overview</button>
+						<button class="tab-btn" data-tab="booths">Exhibitors</button>
+						<button class="tab-btn" data-tab="schedule">Schedule</button>
+						<button class="tab-btn" data-tab="location">Location</button>
+					</div>
+
+					<div class="tab-content">
+						<!-- Overview Tab -->
+						<div id="overview-tab" class="tab-pane active">
+							<div class="layout-sidebar">
+								<div class="main-content">
+									<div class="fair-section">
+										<h2 class="section-title">About This Event</h2>
+										<div id="fair-description" class="fair-description">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+
+									<div class="fair-section">
+										<h2 class="section-title">What to Expect</h2>
+										<div id="fair-highlights" class="fair-highlights">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+
+									<div class="fair-section">
+										<h2 class="section-title">Who Should Attend</h2>
+										<div id="target-audience" class="target-audience">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+								</div>
+
+								<aside class="sidebar">
+									<div class="sidebar-card">
+										<h3 class="sidebar-title">Event Statistics</h3>
+										<div class="stats-grid">
+											<div class="stat-item">
+												<span id="registered-count" class="stat-number">0</span>
+												<span class="stat-label">Registered</span>
+											</div>
+											<div class="stat-item">
+												<span id="exhibitors-count" class="stat-number">0</span>
+												<span class="stat-label">Exhibitors</span>
+											</div>
+											<div class="stat-item">
+												<span id="jobs-count" class="stat-number">0</span>
+												<span class="stat-label">Open Positions</span>
+											</div>
+											<div class="stat-item">
+												<span id="industries-count" class="stat-number">0</span>
+												<span class="stat-label">Industries</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-card">
+										<h3 class="sidebar-title">Registration Deadline</h3>
+										<div class="deadline-info">
+											<p id="registration-deadline" class="deadline-text">-</p>
+											<div id="countdown" class="countdown">
+												<!-- Countdown timer -->
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-card">
+										<h3 class="sidebar-title">Share Event</h3>
+										<div class="share-buttons">
+											<button class="btn btn-icon" title="Share on Facebook">
+												<svg
+													class="icon"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<path
+														d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+													></path>
+												</svg>
+											</button>
+											<button class="btn btn-icon" title="Share on LinkedIn">
+												<svg
+													class="icon"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<path
+														d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+													></path>
+													<rect x="2" y="9" width="4" height="12"></rect>
+													<circle cx="4" cy="4" r="2"></circle>
+												</svg>
+											</button>
+											<button class="btn btn-icon" title="Copy Link">
+												<svg
+													class="icon"
+													viewBox="0 0 24 24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+												>
+													<path
+														d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+													></path>
+													<path
+														d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+													></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</aside>
+							</div>
+						</div>
+
+						<!-- Booths Tab -->
+						<div id="booths-tab" class="tab-pane" style="display: none">
+							<div class="booths-filter-bar">
+								<input
+									type="text"
+									id="booth-search"
+									placeholder="Search exhibitors..."
+									class="form-input"
+								/>
+								<select id="industry-filter" class="form-select">
+									<option value="all">All Industries</option>
+									<!-- Populated by JS -->
+								</select>
+							</div>
+							<div id="booths-grid" class="booths-grid">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+
+						<!-- Schedule Tab -->
+						<div id="schedule-tab" class="tab-pane" style="display: none">
+							<div id="event-schedule" class="event-schedule">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+
+						<!-- Location Tab -->
+						<div id="location-tab" class="tab-pane" style="display: none">
+							<div class="location-info">
+								<h3>Venue Details</h3>
+								<div id="venue-details" class="venue-details">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+							<div id="map-container" class="map-container">
+								<!-- Map placeholder -->
+								<div class="map-placeholder">
+									<p>Map will be displayed here</p>
+								</div>
+							</div>
+							<div class="directions-info">
+								<h3>Getting There</h3>
+								<div id="directions" class="directions">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Related Fairs -->
+			<section class="related-fairs-section">
+				<div class="container">
+					<h2 class="section-title">Upcoming Events</h2>
+					<div id="related-fairs" class="fairs-grid">
+						<!-- Populated by JS -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Registration Modal -->
+		<div id="register-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/fair-detail.page.js"></script>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Manage Jobs - Moon*</title>
+		<meta
+			name="description"
+			content="Manage your job postings, view applications, and track performance."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="employer-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-employer"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="employer-jobs-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">Manage Job Postings</h1>
+						<p class="page-subtitle">
+							View and manage all your active and closed positions
+						</p>
+					</div>
+					<div class="page-actions">
+						<button
+							class="btn btn-primary"
+							onclick="window.location.href='/public/employer/post-job.html'"
+						>
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<line x1="12" y1="5" x2="12" y2="19"></line>
+								<line x1="5" y1="12" x2="19" y2="12"></line>
+							</svg>
+							Post New Job
+						</button>
+					</div>
+				</div>
+
+				<!-- Status Tabs -->
+				<div class="status-tabs">
+					<button class="tab-btn active" data-status="all">
+						All Jobs
+						<span id="count-all" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="active">
+						Active
+						<span id="count-active" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="draft">
+						Draft
+						<span id="count-draft" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="closed">
+						Closed
+						<span id="count-closed" class="tab-count">0</span>
+					</button>
+				</div>
+
+				<!-- Filters and Search -->
+				<div class="results-header">
+					<div class="results-info">
+						<span id="results-count">0 jobs</span>
+					</div>
+					<div class="results-controls">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search jobs..."
+							class="form-input"
+						/>
+						<select id="sort-select" class="form-select">
+							<option value="recent">Recently Posted</option>
+							<option value="applications">Most Applications</option>
+							<option value="views">Most Viewed</option>
+							<option value="expiring">Expiring Soon</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Jobs Table -->
+				<div class="jobs-table-wrapper">
+					<table class="jobs-table">
+						<thead>
+							<tr>
+								<th>Job Title</th>
+								<th>Posted Date</th>
+								<th>Applications</th>
+								<th>Views</th>
+								<th>Status</th>
+								<th>Expiry</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody id="jobs-tbody">
+							<!-- Populated by JS -->
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Empty State -->
+				<div id="empty-state" class="empty-state" style="display: none">
+					<svg
+						class="empty-icon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+						<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+					</svg>
+					<h3>No job postings yet</h3>
+					<p>Start hiring by posting your first job</p>
+					<button
+						class="btn btn-primary"
+						onclick="window.location.href='/public/employer/post-job.html'"
+					>
+						Post Your First Job
+					</button>
+				</div>
+
+				<!-- Pagination -->
+				<div id="pagination" class="pagination">
+					<!-- Populated by JS -->
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Job Actions Modal -->
+		<div id="job-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/employer/jobs.page.js"></script>
+	</body>
+</html>

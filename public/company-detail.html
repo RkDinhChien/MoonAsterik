@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Company Profile - Moon*</title>
+		<meta
+			name="description"
+			content="Learn about top tech companies, their culture, benefits, and open positions."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="company-detail-page">
+			<!-- Breadcrumb -->
+			<section class="breadcrumb-section">
+				<div class="container">
+					<nav class="breadcrumb">
+						<a href="/" class="breadcrumb-link">Home</a>
+						<span class="breadcrumb-separator">/</span>
+						<a href="/public/companies.html" class="breadcrumb-link"
+							>Companies</a
+						>
+						<span class="breadcrumb-separator">/</span>
+						<span id="company-name-breadcrumb" class="breadcrumb-current"
+							>Company Profile</span
+						>
+					</nav>
+				</div>
+			</section>
+
+			<!-- Company Header -->
+			<section class="company-header">
+				<div class="company-cover">
+					<img
+						id="company-cover"
+						src="/public/assets/img/banners/company-default.jpg"
+						alt="Company Cover"
+					/>
+				</div>
+				<div class="container">
+					<div class="company-header-content">
+						<div class="company-logo-wrapper">
+							<img
+								id="company-logo"
+								src="/public/assets/img/placeholders/company.png"
+								alt="Company Logo"
+								class="company-logo-large"
+							/>
+						</div>
+						<div class="company-header-info">
+							<h1 id="company-name" class="company-name">Loading...</h1>
+							<p id="company-tagline" class="company-tagline">
+								Company tagline
+							</p>
+							<div id="company-meta" class="company-meta">
+								<!-- Industry, Size, Location -->
+							</div>
+							<div class="company-header-actions">
+								<button id="follow-company-btn" class="btn btn-outline">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+										<circle cx="8.5" cy="7" r="4"></circle>
+										<line x1="20" y1="8" x2="20" y2="14"></line>
+										<line x1="23" y1="11" x2="17" y2="11"></line>
+									</svg>
+									Follow Company
+								</button>
+								<button id="view-jobs-btn" class="btn btn-primary">
+									View <span id="job-count">0</span> Open Positions
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Company Content -->
+			<section class="company-content-section">
+				<div class="container">
+					<div class="company-tabs">
+						<button class="tab-btn active" data-tab="overview">Overview</button>
+						<button class="tab-btn" data-tab="jobs">Jobs</button>
+						<button class="tab-btn" data-tab="culture">Culture</button>
+						<button class="tab-btn" data-tab="benefits">Benefits</button>
+						<button class="tab-btn" data-tab="reviews">Reviews</button>
+					</div>
+
+					<div class="tab-content">
+						<!-- Overview Tab -->
+						<div id="overview-tab" class="tab-pane active">
+							<div class="layout-sidebar">
+								<div class="main-content">
+									<div class="company-section">
+										<h2 class="section-title">About Us</h2>
+										<div id="company-description" class="company-description">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+
+									<div class="company-section">
+										<h2 class="section-title">What We Do</h2>
+										<div id="company-products" class="company-products">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+
+									<div class="company-section">
+										<h2 class="section-title">Gallery</h2>
+										<div id="company-gallery" class="company-gallery">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+								</div>
+
+								<aside class="sidebar">
+									<div class="sidebar-card">
+										<h3 class="sidebar-title">Company Info</h3>
+										<div class="info-list">
+											<div class="info-item">
+												<span class="info-label">Founded</span>
+												<span id="founded-year" class="info-value">-</span>
+											</div>
+											<div class="info-item">
+												<span class="info-label">Company Size</span>
+												<span id="company-size" class="info-value">-</span>
+											</div>
+											<div class="info-item">
+												<span class="info-label">Industry</span>
+												<span id="industry" class="info-value">-</span>
+											</div>
+											<div class="info-item">
+												<span class="info-label">Headquarters</span>
+												<span id="headquarters" class="info-value">-</span>
+											</div>
+											<div class="info-item">
+												<span class="info-label">Website</span>
+												<a
+													id="website"
+													href="#"
+													target="_blank"
+													class="info-link"
+													>Visit Website</a
+												>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-card">
+										<h3 class="sidebar-title">Tech Stack</h3>
+										<div id="tech-stack" class="tech-stack">
+											<!-- Populated by JS with chips -->
+										</div>
+									</div>
+
+									<div class="sidebar-card">
+										<h3 class="sidebar-title">Social Media</h3>
+										<div id="social-links" class="social-links">
+											<!-- Populated by JS -->
+										</div>
+									</div>
+								</aside>
+							</div>
+						</div>
+
+						<!-- Jobs Tab -->
+						<div id="jobs-tab" class="tab-pane" style="display: none">
+							<div class="jobs-filter-bar">
+								<input
+									type="text"
+									id="jobs-search"
+									placeholder="Search jobs..."
+									class="form-input"
+								/>
+								<select id="jobs-filter" class="form-select">
+									<option value="all">All Positions</option>
+									<option value="engineering">Engineering</option>
+									<option value="design">Design</option>
+									<option value="product">Product</option>
+									<option value="marketing">Marketing</option>
+								</select>
+							</div>
+							<div id="company-jobs" class="jobs-grid">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+
+						<!-- Culture Tab -->
+						<div id="culture-tab" class="tab-pane" style="display: none">
+							<div class="company-section">
+								<h2 class="section-title">Our Culture & Values</h2>
+								<div id="company-culture" class="company-culture">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+
+							<div class="company-section">
+								<h2 class="section-title">Work Environment</h2>
+								<div id="work-environment" class="work-environment">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Benefits Tab -->
+						<div id="benefits-tab" class="tab-pane" style="display: none">
+							<div class="company-section">
+								<h2 class="section-title">Employee Benefits</h2>
+								<div id="company-benefits" class="benefits-grid">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Reviews Tab -->
+						<div id="reviews-tab" class="tab-pane" style="display: none">
+							<div class="reviews-header">
+								<div class="reviews-summary">
+									<div class="rating-large">
+										<span id="average-rating" class="rating-number">4.5</span>
+										<div class="rating-stars">
+											<!-- Stars -->
+										</div>
+										<span id="review-count" class="rating-count"
+											>0 reviews</span
+										>
+									</div>
+								</div>
+								<button class="btn btn-primary">Write a Review</button>
+							</div>
+							<div id="company-reviews" class="reviews-list">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Similar Companies -->
+			<section class="similar-companies-section">
+				<div class="container">
+					<h2 class="section-title">Similar Companies</h2>
+					<div id="similar-companies" class="companies-grid">
+						<!-- Populated by JS -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/company-detail.page.js"></script>
+	</body>
+</html>

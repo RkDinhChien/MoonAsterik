@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Companies - Moon*</title>
+		<meta
+			name="description"
+			content="Discover top tech companies hiring in Vietnam. Explore company profiles and career opportunities."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="companies-page">
+			<!-- Page Header -->
+			<section class="page-header">
+				<div class="container">
+					<h1 class="page-title">Explore Top Companies</h1>
+					<p class="page-subtitle">
+						Connect with <span id="company-count">0</span> leading tech
+						companies in Vietnam
+					</p>
+
+					<!-- Search Bar -->
+					<div class="search-bar">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search companies by name or industry..."
+							class="search-input"
+						/>
+						<button type="button" id="search-btn" class="btn btn-primary">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<circle cx="11" cy="11" r="8"></circle>
+								<path d="M21 21l-4.35-4.35"></path>
+							</svg>
+							Search
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Filters & Results -->
+			<section class="content-section">
+				<div class="container">
+					<div class="layout-sidebar">
+						<!-- Sidebar Filters -->
+						<aside class="sidebar">
+							<div class="filter-group">
+								<h3 class="filter-title">Industry</h3>
+								<div id="industry-filters" class="filter-options">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+
+							<div class="filter-group">
+								<h3 class="filter-title">Location</h3>
+								<div id="location-filters" class="filter-options">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+
+							<div class="filter-group">
+								<h3 class="filter-title">Company Size</h3>
+								<div id="size-filters" class="filter-options">
+									<label class="filter-option">
+										<input type="checkbox" value="1-50" />
+										<span>1-50 employees</span>
+									</label>
+									<label class="filter-option">
+										<input type="checkbox" value="51-200" />
+										<span>51-200 employees</span>
+									</label>
+									<label class="filter-option">
+										<input type="checkbox" value="201-500" />
+										<span>201-500 employees</span>
+									</label>
+									<label class="filter-option">
+										<input type="checkbox" value="501+" />
+										<span>500+ employees</span>
+									</label>
+								</div>
+							</div>
+
+							<button
+								type="button"
+								id="clear-filters"
+								class="btn btn-outline btn-block"
+							>
+								Clear All Filters
+							</button>
+						</aside>
+
+						<!-- Main Content Area -->
+						<div class="main-content">
+							<!-- Sort & View Options -->
+							<div class="results-header">
+								<div class="results-info">
+									<span id="results-count">0 companies found</span>
+								</div>
+								<div class="results-controls">
+									<select id="sort-select" class="form-select">
+										<option value="featured">Featured</option>
+										<option value="name">Name A-Z</option>
+										<option value="jobs">Most Jobs</option>
+										<option value="size">Company Size</option>
+									</select>
+									<div class="view-toggle">
+										<button
+											id="grid-view"
+											class="view-btn active"
+											title="Grid View"
+										>
+											<svg
+												class="icon"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+											>
+												<rect x="3" y="3" width="7" height="7"></rect>
+												<rect x="14" y="3" width="7" height="7"></rect>
+												<rect x="14" y="14" width="7" height="7"></rect>
+												<rect x="3" y="14" width="7" height="7"></rect>
+											</svg>
+										</button>
+										<button id="list-view" class="view-btn" title="List View">
+											<svg
+												class="icon"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+											>
+												<line x1="8" y1="6" x2="21" y2="6"></line>
+												<line x1="8" y1="12" x2="21" y2="12"></line>
+												<line x1="8" y1="18" x2="21" y2="18"></line>
+												<line x1="3" y1="6" x2="3.01" y2="6"></line>
+												<line x1="3" y1="12" x2="3.01" y2="12"></line>
+												<line x1="3" y1="18" x2="3.01" y2="18"></line>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Active Filters -->
+							<div id="active-filters" class="active-filters">
+								<!-- Populated by JS with chips -->
+							</div>
+
+							<!-- Company Cards Grid -->
+							<div id="companies-grid" class="companies-grid view-grid">
+								<!-- Populated by JS -->
+								<!-- Skeleton loaders shown during loading -->
+							</div>
+
+							<!-- Pagination -->
+							<div id="pagination" class="pagination">
+								<!-- Populated by JS -->
+							</div>
+
+							<!-- Empty State -->
+							<div id="empty-state" class="empty-state" style="display: none">
+								<svg
+									class="empty-icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+									<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+								</svg>
+								<h3>No companies found</h3>
+								<p>Try adjusting your filters or search terms</p>
+								<button
+									type="button"
+									onclick="window.clearAllFilters()"
+									class="btn btn-primary"
+								>
+									Clear Filters
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/companies.page.js"></script>
+	</body>
+</html>

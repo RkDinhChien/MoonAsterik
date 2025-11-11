@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Applications - Moon*</title>
+		<meta
+			name="description"
+			content="Track your job applications and manage your interview schedule."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="student-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-student"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="applications-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">My Applications</h1>
+						<p class="page-subtitle">
+							Track the status of all your job applications
+						</p>
+					</div>
+				</div>
+
+				<!-- Status Tabs -->
+				<div class="status-tabs">
+					<button class="tab-btn active" data-status="all">
+						All Applications
+						<span id="count-all" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="reviewing">
+						Reviewing
+						<span id="count-reviewing" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="interview">
+						Interview
+						<span id="count-interview" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="offer">
+						Offer
+						<span id="count-offer" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="rejected">
+						Rejected
+						<span id="count-rejected" class="tab-count">0</span>
+					</button>
+				</div>
+
+				<!-- Filters and Sort -->
+				<div class="results-header">
+					<div class="results-info">
+						<span id="results-count">0 applications</span>
+					</div>
+					<div class="results-controls">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search applications..."
+							class="form-input"
+						/>
+						<select id="sort-select" class="form-select">
+							<option value="recent">Recently Applied</option>
+							<option value="oldest">Oldest First</option>
+							<option value="company">Company A-Z</option>
+							<option value="status">Status</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Applications Table -->
+				<div class="applications-table-wrapper">
+					<table class="applications-table">
+						<thead>
+							<tr>
+								<th>Job Title</th>
+								<th>Company</th>
+								<th>Applied Date</th>
+								<th>Status</th>
+								<th>Last Updated</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody id="applications-tbody">
+							<!-- Populated by JS -->
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Empty State -->
+				<div id="empty-state" class="empty-state" style="display: none">
+					<svg
+						class="empty-icon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+						<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+					</svg>
+					<h3>No applications yet</h3>
+					<p>Start applying to jobs that match your skills and interests</p>
+					<button
+						class="btn btn-primary"
+						onclick="window.location.href='/public/jobs.html'"
+					>
+						Browse Jobs
+					</button>
+				</div>
+
+				<!-- Pagination -->
+				<div id="pagination" class="pagination">
+					<!-- Populated by JS -->
+				</div>
+
+				<!-- Application Stats -->
+				<div class="application-stats">
+					<h2 class="section-title">Application Statistics</h2>
+					<div class="stats-grid">
+						<div class="stat-card">
+							<div class="stat-header">
+								<span class="stat-label">Total Applications</span>
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+									<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+								</svg>
+							</div>
+							<div id="stat-total" class="stat-value">0</div>
+						</div>
+
+						<div class="stat-card">
+							<div class="stat-header">
+								<span class="stat-label">Response Rate</span>
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+								</svg>
+							</div>
+							<div id="stat-response" class="stat-value">0%</div>
+						</div>
+
+						<div class="stat-card">
+							<div class="stat-header">
+								<span class="stat-label">Interview Rate</span>
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+									<circle cx="9" cy="7" r="4"></circle>
+								</svg>
+							</div>
+							<div id="stat-interview" class="stat-value">0%</div>
+						</div>
+
+						<div class="stat-card">
+							<div class="stat-header">
+								<span class="stat-label">Avg. Response Time</span>
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<circle cx="12" cy="12" r="10"></circle>
+									<polyline points="12 6 12 12 16 14"></polyline>
+								</svg>
+							</div>
+							<div id="stat-time" class="stat-value">-</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Application Detail Modal -->
+		<div id="application-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script
+			type="module"
+			src="/src/js/pages/student/applications.page.js"
+		></script>
+	</body>
+</html>
