@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Job Details - Moon*</title>
+		<meta
+			name="description"
+			content="View job details and apply for positions at leading tech companies."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="job-detail-page">
+			<!-- Breadcrumb -->
+			<section class="breadcrumb-section">
+				<div class="container">
+					<nav class="breadcrumb">
+						<a href="/" class="breadcrumb-link">Home</a>
+						<span class="breadcrumb-separator">/</span>
+						<a href="/public/jobs.html" class="breadcrumb-link">Jobs</a>
+						<span class="breadcrumb-separator">/</span>
+						<span id="job-title-breadcrumb" class="breadcrumb-current"
+							>Job Details</span
+						>
+					</nav>
+				</div>
+			</section>
+
+			<!-- Job Header -->
+			<section class="job-header">
+				<div class="container">
+					<div class="job-header-content">
+						<div class="job-header-main">
+							<div class="company-logo">
+								<img
+									id="company-logo"
+									src="/public/assets/img/placeholders/company.png"
+									alt="Company Logo"
+								/>
+							</div>
+							<div class="job-header-info">
+								<h1 id="job-title" class="job-title">Loading...</h1>
+								<p id="company-name" class="company-name">
+									<a href="#" class="company-link">Company Name</a>
+								</p>
+								<div id="job-meta" class="job-meta">
+									<!-- Location, Type, Level, Salary -->
+								</div>
+								<div id="job-badges" class="job-badges">
+									<!-- Badges: Featured, New, Fair, etc. -->
+								</div>
+							</div>
+						</div>
+						<div class="job-header-actions">
+							<button id="save-job-btn" class="btn btn-outline">
+								<svg
+									class="icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+									></path>
+								</svg>
+								Save Job
+							</button>
+							<button id="apply-btn" class="btn btn-primary btn-lg">
+								Apply Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Job Content -->
+			<section class="job-content-section">
+				<div class="container">
+					<div class="layout-sidebar">
+						<!-- Main Content -->
+						<div class="main-content">
+							<div class="job-section">
+								<h2 class="section-title">Job Description</h2>
+								<div id="job-description" class="job-description">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+
+							<div class="job-section">
+								<h2 class="section-title">Requirements</h2>
+								<ul id="job-requirements" class="job-requirements">
+									<!-- Populated by JS -->
+								</ul>
+							</div>
+
+							<div class="job-section">
+								<h2 class="section-title">Responsibilities</h2>
+								<ul id="job-responsibilities" class="job-responsibilities">
+									<!-- Populated by JS -->
+								</ul>
+							</div>
+
+							<div class="job-section">
+								<h2 class="section-title">Benefits</h2>
+								<ul id="job-benefits" class="job-benefits">
+									<!-- Populated by JS -->
+								</ul>
+							</div>
+
+							<div class="job-section">
+								<h2 class="section-title">Skills Required</h2>
+								<div id="job-skills" class="skills-list">
+									<!-- Populated by JS with chips -->
+								</div>
+							</div>
+
+							<div class="job-actions">
+								<button id="apply-btn-bottom" class="btn btn-primary btn-lg">
+									Apply for this position
+								</button>
+								<button id="save-job-btn-bottom" class="btn btn-outline">
+									Save for later
+								</button>
+							</div>
+						</div>
+
+						<!-- Sidebar -->
+						<aside class="sidebar">
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">Job Overview</h3>
+								<div class="job-overview">
+									<div class="overview-item">
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<rect
+												x="3"
+												y="4"
+												width="18"
+												height="18"
+												rx="2"
+												ry="2"
+											></rect>
+											<line x1="16" y1="2" x2="16" y2="6"></line>
+											<line x1="8" y1="2" x2="8" y2="6"></line>
+											<line x1="3" y1="10" x2="21" y2="10"></line>
+										</svg>
+										<div>
+											<span class="overview-label">Posted Date</span>
+											<span id="posted-date" class="overview-value">-</span>
+										</div>
+									</div>
+									<div class="overview-item">
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<circle cx="12" cy="12" r="10"></circle>
+											<polyline points="12 6 12 12 16 14"></polyline>
+										</svg>
+										<div>
+											<span class="overview-label">Expiration Date</span>
+											<span id="expiry-date" class="overview-value">-</span>
+										</div>
+									</div>
+									<div class="overview-item">
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<path
+												d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+											></path>
+											<circle cx="9" cy="7" r="4"></circle>
+											<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+											<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+										</svg>
+										<div>
+											<span class="overview-label">Applicants</span>
+											<span id="applicant-count" class="overview-value">-</span>
+										</div>
+									</div>
+									<div class="overview-item">
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<path
+												d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+											></path>
+											<circle cx="12" cy="10" r="3"></circle>
+										</svg>
+										<div>
+											<span class="overview-label">Location</span>
+											<span id="location" class="overview-value">-</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">About Company</h3>
+								<div id="company-info" class="company-info">
+									<!-- Populated by JS -->
+								</div>
+								<a
+									id="view-company-btn"
+									href="#"
+									class="btn btn-outline btn-block"
+									>View Company Profile</a
+								>
+							</div>
+
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">Share this job</h3>
+								<div class="share-buttons">
+									<button class="btn btn-icon" title="Share on Facebook">
+										<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+											<path
+												d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+											></path>
+										</svg>
+									</button>
+									<button class="btn btn-icon" title="Share on LinkedIn">
+										<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+											<path
+												d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+											></path>
+											<rect x="2" y="9" width="4" height="12"></rect>
+											<circle cx="4" cy="4" r="2"></circle>
+										</svg>
+									</button>
+									<button class="btn btn-icon" title="Copy Link">
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<path
+												d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+											></path>
+											<path
+												d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+											></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+			<!-- Similar Jobs -->
+			<section class="similar-jobs-section">
+				<div class="container">
+					<h2 class="section-title">Similar Jobs</h2>
+					<div id="similar-jobs" class="jobs-grid">
+						<!-- Populated by JS -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Apply Modal -->
+		<div id="apply-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/job-detail.page.js"></script>
+	</body>
+</html>

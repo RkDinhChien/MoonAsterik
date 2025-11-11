@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light only" />
+		<title>My Profile - Moon*</title>
+		<meta
+			name="description"
+			content="Build and manage your professional profile to attract top employers."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="student-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-student"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="profile-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">My Profile</h1>
+						<p class="page-subtitle">
+							Build a profile that stands out to employers
+						</p>
+					</div>
+					<div class="page-actions">
+						<button id="preview-btn" class="btn btn-outline">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+								<circle cx="12" cy="12" r="3"></circle>
+							</svg>
+							Preview Profile
+						</button>
+						<button id="save-profile-btn" class="btn btn-primary">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"
+								></path>
+								<polyline points="17 21 17 13 7 13 7 21"></polyline>
+								<polyline points="7 3 7 8 15 8"></polyline>
+							</svg>
+							Save Changes
+						</button>
+					</div>
+				</div>
+
+				<!-- Profile Completion -->
+				<div class="profile-completion-card">
+					<div class="completion-header">
+						<h3>Profile Completion</h3>
+						<span id="completion-percentage">0%</span>
+					</div>
+					<div class="progress-bar">
+						<div
+							id="completion-progress"
+							class="progress-fill"
+							style="width: 0%"
+						></div>
+					</div>
+					<div id="completion-tips" class="completion-tips">
+						<!-- Tips populated by JS -->
+					</div>
+				</div>
+
+				<!-- Profile Form -->
+				<form id="profile-form" class="profile-form">
+					<!-- Basic Information -->
+					<div class="form-section">
+						<h2 class="form-section-title">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+								<circle cx="12" cy="7" r="4"></circle>
+							</svg>
+							Basic Information
+						</h2>
+
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="full-name" class="form-label">Full Name *</label>
+								<input
+									type="text"
+									id="full-name"
+									name="fullName"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="email" class="form-label">Email *</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="phone" class="form-label">Phone Number *</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="location" class="form-label">Location *</label>
+								<select
+									id="location"
+									name="location"
+									class="form-select"
+									required
+								>
+									<option value="">Select location</option>
+									<option value="hanoi">Hà Nội</option>
+									<option value="hcmc">TP. Hồ Chí Minh</option>
+									<option value="danang">Đà Nẵng</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="bio" class="form-label">Professional Summary</label>
+							<textarea
+								id="bio"
+								name="bio"
+								class="form-textarea"
+								rows="4"
+								placeholder="Tell employers about yourself..."
+							></textarea>
+							<span class="form-hint"
+								>Write a brief summary that highlights your skills and career
+								goals</span
+							>
+						</div>
+					</div>
+
+					<!-- Education -->
+					<div class="form-section">
+						<h2 class="form-section-title">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+								<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+							</svg>
+							Education
+						</h2>
+
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="school" class="form-label"
+									>University/School *</label
+								>
+								<input
+									type="text"
+									id="school"
+									name="school"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="major" class="form-label">Major *</label>
+								<input
+									type="text"
+									id="major"
+									name="major"
+									class="form-input"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="graduation-year" class="form-label"
+									>Graduation Year *</label
+								>
+								<select
+									id="graduation-year"
+									name="graduationYear"
+									class="form-select"
+									required
+								>
+									<option value="">Select year</option>
+									<!-- Years populated by JS -->
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="gpa" class="form-label">GPA</label>
+								<input
+									type="number"
+									id="gpa"
+									name="gpa"
+									class="form-input"
+									step="0.01"
+									min="0"
+									max="4.0"
+									placeholder="3.50"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- Skills -->
+					<div class="form-section">
+						<h2 class="form-section-title">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<polyline points="16 18 22 12 16 6"></polyline>
+								<polyline points="8 6 2 12 8 18"></polyline>
+							</svg>
+							Technical Skills
+						</h2>
+
+						<div class="form-group">
+							<label for="skills-input" class="form-label">Add Skills *</label>
+							<div class="skills-input-wrapper">
+								<input
+									type="text"
+									id="skills-input"
+									class="form-input"
+									placeholder="Type a skill and press Enter"
+								/>
+								<button
+									type="button"
+									id="add-skill-btn"
+									class="btn btn-outline"
+								>
+									Add
+								</button>
+							</div>
+							<div id="skills-list" class="skills-list">
+								<!-- Skills chips populated by JS -->
+							</div>
+							<span class="form-hint"
+								>Add at least 3 skills relevant to your desired positions</span
+							>
+						</div>
+					</div>
+
+					<!-- Audio Introduction -->
+					<div class="form-section">
+						<h2 class="form-section-title">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+								></path>
+								<path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+								<line x1="12" y1="19" x2="12" y2="23"></line>
+								<line x1="8" y1="23" x2="16" y2="23"></line>
+							</svg>
+							Audio Introduction
+							<span class="badge badge-success">Recommended</span>
+						</h2>
+
+						<div class="audio-intro-section">
+							<p class="section-description">
+								Record a brief introduction to stand out from other candidates.
+								Employers are 5x more likely to view profiles with audio intros.
+							</p>
+
+							<div id="audio-recorder" class="audio-recorder">
+								<div class="recorder-controls">
+									<button type="button" id="record-btn" class="btn btn-primary">
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<circle cx="12" cy="12" r="10"></circle>
+											<circle
+												cx="12"
+												cy="12"
+												r="3"
+												fill="currentColor"
+											></circle>
+										</svg>
+										Start Recording
+									</button>
+									<span id="recording-time" class="recording-time"
+										>0:00 / 2:00</span
+									>
+								</div>
+
+								<div
+									id="audio-player"
+									class="audio-player"
+									style="display: none"
+								>
+									<audio id="audio-element" controls></audio>
+									<button
+										type="button"
+										id="delete-audio-btn"
+										class="btn btn-outline btn-sm"
+									>
+										<svg
+											class="icon"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="3 6 5 6 21 6"></polyline>
+											<path
+												d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+											></path>
+										</svg>
+										Delete
+									</button>
+								</div>
+							</div>
+
+							<div class="audio-tips">
+								<h4>Recording Tips:</h4>
+								<ul>
+									<li>Keep it between 30-90 seconds</li>
+									<li>Introduce yourself and your career goals</li>
+									<li>Mention your key skills and what makes you unique</li>
+									<li>Speak clearly and confidently</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- CV Upload -->
+					<div class="form-section">
+						<h2 class="form-section-title">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+								></path>
+								<polyline points="14 2 14 8 20 8"></polyline>
+								<line x1="16" y1="13" x2="8" y2="13"></line>
+								<line x1="16" y1="17" x2="8" y2="17"></line>
+								<polyline points="10 9 9 9 8 9"></polyline>
+							</svg>
+							Resume/CV *
+						</h2>
+
+						<div class="file-upload-section">
+							<div class="file-upload-area" id="cv-upload-area">
+								<input
+									type="file"
+									id="cv-file"
+									name="cv"
+									accept=".pdf,.doc,.docx"
+									hidden
+								/>
+								<svg
+									class="upload-icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+									<polyline points="17 8 12 3 7 8"></polyline>
+									<line x1="12" y1="3" x2="12" y2="15"></line>
+								</svg>
+								<p>
+									Drag and drop your CV here or
+									<button
+										type="button"
+										class="link-btn"
+										onclick="document.getElementById('cv-file').click()"
+									>
+										browse files
+									</button>
+								</p>
+								<span class="upload-hint"
+									>Supported formats: PDF, DOC, DOCX (Max 5MB)</span
+								>
+							</div>
+
+							<div id="cv-preview" class="file-preview" style="display: none">
+								<!-- File info shown after upload -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Job Preferences -->
+					<div class="form-section">
+						<h2 class="form-section-title">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<circle cx="12" cy="12" r="3"></circle>
+								<path
+									d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m-2 2l-4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m-2-2l-4.2-4.2"
+								></path>
+							</svg>
+							Job Preferences
+						</h2>
+
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="job-type" class="form-label"
+									>Preferred Job Type</label
+								>
+								<select id="job-type" name="jobType" class="form-select">
+									<option value="">Select type</option>
+									<option value="full-time">Full-time</option>
+									<option value="part-time">Part-time</option>
+									<option value="internship">Internship</option>
+									<option value="contract">Contract</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="expected-salary" class="form-label"
+									>Expected Salary</label
+								>
+								<input
+									type="text"
+									id="expected-salary"
+									name="expectedSalary"
+									class="form-input"
+									placeholder="e.g., 10-15 triệu"
+								/>
+							</div>
+
+							<div class="form-group form-group-full">
+								<label for="industries" class="form-label"
+									>Preferred Industries</label
+								>
+								<div class="checkbox-group">
+									<label class="checkbox-label">
+										<input type="checkbox" name="industries" value="data-ai" />
+										<span>Data/AI</span>
+									</label>
+									<label class="checkbox-label">
+										<input type="checkbox" name="industries" value="frontend" />
+										<span>Frontend</span>
+									</label>
+									<label class="checkbox-label">
+										<input type="checkbox" name="industries" value="backend" />
+										<span>Backend</span>
+									</label>
+									<label class="checkbox-label">
+										<input type="checkbox" name="industries" value="mobile" />
+										<span>Mobile</span>
+									</label>
+									<label class="checkbox-label">
+										<input type="checkbox" name="industries" value="devops" />
+										<span>DevOps</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Form Actions -->
+					<div class="form-actions">
+						<button
+							type="button"
+							class="btn btn-outline"
+							onclick="window.history.back()"
+						>
+							Cancel
+						</button>
+						<button type="submit" class="btn btn-primary">Save Profile</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Profile Preview Modal -->
+		<div id="preview-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/student/profile.page.js"></script>
+	</body>
+</html>

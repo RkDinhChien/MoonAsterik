@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Campaign Analytics - Moon*</title>
+		<meta
+			name="description"
+			content="Track recruitment campaign performance and analytics."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="employer-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-employer"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="campaigns-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">Campaign Analytics</h1>
+						<p class="page-subtitle">
+							Track your recruitment performance and insights
+						</p>
+					</div>
+					<div class="page-actions">
+						<select id="date-range" class="form-select">
+							<option value="7">Last 7 days</option>
+							<option value="30" selected>Last 30 days</option>
+							<option value="90">Last 90 days</option>
+							<option value="365">Last year</option>
+						</select>
+						<button class="btn btn-outline">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+								<polyline points="7 10 12 15 17 10"></polyline>
+								<line x1="12" y1="15" x2="12" y2="3"></line>
+							</svg>
+							Export Report
+						</button>
+					</div>
+				</div>
+
+				<!-- Overview Stats -->
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-content">
+							<span class="stat-label">Total Views</span>
+							<span id="total-views" class="stat-value">0</span>
+						</div>
+						<div class="stat-trend stat-trend-up">
+							<span>+15% vs last period</span>
+						</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-content">
+							<span class="stat-label">Applications</span>
+							<span id="total-apps" class="stat-value">0</span>
+						</div>
+						<div class="stat-trend stat-trend-up">
+							<span>+28% vs last period</span>
+						</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-content">
+							<span class="stat-label">Conversion Rate</span>
+							<span id="conversion-rate" class="stat-value">0%</span>
+						</div>
+						<div class="stat-trend stat-trend-down">
+							<span>-3% vs last period</span>
+						</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-content">
+							<span class="stat-label">Avg. Time to Hire</span>
+							<span id="time-to-hire" class="stat-value">-</span>
+						</div>
+						<div class="stat-trend stat-trend-up">
+							<span>Improved by 2 days</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Charts Section -->
+				<div class="analytics-grid">
+					<!-- Applications Over Time -->
+					<div class="analytics-card analytics-card-wide">
+						<div class="card-header">
+							<h2 class="card-title">Applications Over Time</h2>
+							<div class="card-actions">
+								<button class="btn-tab active">Applications</button>
+								<button class="btn-tab">Views</button>
+								<button class="btn-tab">Hires</button>
+							</div>
+						</div>
+						<div class="card-content">
+							<div id="applications-chart" class="chart-placeholder">
+								<p>Chart will be displayed here</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Top Performing Jobs -->
+					<div class="analytics-card">
+						<div class="card-header">
+							<h2 class="card-title">Top Performing Jobs</h2>
+						</div>
+						<div class="card-content">
+							<div id="top-jobs" class="performance-list">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Application Sources -->
+					<div class="analytics-card">
+						<div class="card-header">
+							<h2 class="card-title">Application Sources</h2>
+						</div>
+						<div class="card-content">
+							<div id="sources-chart" class="chart-placeholder">
+								<p>Pie chart will be displayed here</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Candidate Demographics -->
+					<div class="analytics-card">
+						<div class="card-header">
+							<h2 class="card-title">Candidate Demographics</h2>
+						</div>
+						<div class="card-content">
+							<div id="demographics" class="demographics-list">
+								<div class="demo-item">
+									<span class="demo-label">Top Schools</span>
+									<div id="top-schools"><!-- Populated by JS --></div>
+								</div>
+								<div class="demo-item">
+									<span class="demo-label">Top Skills</span>
+									<div id="top-skills"><!-- Populated by JS --></div>
+								</div>
+								<div class="demo-item">
+									<span class="demo-label">Graduation Years</span>
+									<div id="grad-years"><!-- Populated by JS --></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Funnel Analysis -->
+					<div class="analytics-card">
+						<div class="card-header">
+							<h2 class="card-title">Recruitment Funnel</h2>
+						</div>
+						<div class="card-content">
+							<div id="funnel-chart" class="funnel-visualization">
+								<div class="funnel-stage">
+									<div class="funnel-bar" style="width: 100%">
+										<span class="funnel-label">Viewed</span>
+										<span class="funnel-value">1,250</span>
+									</div>
+								</div>
+								<div class="funnel-stage">
+									<div class="funnel-bar" style="width: 40%">
+										<span class="funnel-label">Applied</span>
+										<span class="funnel-value">500</span>
+									</div>
+								</div>
+								<div class="funnel-stage">
+									<div class="funnel-bar" style="width: 20%">
+										<span class="funnel-label">Screened</span>
+										<span class="funnel-value">250</span>
+									</div>
+								</div>
+								<div class="funnel-stage">
+									<div class="funnel-bar" style="width: 10%">
+										<span class="funnel-label">Interviewed</span>
+										<span class="funnel-value">125</span>
+									</div>
+								</div>
+								<div class="funnel-stage">
+									<div class="funnel-bar" style="width: 4%">
+										<span class="funnel-label">Hired</span>
+										<span class="funnel-value">50</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script
+			type="module"
+			src="/src/js/pages/employer/campaigns.page.js"
+		></script>
+	</body>
+</html>

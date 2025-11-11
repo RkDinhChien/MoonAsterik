@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light only" />
+		<title>Employer Dashboard - Moon*</title>
+		<meta
+			name="description"
+			content="Manage your recruitment pipeline, job postings, and candidate applications."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="employer-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-employer"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="employer-dashboard-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="dashboard-header">
+					<div>
+						<h1 class="page-title">
+							Welcome back, <span id="company-name">Company</span>! 👋
+						</h1>
+						<p class="page-subtitle">Here's your recruitment overview</p>
+					</div>
+					<div class="dashboard-actions">
+						<button
+							class="btn btn-outline"
+							onclick="window.location.href='/public/employer/candidates.html'"
+						>
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+								<circle cx="9" cy="7" r="4"></circle>
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+							</svg>
+							Browse Candidates
+						</button>
+						<button
+							class="btn btn-primary"
+							onclick="window.location.href='/public/employer/post-job.html'"
+						>
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<line x1="12" y1="5" x2="12" y2="19"></line>
+								<line x1="5" y1="12" x2="19" y2="12"></line>
+							</svg>
+							Post New Job
+						</button>
+					</div>
+				</div>
+
+				<!-- Stats Grid -->
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-icon stat-icon-primary">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+								<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+							</svg>
+						</div>
+						<div class="stat-content">
+							<span class="stat-label">Active Jobs</span>
+							<span id="active-jobs" class="stat-value">0</span>
+						</div>
+						<div class="stat-trend stat-trend-up">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+							</svg>
+							<span>+12% this month</span>
+						</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-icon stat-icon-success">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+								<circle cx="9" cy="7" r="4"></circle>
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+							</svg>
+						</div>
+						<div class="stat-content">
+							<span class="stat-label">Total Applications</span>
+							<span id="total-applications" class="stat-value">0</span>
+						</div>
+						<div class="stat-trend stat-trend-up">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+							</svg>
+							<span>+28% this month</span>
+						</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-icon stat-icon-warning">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+							</svg>
+						</div>
+						<div class="stat-content">
+							<span class="stat-label">New Applicants</span>
+							<span id="new-applicants" class="stat-value">0</span>
+						</div>
+						<div class="stat-badge">
+							<span class="badge badge-warning">Pending Review</span>
+						</div>
+					</div>
+
+					<div class="stat-card">
+						<div class="stat-icon stat-icon-info">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+								<circle cx="12" cy="12" r="3"></circle>
+							</svg>
+						</div>
+						<div class="stat-content">
+							<span class="stat-label">Profile Views</span>
+							<span id="profile-views" class="stat-value">0</span>
+						</div>
+						<div class="stat-trend stat-trend-down">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+							</svg>
+							<span>-5% this month</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Main Dashboard Grid -->
+				<div class="dashboard-grid">
+					<!-- Recent Applications -->
+					<div class="dashboard-card">
+						<div class="card-header">
+							<h2 class="card-title">Recent Applications</h2>
+							<a href="/public/employer/candidates.html" class="card-link"
+								>View All</a
+							>
+						</div>
+						<div id="recent-applications" class="card-content">
+							<!-- Populated by JS -->
+						</div>
+					</div>
+
+					<!-- Active Jobs Performance -->
+					<div class="dashboard-card">
+						<div class="card-header">
+							<h2 class="card-title">Job Performance</h2>
+							<a href="/public/employer/jobs.html" class="card-link"
+								>Manage Jobs</a
+							>
+						</div>
+						<div id="job-performance" class="card-content">
+							<!-- Populated by JS -->
+						</div>
+					</div>
+
+					<!-- Application Pipeline -->
+					<div class="dashboard-card dashboard-card-wide">
+						<div class="card-header">
+							<h2 class="card-title">Recruitment Pipeline</h2>
+							<select id="pipeline-filter" class="form-select">
+								<option value="all">All Jobs</option>
+								<!-- Jobs populated by JS -->
+							</select>
+						</div>
+						<div class="card-content">
+							<div class="pipeline-stats">
+								<div class="pipeline-stage">
+									<div class="pipeline-number" id="pipeline-applied">0</div>
+									<div class="pipeline-label">Applied</div>
+								</div>
+								<div class="pipeline-arrow">→</div>
+								<div class="pipeline-stage">
+									<div class="pipeline-number" id="pipeline-screening">0</div>
+									<div class="pipeline-label">Screening</div>
+								</div>
+								<div class="pipeline-arrow">→</div>
+								<div class="pipeline-stage">
+									<div class="pipeline-number" id="pipeline-interview">0</div>
+									<div class="pipeline-label">Interview</div>
+								</div>
+								<div class="pipeline-arrow">→</div>
+								<div class="pipeline-stage">
+									<div class="pipeline-number" id="pipeline-offer">0</div>
+									<div class="pipeline-label">Offer</div>
+								</div>
+								<div class="pipeline-arrow">→</div>
+								<div class="pipeline-stage">
+									<div class="pipeline-number" id="pipeline-hired">0</div>
+									<div class="pipeline-label">Hired</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Quick Actions -->
+					<div class="dashboard-card">
+						<div class="card-header">
+							<h2 class="card-title">Quick Actions</h2>
+						</div>
+						<div class="card-content">
+							<div class="quick-actions">
+								<button
+									class="action-btn"
+									onclick="window.location.href='/public/employer/post-job.html'"
+								>
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<line x1="12" y1="5" x2="12" y2="19"></line>
+										<line x1="5" y1="12" x2="19" y2="12"></line>
+									</svg>
+									<span>Post New Job</span>
+								</button>
+								<button
+									class="action-btn"
+									onclick="window.location.href='/public/employer/candidates.html'"
+								>
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<circle cx="11" cy="11" r="8"></circle>
+										<path d="M21 21l-4.35-4.35"></path>
+									</svg>
+									<span>Search Candidates</span>
+								</button>
+								<button
+									class="action-btn"
+									onclick="window.location.href='/public/fairs.html'"
+								>
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<rect
+											x="3"
+											y="4"
+											width="18"
+											height="18"
+											rx="2"
+											ry="2"
+										></rect>
+										<line x1="16" y1="2" x2="16" y2="6"></line>
+										<line x1="8" y1="2" x2="8" y2="6"></line>
+										<line x1="3" y1="10" x2="21" y2="10"></line>
+									</svg>
+									<span>Book Fair Booth</span>
+								</button>
+								<button
+									class="action-btn"
+									onclick="window.location.href='/public/employer/campaigns.html'"
+								>
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<line x1="12" y1="1" x2="12" y2="23"></line>
+										<path
+											d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+										></path>
+									</svg>
+									<span>View Analytics</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Upcoming Fairs -->
+					<div class="dashboard-card">
+						<div class="card-header">
+							<h2 class="card-title">Upcoming Job Fairs</h2>
+							<a href="/public/employer/fairs.html" class="card-link"
+								>View All</a
+							>
+						</div>
+						<div id="upcoming-fairs" class="card-content">
+							<!-- Populated by JS -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script
+			type="module"
+			src="/src/js/pages/employer/dashboard.page.js"
+		></script>
+	</body>
+</html>

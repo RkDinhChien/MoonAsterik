@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog Article - Moon*</title>
+		<meta
+			name="description"
+			content="Read career insights and professional development tips for IT professionals."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+
+		<!-- Open Graph / Social Media Meta Tags -->
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Article Title" />
+		<meta property="og:description" content="Article description" />
+		<meta property="og:image" content="/public/assets/img/blog/default.jpg" />
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="blog-article-page">
+			<!-- Breadcrumb -->
+			<section class="breadcrumb-section">
+				<div class="container">
+					<nav class="breadcrumb">
+						<a href="/" class="breadcrumb-link">Home</a>
+						<span class="breadcrumb-separator">/</span>
+						<a href="/public/blog.html" class="breadcrumb-link">Blog</a>
+						<span class="breadcrumb-separator">/</span>
+						<span id="article-title-breadcrumb" class="breadcrumb-current"
+							>Article</span
+						>
+					</nav>
+				</div>
+			</section>
+
+			<!-- Article Header -->
+			<section class="article-header">
+				<div class="container">
+					<div class="article-header-content">
+						<div id="article-category" class="article-category">
+							<!-- Category badge -->
+						</div>
+						<h1 id="article-title" class="article-title">Loading...</h1>
+						<div class="article-meta">
+							<div class="author-info">
+								<img
+									id="author-avatar"
+									src="/public/assets/img/placeholders/avatar.png"
+									alt="Author"
+									class="author-avatar"
+								/>
+								<div>
+									<span id="author-name" class="author-name">Author Name</span>
+									<div class="article-date-read">
+										<time id="publish-date">Date</time>
+										<span class="separator">•</span>
+										<span id="read-time">5 min read</span>
+									</div>
+								</div>
+							</div>
+							<div class="article-actions">
+								<button class="btn btn-icon" title="Bookmark">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<path
+											d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+										></path>
+									</svg>
+								</button>
+								<button class="btn btn-icon" title="Share">
+									<svg
+										class="icon"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<circle cx="18" cy="5" r="3"></circle>
+										<circle cx="6" cy="12" r="3"></circle>
+										<circle cx="18" cy="19" r="3"></circle>
+										<line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+										<line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Article Featured Image -->
+			<section class="article-image-section">
+				<div class="container">
+					<img
+						id="article-image"
+						src="/public/assets/img/placeholders/blog-default.jpg"
+						alt="Article"
+						class="article-featured-image"
+					/>
+				</div>
+			</section>
+
+			<!-- Article Content -->
+			<section class="article-content-section">
+				<div class="container">
+					<div class="layout-sidebar">
+						<!-- Main Content -->
+						<div class="main-content">
+							<article class="article-content">
+								<div id="article-body" class="article-body">
+									<!-- Populated by JS with formatted content -->
+								</div>
+							</article>
+
+							<!-- Article Footer -->
+							<div class="article-footer">
+								<div class="article-tags">
+									<h4>Tags:</h4>
+									<div id="article-tags" class="tags-list">
+										<!-- Populated by JS -->
+									</div>
+								</div>
+
+								<div class="article-share">
+									<h4>Share this article:</h4>
+									<div class="share-buttons">
+										<button class="btn btn-icon" title="Share on Facebook">
+											<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+												<path
+													d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+												></path>
+											</svg>
+										</button>
+										<button class="btn btn-icon" title="Share on Twitter">
+											<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+												<path
+													d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+												></path>
+											</svg>
+										</button>
+										<button class="btn btn-icon" title="Share on LinkedIn">
+											<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+												<path
+													d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+												></path>
+												<rect x="2" y="9" width="4" height="12"></rect>
+												<circle cx="4" cy="4" r="2"></circle>
+											</svg>
+										</button>
+										<button class="btn btn-icon" title="Copy Link">
+											<svg
+												class="icon"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+											>
+												<path
+													d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+												></path>
+												<path
+													d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+												></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Author Bio -->
+							<div class="author-bio-card">
+								<div class="author-bio-header">
+									<img
+										id="author-bio-avatar"
+										src="/public/assets/img/placeholders/avatar.png"
+										alt="Author"
+										class="author-bio-avatar"
+									/>
+									<div>
+										<h3 id="author-bio-name" class="author-bio-name">
+											Author Name
+										</h3>
+										<p id="author-bio-title" class="author-bio-title">
+											Job Title
+										</p>
+									</div>
+								</div>
+								<p id="author-bio" class="author-bio-text">
+									Author bio text...
+								</p>
+								<div class="author-social">
+									<!-- Social links -->
+								</div>
+							</div>
+
+							<!-- Comments Section (Placeholder) -->
+							<div class="comments-section">
+								<h3 class="section-title">Comments</h3>
+								<div class="comments-placeholder">
+									<p>Comments section will be available soon</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Sidebar -->
+						<aside class="sidebar">
+							<!-- Table of Contents -->
+							<div class="sidebar-card sidebar-sticky">
+								<h3 class="sidebar-title">Table of Contents</h3>
+								<nav id="table-of-contents" class="table-of-contents">
+									<!-- Auto-generated from article headings -->
+								</nav>
+							</div>
+
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">Share Article</h3>
+								<div class="share-buttons-vertical">
+									<button class="btn btn-outline btn-block">
+										<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+											<path
+												d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+											></path>
+										</svg>
+										Facebook
+									</button>
+									<button class="btn btn-outline btn-block">
+										<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+											<path
+												d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+											></path>
+										</svg>
+										Twitter
+									</button>
+									<button class="btn btn-outline btn-block">
+										<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+											<path
+												d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+											></path>
+											<rect x="2" y="9" width="4" height="12"></rect>
+											<circle cx="4" cy="4" r="2"></circle>
+										</svg>
+										LinkedIn
+									</button>
+								</div>
+							</div>
+
+							<div class="sidebar-card sidebar-cta">
+								<h3 class="sidebar-title">Newsletter</h3>
+								<p>Get weekly career tips delivered to your inbox</p>
+								<form id="newsletter-form" class="newsletter-form">
+									<input
+										type="email"
+										placeholder="Your email"
+										class="form-input"
+										required
+									/>
+									<button type="submit" class="btn btn-primary btn-block">
+										Subscribe
+									</button>
+								</form>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+			<!-- Related Articles -->
+			<section class="related-articles-section">
+				<div class="container">
+					<h2 class="section-title">Related Articles</h2>
+					<div id="related-articles" class="blog-grid">
+						<!-- Populated by JS -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/blog-article.page.js"></script>
+	</body>
+</html>

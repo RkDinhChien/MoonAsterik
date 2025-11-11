@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Post a Job - Moon*</title>
+		<meta
+			name="description"
+			content="Post a new job opening and start receiving applications from qualified candidates."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="employer-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-employer"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="post-job-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">Post a New Job</h1>
+						<p class="page-subtitle">
+							Fill in the details to attract the right candidates
+						</p>
+					</div>
+					<div class="page-actions">
+						<button id="preview-btn" class="btn btn-outline">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+								<circle cx="12" cy="12" r="3"></circle>
+							</svg>
+							Preview
+						</button>
+						<button id="save-draft-btn" class="btn btn-outline">
+							Save Draft
+						</button>
+						<button id="publish-btn" class="btn btn-primary">
+							Publish Job
+						</button>
+					</div>
+				</div>
+
+				<!-- Job Posting Form -->
+				<form id="job-form" class="job-form">
+					<!-- Basic Information -->
+					<div class="form-section">
+						<h2 class="form-section-title">Job Details</h2>
+
+						<div class="form-group">
+							<label for="job-title" class="form-label">Job Title *</label>
+							<input
+								type="text"
+								id="job-title"
+								name="title"
+								class="form-input"
+								placeholder="e.g., Senior Frontend Developer"
+								required
+							/>
+						</div>
+
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="industry" class="form-label">Industry *</label>
+								<select
+									id="industry"
+									name="industry"
+									class="form-select"
+									required
+								>
+									<option value="">Select industry</option>
+									<option value="data-ai">Data/AI</option>
+									<option value="frontend">Frontend</option>
+									<option value="backend">Backend</option>
+									<option value="mobile">Mobile</option>
+									<option value="devops">DevOps</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="job-type" class="form-label">Job Type *</label>
+								<select id="job-type" name="type" class="form-select" required>
+									<option value="">Select type</option>
+									<option value="full-time">Full-time</option>
+									<option value="part-time">Part-time</option>
+									<option value="contract">Contract</option>
+									<option value="internship">Internship</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="experience-level" class="form-label"
+									>Experience Level *</label
+								>
+								<select
+									id="experience-level"
+									name="level"
+									class="form-select"
+									required
+								>
+									<option value="">Select level</option>
+									<option value="intern">Internship</option>
+									<option value="entry">Entry Level</option>
+									<option value="mid">Mid-Level</option>
+									<option value="senior">Senior</option>
+									<option value="lead">Lead</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="location" class="form-label">Location *</label>
+								<select
+									id="location"
+									name="location"
+									class="form-select"
+									required
+								>
+									<option value="">Select location</option>
+									<option value="hanoi">Hà Nội</option>
+									<option value="hcmc">TP. Hồ Chí Minh</option>
+									<option value="danang">Đà Nẵng</option>
+									<option value="remote">Remote</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="salary-min" class="form-label"
+									>Salary Range *</label
+								>
+								<div class="input-group">
+									<input
+										type="number"
+										id="salary-min"
+										name="salaryMin"
+										class="form-input"
+										placeholder="Min"
+										required
+									/>
+									<span class="input-separator">to</span>
+									<input
+										type="number"
+										id="salary-max"
+										name="salaryMax"
+										class="form-input"
+										placeholder="Max"
+										required
+									/>
+									<span class="input-suffix">triệu VND</span>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="positions" class="form-label"
+									>Number of Positions</label
+								>
+								<input
+									type="number"
+									id="positions"
+									name="positions"
+									class="form-input"
+									value="1"
+									min="1"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- Job Description -->
+					<div class="form-section">
+						<h2 class="form-section-title">Description & Requirements</h2>
+
+						<div class="form-group">
+							<label for="description" class="form-label"
+								>Job Description *</label
+							>
+							<textarea
+								id="description"
+								name="description"
+								class="form-textarea"
+								rows="6"
+								placeholder="Describe the role, responsibilities, and what the candidate will be working on..."
+								required
+							></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="requirements" class="form-label"
+								>Requirements *</label
+							>
+							<textarea
+								id="requirements"
+								name="requirements"
+								class="form-textarea"
+								rows="6"
+								placeholder="List the required qualifications, skills, and experience..."
+								required
+							></textarea>
+							<span class="form-hint"
+								>Use bullet points (one per line) for better readability</span
+							>
+						</div>
+
+						<div class="form-group">
+							<label for="responsibilities" class="form-label"
+								>Responsibilities</label
+							>
+							<textarea
+								id="responsibilities"
+								name="responsibilities"
+								class="form-textarea"
+								rows="5"
+								placeholder="Outline key responsibilities and duties..."
+							></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="benefits" class="form-label">Benefits</label>
+							<textarea
+								id="benefits"
+								name="benefits"
+								class="form-textarea"
+								rows="5"
+								placeholder="List employee benefits and perks..."
+							></textarea>
+						</div>
+					</div>
+
+					<!-- Skills -->
+					<div class="form-section">
+						<h2 class="form-section-title">Required Skills</h2>
+
+						<div class="form-group">
+							<label for="skills-input" class="form-label">Add Skills *</label>
+							<div class="skills-input-wrapper">
+								<input
+									type="text"
+									id="skills-input"
+									class="form-input"
+									placeholder="Type a skill and press Enter"
+								/>
+								<button
+									type="button"
+									id="add-skill-btn"
+									class="btn btn-outline"
+								>
+									Add
+								</button>
+							</div>
+							<div id="skills-list" class="skills-list">
+								<!-- Skills chips populated by JS -->
+							</div>
+							<span class="form-hint"
+								>Add at least 3 required skills for this position</span
+							>
+						</div>
+					</div>
+
+					<!-- Additional Options -->
+					<div class="form-section">
+						<h2 class="form-section-title">Additional Options</h2>
+
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="expiry-date" class="form-label"
+									>Application Deadline</label
+								>
+								<input
+									type="date"
+									id="expiry-date"
+									name="expiryDate"
+									class="form-input"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label">Visibility Options</label>
+								<div class="checkbox-group">
+									<label class="checkbox-label">
+										<input type="checkbox" name="featured" id="featured" />
+										<span>Feature this job (Premium)</span>
+									</label>
+									<label class="checkbox-label">
+										<input type="checkbox" name="audioIntro" id="audio-intro" />
+										<span>Allow audio introductions</span>
+									</label>
+									<label class="checkbox-label">
+										<input type="checkbox" name="fairBadge" id="fair-badge" />
+										<span>Show at upcoming job fairs</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Form Actions -->
+					<div class="form-actions">
+						<button
+							type="button"
+							class="btn btn-outline"
+							onclick="window.history.back()"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							id="save-draft-btn-bottom"
+							class="btn btn-outline"
+						>
+							Save as Draft
+						</button>
+						<button type="submit" class="btn btn-primary">Publish Job</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Preview Modal -->
+		<div id="preview-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script
+			type="module"
+			src="/src/js/pages/employer/post-job.page.js"
+		></script>
+	</body>
+</html>

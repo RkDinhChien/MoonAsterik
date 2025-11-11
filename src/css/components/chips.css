@@ -1,0 +1,382 @@
+/* ===========================
+   Chips/Tags Styles
+   =========================== */
+
+/* Base Chip */
+.chip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	padding: var(--spacing-xs) var(--spacing-sm);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	line-height: 1;
+	background: var(--lighter-gray);
+	color: var(--dark-color);
+	border: 1px solid transparent;
+	border-radius: var(--radius-full);
+	transition: all var(--transition-fast);
+	cursor: default;
+	white-space: nowrap;
+}
+
+/* Chip Sizes */
+.chip-sm {
+	padding: 4px var(--spacing-xs);
+	font-size: var(--font-size-xs);
+}
+
+.chip-lg {
+	padding: var(--spacing-sm) var(--spacing-md);
+	font-size: var(--font-size-base);
+}
+
+/* Chip Variants */
+.chip-primary {
+	background: var(--bg-primary-soft);
+	color: var(--primary-color);
+}
+
+.chip-secondary {
+	background: var(--bg-secondary-soft);
+	color: var(--secondary-color);
+}
+
+.chip-success {
+	background: var(--bg-green-soft);
+	color: var(--success);
+}
+
+.chip-warning {
+	background: var(--bg-yellow-soft);
+	color: var(--warning);
+}
+
+.chip-danger {
+	background: var(--bg-coral-soft);
+	color: var(--error);
+}
+
+.chip-info {
+	background: var(--bg-blue-soft);
+	color: var(--info);
+}
+
+/* Outlined Chips */
+.chip-outline {
+	background: transparent;
+	border-color: var(--light-gray);
+}
+
+.chip-outline.chip-primary {
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.chip-outline.chip-secondary {
+	border-color: var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+.chip-outline.chip-success {
+	border-color: var(--success);
+	color: var(--success);
+}
+
+.chip-outline.chip-danger {
+	border-color: var(--error);
+	color: var(--error);
+}
+
+/* Clickable Chips */
+.chip-clickable {
+	cursor: pointer;
+}
+
+.chip-clickable:hover {
+	background: var(--light-gray);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-sm);
+}
+
+.chip-primary.chip-clickable:hover {
+	background: var(--primary-color);
+	color: var(--white);
+}
+
+.chip-secondary.chip-clickable:hover {
+	background: var(--secondary-color);
+	color: var(--white);
+}
+
+.chip-success.chip-clickable:hover {
+	background: var(--success);
+	color: var(--white);
+}
+
+.chip-danger.chip-clickable:hover {
+	background: var(--error);
+	color: var(--white);
+}
+
+/* Selected/Active State */
+.chip-selected,
+.chip-active {
+	background: var(--primary-color);
+	color: var(--white);
+	border-color: var(--primary-color);
+}
+
+.chip-outline.chip-selected,
+.chip-outline.chip-active {
+	background: var(--bg-primary-soft);
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+/* Chip with Icon */
+.chip-icon {
+	width: 16px;
+	height: 16px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chip-avatar {
+	width: 24px;
+	height: 24px;
+	border-radius: var(--radius-full);
+	object-fit: cover;
+	margin-left: calc(var(--spacing-xs) * -1);
+}
+
+/* Removable Chip */
+.chip-removable {
+	padding-right: var(--spacing-xs);
+}
+
+.chip-remove {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	padding: 0;
+	background: transparent;
+	border: none;
+	border-radius: var(--radius-full);
+	color: currentColor;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: all var(--transition-fast);
+}
+
+.chip-remove:hover {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.chip-remove svg {
+	width: 12px;
+	height: 12px;
+}
+
+/* Chip Group */
+.chip-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--spacing-sm);
+}
+
+/* Scrollable Chip Group */
+.chip-group-scrollable {
+	display: flex;
+	gap: var(--spacing-sm);
+	overflow-x: auto;
+	padding-bottom: var(--spacing-xs);
+}
+
+.chip-group-scrollable::-webkit-scrollbar {
+	height: 4px;
+}
+
+.chip-group-scrollable::-webkit-scrollbar-track {
+	background: var(--lighter-gray);
+	border-radius: var(--radius-full);
+}
+
+.chip-group-scrollable::-webkit-scrollbar-thumb {
+	background: var(--light-gray);
+	border-radius: var(--radius-full);
+}
+
+.chip-group-scrollable::-webkit-scrollbar-thumb:hover {
+	background: var(--gray-color);
+}
+
+/* Skill Tags (Special case for job/profile skills) */
+.skill-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	padding: var(--spacing-xs) var(--spacing-sm);
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-medium);
+	background: var(--bg-primary-soft);
+	color: var(--primary-color);
+	border-radius: var(--radius-md);
+}
+
+.skill-tag-level {
+	display: inline-flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.skill-tag-dot {
+	width: 4px;
+	height: 4px;
+	border-radius: var(--radius-full);
+	background: currentColor;
+}
+
+.skill-tag-dot.inactive {
+	opacity: 0.3;
+}
+
+/* Job Type Chips */
+.job-type-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	padding: 4px var(--spacing-sm);
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-semibold);
+	border-radius: var(--radius-sm);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.job-type-chip.fulltime {
+	background: var(--bg-green-soft);
+	color: var(--success);
+}
+
+.job-type-chip.parttime {
+	background: var(--bg-blue-soft);
+	color: var(--info);
+}
+
+.job-type-chip.internship {
+	background: var(--bg-yellow-soft);
+	color: var(--warning);
+}
+
+.job-type-chip.freelance {
+	background: var(--bg-secondary-soft);
+	color: var(--secondary-color);
+}
+
+/* Location Chip */
+.location-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	color: var(--gray-color);
+	font-size: var(--font-size-sm);
+}
+
+.location-chip svg {
+	width: 14px;
+	height: 14px;
+}
+
+/* Filter Chips */
+.filter-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--spacing-sm);
+	padding: var(--spacing-md) 0;
+}
+
+.filter-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	padding: var(--spacing-xs) var(--spacing-sm);
+	background: var(--white);
+	border: 2px solid var(--light-gray);
+	border-radius: var(--radius-full);
+	font-size: var(--font-size-sm);
+	cursor: pointer;
+	transition: all var(--transition-fast);
+}
+
+.filter-chip:hover {
+	border-color: var(--primary-color);
+	background: var(--bg-primary-soft);
+}
+
+.filter-chip.active {
+	background: var(--primary-color);
+	border-color: var(--primary-color);
+	color: var(--white);
+}
+
+.filter-chip-label {
+	font-weight: var(--font-weight-medium);
+}
+
+.filter-chip-count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 20px;
+	height: 20px;
+	padding: 0 var(--spacing-xs);
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: var(--radius-full);
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-semibold);
+}
+
+.filter-chip.active .filter-chip-count {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* Clear All Filters Button */
+.clear-filters {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	padding: var(--spacing-xs) var(--spacing-sm);
+	background: transparent;
+	border: none;
+	color: var(--error);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	cursor: pointer;
+	transition: all var(--transition-fast);
+	border-radius: var(--radius-md);
+}
+
+.clear-filters:hover {
+	background: var(--bg-coral-soft);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.chip-group {
+		gap: var(--spacing-xs);
+	}
+
+	.chip {
+		font-size: var(--font-size-xs);
+		padding: 4px var(--spacing-xs);
+	}
+
+	.filter-chips {
+		gap: var(--spacing-xs);
+	}
+}

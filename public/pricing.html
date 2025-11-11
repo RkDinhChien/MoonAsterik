@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light only" />
+		<title>Pricing - Moon*</title>
+		<meta
+			name="description"
+			content="Choose the perfect plan for your hiring needs. Flexible pricing for companies of all sizes."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="pricing-page">
+			<!-- Page Header -->
+			<section class="pricing-header">
+				<div class="container text-center">
+					<h1 class="page-title">Choose Your Perfect Plan</h1>
+					<p class="page-subtitle">
+						Flexible pricing designed to scale with your hiring needs
+					</p>
+
+					<!-- Billing Toggle -->
+					<div class="billing-toggle">
+						<span class="toggle-label">Monthly</span>
+						<label class="toggle-switch">
+							<input type="checkbox" id="billing-period" />
+							<span class="toggle-slider"></span>
+						</label>
+						<span class="toggle-label">
+							Yearly
+							<span class="badge badge-success">Save 20%</span>
+						</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pricing Plans -->
+			<section class="pricing-plans-section">
+				<div class="container">
+					<div class="pricing-grid">
+						<!-- Starter Plan -->
+						<div class="pricing-card">
+							<div class="pricing-card-header">
+								<h3 class="plan-name">Starter</h3>
+								<p class="plan-description">
+									Perfect for startups and small teams
+								</p>
+							</div>
+							<div class="pricing-card-price">
+								<span class="currency">$</span>
+								<span class="amount" data-monthly="99" data-yearly="79"
+									>99</span
+								>
+								<span class="period">/month</span>
+							</div>
+							<div class="pricing-card-features">
+								<ul class="features-list">
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Up to 5 job postings</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>30-day visibility</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Basic applicant tracking</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Email notifications</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Standard support</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pricing-card-action">
+								<button class="btn btn-outline btn-block">Get Started</button>
+							</div>
+						</div>
+
+						<!-- Professional Plan (Featured) -->
+						<div class="pricing-card pricing-card-featured">
+							<div class="featured-badge">Most Popular</div>
+							<div class="pricing-card-header">
+								<h3 class="plan-name">Professional</h3>
+								<p class="plan-description">Ideal for growing companies</p>
+							</div>
+							<div class="pricing-card-price">
+								<span class="currency">$</span>
+								<span class="amount" data-monthly="249" data-yearly="199"
+									>249</span
+								>
+								<span class="period">/month</span>
+							</div>
+							<div class="pricing-card-features">
+								<ul class="features-list">
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Up to 20 job postings</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>60-day visibility</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Advanced applicant tracking</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Featured company profile</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Audio intro support</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Priority support</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Analytics dashboard</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pricing-card-action">
+								<button class="btn btn-primary btn-block">Get Started</button>
+							</div>
+						</div>
+
+						<!-- Enterprise Plan -->
+						<div class="pricing-card">
+							<div class="pricing-card-header">
+								<h3 class="plan-name">Enterprise</h3>
+								<p class="plan-description">
+									For large organizations with custom needs
+								</p>
+							</div>
+							<div class="pricing-card-price">
+								<span class="amount-custom">Custom</span>
+							</div>
+							<div class="pricing-card-features">
+								<ul class="features-list">
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Unlimited job postings</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Extended visibility</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Custom ATS integration</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Dedicated account manager</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Fair booth priority</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>Custom branding</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>API access</span>
+									</li>
+									<li class="feature-item">
+										<svg
+											class="icon icon-check"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										>
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+										<span>24/7 premium support</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pricing-card-action">
+								<button class="btn btn-outline btn-block">Contact Sales</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Job Fair Packages -->
+			<section class="fair-packages-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h2 class="section-title">Job Fair Packages</h2>
+						<p class="section-subtitle">
+							Premium booth packages for career events
+						</p>
+					</div>
+
+					<div class="packages-grid">
+						<div class="package-card">
+							<h3 class="package-name">Standard Booth</h3>
+							<div class="package-price">
+								<span class="currency">$</span>
+								<span class="amount">1,500</span>
+								<span class="period">/fair</span>
+							</div>
+							<ul class="package-features">
+								<li>3m x 3m booth space</li>
+								<li>Basic booth setup</li>
+								<li>Company listing</li>
+								<li>2 recruiter passes</li>
+							</ul>
+						</div>
+
+						<div class="package-card package-card-featured">
+							<div class="featured-badge">Best Value</div>
+							<h3 class="package-name">Premium Booth</h3>
+							<div class="package-price">
+								<span class="currency">$</span>
+								<span class="amount">3,000</span>
+								<span class="period">/fair</span>
+							</div>
+							<ul class="package-features">
+								<li>6m x 3m booth space</li>
+								<li>Premium booth setup</li>
+								<li>Featured company listing</li>
+								<li>5 recruiter passes</li>
+								<li>Interview rooms</li>
+								<li>Priority positioning</li>
+							</ul>
+						</div>
+
+						<div class="package-card">
+							<h3 class="package-name">Sponsor Package</h3>
+							<div class="package-price">
+								<span class="amount-custom">Custom</span>
+							</div>
+							<ul class="package-features">
+								<li>Premium booth + branding</li>
+								<li>Stage presentation slot</li>
+								<li>Marketing materials</li>
+								<li>Unlimited recruiter passes</li>
+								<li>VIP networking access</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ Section -->
+			<section class="faq-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h2 class="section-title">Frequently Asked Questions</h2>
+					</div>
+
+					<div class="faq-grid">
+						<div class="faq-item">
+							<h3 class="faq-question">Can I upgrade or downgrade my plan?</h3>
+							<p class="faq-answer">
+								Yes, you can change your plan at any time. Changes will be
+								reflected in your next billing cycle.
+							</p>
+						</div>
+						<div class="faq-item">
+							<h3 class="faq-question">What payment methods do you accept?</h3>
+							<p class="faq-answer">
+								We accept all major credit cards, bank transfers, and company
+								invoicing for Enterprise plans.
+							</p>
+						</div>
+						<div class="faq-item">
+							<h3 class="faq-question">Is there a free trial?</h3>
+							<p class="faq-answer">
+								Yes! We offer a 14-day free trial for all plans. No credit card
+								required.
+							</p>
+						</div>
+						<div class="faq-item">
+							<h3 class="faq-question">
+								What happens when my job posting expires?
+							</h3>
+							<p class="faq-answer">
+								Expired postings are automatically archived. You can renew them
+								at any time from your dashboard.
+							</p>
+						</div>
+						<div class="faq-item">
+							<h3 class="faq-question">
+								Do you offer discounts for annual subscriptions?
+							</h3>
+							<p class="faq-answer">
+								Yes! Annual subscriptions save 20% compared to monthly billing.
+							</p>
+						</div>
+						<div class="faq-item">
+							<h3 class="faq-question">Can I cancel my subscription?</h3>
+							<p class="faq-answer">
+								Yes, you can cancel anytime. Your access will continue until the
+								end of your billing period.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="cta-section">
+				<div class="container text-center">
+					<h2 class="cta-title">Still have questions?</h2>
+					<p class="cta-text">
+						Our sales team is here to help you find the perfect plan
+					</p>
+					<div class="cta-actions">
+						<button class="btn btn-primary btn-lg">Contact Sales</button>
+						<button class="btn btn-outline btn-lg">Schedule Demo</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/pricing.page.js"></script>
+	</body>
+</html>

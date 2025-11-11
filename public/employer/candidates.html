@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Candidate Search - Moon*</title>
+		<meta
+			name="description"
+			content="Search and browse qualified candidates for your open positions."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="employer-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-employer"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="candidates-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">Candidate Search</h1>
+						<p class="page-subtitle">
+							Find and connect with qualified professionals
+						</p>
+					</div>
+				</div>
+
+				<!-- Search Bar -->
+				<div class="search-section">
+					<div class="search-bar">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search by skills, school, or major..."
+							class="search-input"
+						/>
+						<button type="button" id="search-btn" class="btn btn-primary">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<circle cx="11" cy="11" r="8"></circle>
+								<path d="M21 21l-4.35-4.35"></path>
+							</svg>
+							Search
+						</button>
+					</div>
+				</div>
+
+				<!-- Filters & Results -->
+				<div class="layout-sidebar">
+					<!-- Sidebar Filters -->
+					<aside class="sidebar">
+						<div class="filter-group">
+							<h3 class="filter-title">Graduation Year</h3>
+							<div class="filter-options">
+								<label class="filter-option">
+									<input type="checkbox" value="2024" />
+									<span>2024</span>
+								</label>
+								<label class="filter-option">
+									<input type="checkbox" value="2025" />
+									<span>2025</span>
+								</label>
+								<label class="filter-option">
+									<input type="checkbox" value="2026" />
+									<span>2026</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="filter-group">
+							<h3 class="filter-title">Skills</h3>
+							<div id="skills-filters" class="filter-options">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+
+						<div class="filter-group">
+							<h3 class="filter-title">School</h3>
+							<div id="school-filters" class="filter-options">
+								<!-- Populated by JS -->
+							</div>
+						</div>
+
+						<div class="filter-group">
+							<h3 class="filter-title">Has Audio Intro</h3>
+							<div class="filter-options">
+								<label class="filter-option">
+									<input type="checkbox" value="true" />
+									<span>With Audio Introduction</span>
+								</label>
+							</div>
+						</div>
+
+						<button
+							type="button"
+							id="clear-filters"
+							class="btn btn-outline btn-block"
+						>
+							Clear All Filters
+						</button>
+					</aside>
+
+					<!-- Main Content Area -->
+					<div class="main-content">
+						<!-- Sort & View Options -->
+						<div class="results-header">
+							<div class="results-info">
+								<span id="results-count">0 candidates found</span>
+							</div>
+							<div class="results-controls">
+								<select id="sort-select" class="form-select">
+									<option value="match">Best Match</option>
+									<option value="gpa">Highest GPA</option>
+									<option value="recent">Recently Updated</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- Active Filters -->
+						<div id="active-filters" class="active-filters">
+							<!-- Populated by JS with chips -->
+						</div>
+
+						<!-- Candidates Grid -->
+						<div id="candidates-grid" class="candidates-grid">
+							<!-- Populated by JS -->
+							<!-- Skeleton loaders shown during loading -->
+						</div>
+
+						<!-- Pagination -->
+						<div id="pagination" class="pagination">
+							<!-- Populated by JS -->
+						</div>
+
+						<!-- Empty State -->
+						<div id="empty-state" class="empty-state" style="display: none">
+							<svg
+								class="empty-icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+								<circle cx="9" cy="7" r="4"></circle>
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+							</svg>
+							<h3>No candidates found</h3>
+							<p>Try adjusting your filters or search terms</p>
+							<button
+								type="button"
+								onclick="window.clearAllFilters()"
+								class="btn btn-primary"
+							>
+								Clear Filters
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Candidate Detail Modal -->
+		<div id="candidate-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script
+			type="module"
+			src="/src/js/pages/employer/candidates.page.js"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+/* ===========================
+   CSS Variables & Theme
+   =========================== */
+
+:root {
+	/* Force light mode only */
+	color-scheme: light;
+
+	/* Primary Brand Colors - Cyan (Main identity) */
+	--primary-color: #00bcd4;
+	--primary-light: #4dd0e1;
+	--primary-dark: #0097a7;
+	--primary-rgb: 0, 188, 212;
+
+	/* Secondary Accent - Deep Purple for contrast */
+	--secondary-color: #7c4dff;
+	--secondary-light: #b47cff;
+	--secondary-dark: #651fff;
+	--secondary-rgb: 124, 77, 255;
+
+	/* Accent Colors - Carefully selected for harmony */
+	--accent-coral: #ff7675;
+	--accent-orange: #fdcb6e;
+	--accent-pink: #fd79a8;
+	--accent-green: #00b894;
+	--accent-blue: #74b9ff;
+	--accent-purple: #a29bfe;
+
+	/* Status Colors */
+	--success: #00b894;
+	--success-light: #55efc4;
+	--warning: #fdcb6e;
+	--warning-light: #ffeaa7;
+	--error: #ff7675;
+	--error-light: #fab1a0;
+	--info: #74b9ff;
+	--info-light: #a29bfe;
+
+	/* Neutral Colors */
+	--dark-color: #263238;
+	--gray-dark: #455a64;
+	--gray-color: #78909c;
+	--gray-light: #b0bec5;
+	--light-gray: #eceff1;
+	--lighter-gray: #f5f7f9;
+	--white: #ffffff;
+	--black: #000000;
+
+	/* Background Gradients */
+	--gradient-primary: linear-gradient(135deg, #00bcd4 0%, #4dd0e1 100%);
+	--gradient-purple: linear-gradient(135deg, #7c4dff 0%, #651fff 100%);
+	--gradient-warm: linear-gradient(135deg, #ff7675 0%, #fdcb6e 100%);
+	--gradient-cool: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
+	--gradient-dark: linear-gradient(135deg, #263238 0%, #455a64 100%);
+
+	/* Soft Backgrounds */
+	--bg-primary-soft: rgba(0, 188, 212, 0.08);
+	--bg-purple-soft: rgba(124, 77, 255, 0.08);
+	--bg-coral-soft: rgba(255, 118, 117, 0.08);
+	--bg-green-soft: rgba(0, 184, 148, 0.08);
+	--bg-gray-soft: rgba(120, 144, 156, 0.08);
+
+	/* Spacing Scale */
+	--spacing-xs: 0.25rem; /* 4px */
+	--spacing-sm: 0.5rem; /* 8px */
+	--spacing-md: 1rem; /* 16px */
+	--spacing-lg: 1.5rem; /* 24px */
+	--spacing-xl: 2rem; /* 32px */
+	--spacing-2xl: 3rem; /* 48px */
+	--spacing-3xl: 4rem; /* 64px */
+	--spacing-4xl: 6rem; /* 96px */
+	--spacing-5xl: 8rem; /* 128px */
+
+	/* Border Radius */
+	--radius-sm: 0.25rem; /* 4px */
+	--radius-md: 0.5rem; /* 8px */
+	--radius-lg: 0.75rem; /* 12px */
+	--radius-xl: 1rem; /* 16px */
+	--radius-2xl: 1.5rem; /* 24px */
+	--radius-full: 9999px;
+
+	/* Shadows */
+	--shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	--shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	--shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+	/* Typography Scale */
+	--font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Courier New', Courier, monospace;
+
+	--font-size-xs: 0.75rem; /* 12px */
+	--font-size-sm: 0.875rem; /* 14px */
+	--font-size-base: 1rem; /* 16px */
+	--font-size-lg: 1.125rem; /* 18px */
+	--font-size-xl: 1.25rem; /* 20px */
+	--font-size-2xl: 1.5rem; /* 24px */
+	--font-size-3xl: 1.875rem; /* 30px */
+	--font-size-4xl: 2.25rem; /* 36px */
+	--font-size-5xl: 3rem; /* 48px */
+	--font-size-6xl: 3.75rem; /* 60px */
+
+	/* Font Weights */
+	--font-weight-light: 300;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--font-weight-extrabold: 800;
+
+	/* Line Heights */
+	--line-height-tight: 1.2;
+	--line-height-snug: 1.375;
+	--line-height-normal: 1.5;
+	--line-height-relaxed: 1.625;
+	--line-height-loose: 2;
+
+	/* Transitions */
+	--transition-fast: 150ms ease-in-out;
+	--transition-normal: 300ms ease-in-out;
+	--transition-slow: 500ms ease-in-out;
+
+	/* Z-Index Scale */
+	--z-dropdown: 1000;
+	--z-sticky: 1020;
+	--z-fixed: 1030;
+	--z-modal-backdrop: 1040;
+	--z-modal: 1050;
+	--z-popover: 1060;
+	--z-tooltip: 1070;
+
+	/* Container Max Widths */
+	--container-sm: 640px;
+	--container-md: 768px;
+	--container-lg: 1024px;
+	--container-xl: 1280px;
+	--container-2xl: 1440px;
+
+	/* Breakpoints (for reference in JS) */
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+	--breakpoint-2xl: 1440px;
+}

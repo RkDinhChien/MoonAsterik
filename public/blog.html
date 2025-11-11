@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog - Moon*</title>
+		<meta
+			name="description"
+			content="Career tips, industry insights, and job search advice for IT professionals in Vietnam."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body>
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="blog-page">
+			<!-- Page Header -->
+			<section class="page-header">
+				<div class="container">
+					<h1 class="page-title">Career Insights & Resources</h1>
+					<p class="page-subtitle">
+						Expert advice to help you succeed in your tech career
+					</p>
+
+					<!-- Search Bar -->
+					<div class="search-bar">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search articles..."
+							class="search-input"
+						/>
+						<button type="button" id="search-btn" class="btn btn-primary">
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<circle cx="11" cy="11" r="8"></circle>
+								<path d="M21 21l-4.35-4.35"></path>
+							</svg>
+							Search
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Featured Article -->
+			<section class="featured-article-section">
+				<div class="container">
+					<div id="featured-article" class="featured-article">
+						<!-- Populated by JS -->
+					</div>
+				</div>
+			</section>
+
+			<!-- Blog Content -->
+			<section class="content-section">
+				<div class="container">
+					<div class="layout-sidebar">
+						<!-- Main Content Area -->
+						<div class="main-content">
+							<!-- Category Tabs -->
+							<div class="category-tabs">
+								<button class="tab-btn active" data-category="all">
+									All Articles
+								</button>
+								<button class="tab-btn" data-category="career-tips">
+									Career Tips
+								</button>
+								<button class="tab-btn" data-category="interview">
+									Interviews
+								</button>
+								<button class="tab-btn" data-category="industry">
+									Industry News
+								</button>
+								<button class="tab-btn" data-category="skills">Skills</button>
+							</div>
+
+							<!-- Sort Options -->
+							<div class="results-header">
+								<div class="results-info">
+									<span id="results-count">0 articles</span>
+								</div>
+								<div class="results-controls">
+									<select id="sort-select" class="form-select">
+										<option value="latest">Latest</option>
+										<option value="popular">Most Popular</option>
+										<option value="oldest">Oldest</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- Blog Grid -->
+							<div id="blog-grid" class="blog-grid">
+								<!-- Populated by JS -->
+								<!-- Skeleton loaders shown during loading -->
+							</div>
+
+							<!-- Pagination -->
+							<div id="pagination" class="pagination">
+								<!-- Populated by JS -->
+							</div>
+
+							<!-- Empty State -->
+							<div id="empty-state" class="empty-state" style="display: none">
+								<svg
+									class="empty-icon"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+									<path
+										d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+									></path>
+								</svg>
+								<h3>No articles found</h3>
+								<p>Try adjusting your search or browse other categories</p>
+							</div>
+						</div>
+
+						<!-- Sidebar -->
+						<aside class="sidebar">
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">Categories</h3>
+								<div id="category-list" class="category-list">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">Popular Tags</h3>
+								<div id="tag-cloud" class="tag-cloud">
+									<!-- Populated by JS with chips -->
+								</div>
+							</div>
+
+							<div class="sidebar-card">
+								<h3 class="sidebar-title">Popular Posts</h3>
+								<div id="popular-posts" class="popular-posts">
+									<!-- Populated by JS -->
+								</div>
+							</div>
+
+							<div class="sidebar-card sidebar-cta">
+								<h3 class="sidebar-title">Newsletter</h3>
+								<p>Get weekly career tips delivered to your inbox</p>
+								<form id="newsletter-form" class="newsletter-form">
+									<input
+										type="email"
+										placeholder="Your email"
+										class="form-input"
+										required
+									/>
+									<button type="submit" class="btn btn-primary btn-block">
+										Subscribe
+									</button>
+								</form>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/blog.page.js"></script>
+	</body>
+</html>

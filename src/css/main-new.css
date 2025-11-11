@@ -1,0 +1,39 @@
+/* ===========================
+   Moon* JobFair Vietnam
+   Main Stylesheet
+   =========================== */
+
+/* Import modular CSS files */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/typography.css';
+@import './layout/grid.css';
+@import './layout/header.css';
+@import './layout/footer.css';
+@import './layout/sections.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/tables.css';
+@import './components/chips.css';
+@import './components/skeleton.css';
+@import './pages/home.css';
+@import './pages/jobs.css';
+@import './pages/job-detail.css';
+@import './pages/companies.css';
+@import './pages/company-detail.css';
+@import './pages/fairs.css';
+@import './pages/fair-detail.css';
+@import './pages/pricing.css';
+@import './pages/blog.css';
+@import './pages/student.css';
+@import './pages/employer.css';
+@import './utilities/helpers.css';
+
+/* ===========================
+   Import Original Complete Stylesheets
+   After refactoring is complete, remove these imports
+   =========================== */
+@import '../../styles/main.css';
+@import '../../styles/landing.css';
+@import '../../styles/profile-styles.css';

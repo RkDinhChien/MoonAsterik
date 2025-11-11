@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light only" />
+		<title>My Fairs - Moon*</title>
+		<meta
+			name="description"
+			content="Manage your job fair registrations and event bookings."
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/src/css/main-new.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/public/assets/logos/favicon.svg"
+		/>
+	</head>
+	<body class="student-portal">
+		<!-- Navbar placeholder (populated by JS) -->
+		<nav id="navbar" class="navbar navbar-student"></nav>
+
+		<!-- Main Content -->
+		<main id="main-content" class="student-fairs-page">
+			<div class="container">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div>
+						<h1 class="page-title">My Job Fairs</h1>
+						<p class="page-subtitle">
+							Manage your event registrations and schedules
+						</p>
+					</div>
+					<div class="page-actions">
+						<button
+							class="btn btn-primary"
+							onclick="window.location.href='/public/fairs.html'"
+						>
+							<svg
+								class="icon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<circle cx="11" cy="11" r="8"></circle>
+								<path d="M21 21l-4.35-4.35"></path>
+							</svg>
+							Browse Fairs
+						</button>
+					</div>
+				</div>
+
+				<!-- Status Tabs -->
+				<div class="status-tabs">
+					<button class="tab-btn active" data-status="all">
+						All Events
+						<span id="count-all" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="upcoming">
+						Upcoming
+						<span id="count-upcoming" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="registered">
+						Registered
+						<span id="count-registered" class="tab-count">0</span>
+					</button>
+					<button class="tab-btn" data-status="attended">
+						Attended
+						<span id="count-attended" class="tab-count">0</span>
+					</button>
+				</div>
+
+				<!-- Registered Fairs List -->
+				<div id="fairs-list" class="fairs-list">
+					<!-- Populated by JS -->
+				</div>
+
+				<!-- Empty State -->
+				<div id="empty-state" class="empty-state" style="display: none">
+					<svg
+						class="empty-icon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+						<line x1="16" y1="2" x2="16" y2="6"></line>
+						<line x1="8" y1="2" x2="8" y2="6"></line>
+						<line x1="3" y1="10" x2="21" y2="10"></line>
+					</svg>
+					<h3>No registered fairs</h3>
+					<p>Start exploring upcoming career events and register</p>
+					<button
+						class="btn btn-primary"
+						onclick="window.location.href='/public/fairs.html'"
+					>
+						Browse Job Fairs
+					</button>
+				</div>
+
+				<!-- Upcoming Fair Reminders -->
+				<div class="reminders-section">
+					<h2 class="section-title">Upcoming Reminders</h2>
+					<div id="reminders-list" class="reminders-list">
+						<!-- Populated by JS -->
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholder (populated by JS) -->
+		<footer id="footer" class="footer"></footer>
+
+		<!-- Fair Detail Modal -->
+		<div id="fair-modal" class="modal" style="display: none">
+			<!-- Populated by JS -->
+		</div>
+
+		<!-- Scripts -->
+		<script type="module" src="/src/js/app.js"></script>
+		<script type="module" src="/src/js/pages/student/fairs.page.js"></script>
+	</body>
+</html>

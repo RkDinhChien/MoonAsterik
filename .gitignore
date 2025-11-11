@@ -24,7 +24,4 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Old React files (can be safely deleted)
-src/
-vite.config.ts
-tsconfig.json
+.playwright-mcp
