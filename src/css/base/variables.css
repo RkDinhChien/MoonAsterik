@@ -3,6 +3,9 @@
    =========================== */
 
 :root {
+	/* Force light mode only */
+	color-scheme: light;
+
 	/* Primary Brand Colors - Cyan (Main identity) */
 	--primary-color: #00bcd4;
 	--primary-light: #4dd0e1;
@@ -145,11 +148,4 @@
 	--breakpoint-lg: 1024px;
 	--breakpoint-xl: 1280px;
 	--breakpoint-2xl: 1440px;
-}
-
-/* Dark Mode Support (Optional for future) */
-@media (prefers-color-scheme: dark) {
-	:root {
-		/* Override colors for dark mode if needed */
-	}
 }
